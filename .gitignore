@@ -6,6 +6,8 @@
 *~
 target/
 /parent/target/
+build.properties
+project.properties
 
 # IDE metadata
 nbproject/
