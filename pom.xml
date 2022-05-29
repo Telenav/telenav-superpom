@@ -139,20 +139,20 @@
 
         <!-- Annotations -->
 
-        <jetbrains.annotations.version>20.1.0</jetbrains.annotations.version>
+        <jetbrains.annotations.version>23.0.0</jetbrains.annotations.version>
 
         <!-- Build -->
 
         <java.version>11</java.version>
 
-        <maven.version>3.8.1</maven.version>
-        <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
+        <maven.version>3.8.5</maven.version>
+        <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
+        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
-        <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
-        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+        <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-exec-plugin.version>3.0.0</maven-exec-plugin.version>
         <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
@@ -166,17 +166,21 @@
 
         <lexakai.version>1.0.5</lexakai.version>
         <lexakai.annotations.version>1.0.0</lexakai.annotations.version>
-        <nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Cluster -->
 
         <zookeeper.version>3.5.6</zookeeper.version>
+        <!-- Creates a conflict with zookeeper over commons.io -->
+        <!--<zookeeper.version>3.8.0</zookeeper.version>-->
 
         <!-- File Systems -->
 
         <hdfs.version>3.3.0</hdfs.version>
+        <!-- Creates a conflict with zookeeper over commons.io -->
+        <!--<hdfs.version>3.3.3</hdfs.version>-->
         <s3.version>2.17.31</s3.version>
         <github.api.version>1.132</github.api.version>
         <ow2.asm.version>8.0.1</ow2.asm.version>
@@ -194,21 +198,23 @@
         <kivakit.version>1.5.1-SNAPSHOT</kivakit.version>
 
         <!-- Merged JARs -->
-        <kivakit.merged.version>1.5.0</kivakit.merged.version>
+        <kivakit.merged.version>1.5.2</kivakit.merged.version>
 
         <!-- Parsing -->
-        <antlr.version>4.7.2</antlr.version>
+        <antlr.version>4.10.1</antlr.version>
 
         <!-- Protocols -->
 
         <protobuf.version>3.18.2</protobuf.version>
         <gson.version>2.8.0</gson.version>
-        <jettison.version>1.1</jettison.version>
+        <!--<gson.version>2.9.0</gson.version>-->
+        <jettison.version>1.4.1</jettison.version>
         <protostuff.version>1.1.6</protostuff.version>
 
         <!-- Serialization -->
 
         <kryo.version>4.0.2</kryo.version>
+        <!--<kryo.version>5.3.0</kryo.version>-->
         <kryo.serializers.version>0.45</kryo.serializers.version>
         <jdk.serializable.functional.version>1.9.0</jdk.serializable.functional.version>
         <objenesis.version>3.2</objenesis.version>
