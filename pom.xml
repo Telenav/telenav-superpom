@@ -10,16 +10,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>telenav-superpom</name>
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
     <version>1.5.1-SNAPSHOT</version>
+
+    <description>The Telenav superpom is used by all Telenav Open Source projects.</description>
 
     <packaging>pom</packaging>
 
     <!-- Project -->
 
-    <description>The KivaKit super POM is used by all Telenav Open Source projects that depend directly or indirectly on KivaKit to help ensure consistent builds.</description>
     <url>https://www.telenav.com/</url>
     <inceptionYear>2011</inceptionYear>
     <organization>
@@ -30,19 +30,16 @@
     <!-- Licensing -->
 
     <licenses>
-
         <license>
             <name>Apache License, Version 2.0</name>
             <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
-
     </licenses>
 
     <!-- Contributors -->
 
     <developers>
-
         <developer>
             <id>jonathanl</id>
             <name>Jonathan Locke (Luo Shibo)</name>
@@ -54,7 +51,6 @@
                 <role>administrator</role>
             </roles>
         </developer>
-
         <developer>
             <id>haifeng</id>
             <name>Haifeng Zhu</name>
@@ -66,7 +62,6 @@
                 <role>administrator</role>
             </roles>
         </developer>
-
         <developer>
             <id>timboudreau</id>
             <name>Tim Boudreau</name>
@@ -78,39 +73,32 @@
                 <role>administrator</role>
             </roles>
         </developer>
-
     </developers>
 
     <!-- Source Code -->
 
     <scm>
-
         <connection>scm:git:https://Telenav/kivakit.git</connection>
         <developerConnection>scm:git:https://Telenav/kivakit.git</developerConnection>
         <url>https://Telenav/kivakit.git</url>
-
     </scm>
 
     <!-- Publishing -->
 
     <distributionManagement>
-
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
-
         <repository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
-
     </distributionManagement>
 
     <!-- Repositories -->
 
     <repositories>
-
         <repository>
             <snapshots>
                 <enabled>false</enabled>
@@ -119,7 +107,6 @@
             <name>Maven Central</name>
             <url>https://repo1.maven.org/maven2</url>
         </repository>
-
         <repository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
@@ -130,7 +117,6 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-
     </repositories>
 
     <!-- Properties -->
@@ -996,7 +982,7 @@
             </dependency>            
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
-                <artifactId>kivakit-test</artifactId>
+                <artifactId>kivakit-tests</artifactId>
                 <version>${kivakit.version}</version>
             </dependency>            
             <dependency>
@@ -1011,7 +997,7 @@
             </dependency>            
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
-                <artifactId>kivakit-serialization-kryo-test</artifactId>
+                <artifactId>kivakit-serialization-kryo-testing</artifactId>
                 <version>${kivakit.version}</version>
             </dependency>            
             <dependency>
@@ -1754,27 +1740,27 @@
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-map-measurements-test</artifactId>
+                <artifactId>mesakit-map-measurements-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-map-geography-test</artifactId>
+                <artifactId>mesakit-map-geography-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-map-region-test</artifactId>
+                <artifactId>mesakit-map-region-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-graph-world-test</artifactId>
+                <artifactId>mesakit-graph-world-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-graph-core-test</artifactId>
+                <artifactId>mesakit-graph-core-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
@@ -1889,8 +1875,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
         </dependencies>
-
     </dependencyManagement>
-
 </project>
