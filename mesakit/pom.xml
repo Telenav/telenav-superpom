@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //
+ // © 2011-2022 Telenav, Inc.
+ // Licensed under Apache License, Version 2.0
+ //
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ -->
+
+<project
+     xmlns="http://maven.apache.org/POM/4.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.telenav</groupId>
+        <artifactId>telenav-superpom</artifactId>
+        <version>1.5.1-SNAPSHOT</version>
+        <relativePath>../telenav-superpom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.telenav.mesakit</groupId>
+    <artifactId>mesakit</artifactId>
+    <version>0.9.13</version>
+
+    <packaging>pom</packaging>
+    <name>mesakit-superpom</name>
+    <description>
+        Dev-time configuration for mesakit, customizations.
+    </description>
+
+    <properties>
+        <!-- dev-time customizations go here -->
+    </properties>    
+
+</project>
