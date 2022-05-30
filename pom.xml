@@ -1867,6 +1867,11 @@
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
+                <artifactId>mesakit-map-shapefile</artifactId>
+                <version>${mesakit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.mesakit</groupId>
                 <artifactId>mesakit-map-geography-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
