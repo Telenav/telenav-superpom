@@ -1,137 +1,41 @@
-<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<!--                                                                                                                 -->
-<!--  © 2011-2021 Telenav, Inc.                                                                                      -->
-<!--  Licensed under Apache License, Version 2.0                                                                     -->
-<!--                                                                                                                 -->
-<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--  -->
+<!-- © 2011-2022 Telenav, Inc. -->
+<!-- Licensed under Apache License, Version 2.0 -->
+<!--  -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<project xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>telenav-superpom</name>
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
     <version>1.5.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
+    <name>telenav-superpom</name>
 
     <!-- Project -->
 
-    <description>The KivaKit super POM is used by all Telenav Open Source projects that depend directly or indirectly on KivaKit to help ensure consistent builds.</description>
-    <url>https://www.telenav.com/</url>
-    <inceptionYear>2011</inceptionYear>
-    <organization>
-        <name>Telenav</name>
-        <url>https://www.telenav.com</url>
-    </organization>
+    <description>
+        The KivaKit super POM is used by all Telenav Open Source projects that
+        depend directly or indirectly on KivaKit to help ensure consistent builds.
+    </description>
 
     <!-- Licensing -->
 
     <licenses>
-
         <license>
             <name>Apache License, Version 2.0</name>
             <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
-
     </licenses>
-
-    <!-- Contributors -->
-
-    <developers>
-
-        <developer>
-            <id>jonathanl</id>
-            <name>Jonathan Locke (Luo Shibo)</name>
-            <email>jonathanl@telenav.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>lead</role>
-                <role>administrator</role>
-            </roles>
-        </developer>
-
-        <developer>
-            <id>haifeng</id>
-            <name>Haifeng Zhu</name>
-            <email>hfzhu@telenav.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>developer</role>
-                <role>administrator</role>
-            </roles>
-        </developer>
-
-        <developer>
-            <id>timboudreau</id>
-            <name>Tim Boudreau</name>
-            <email>tim@timboudreau.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>developer</role>
-                <role>administrator</role>
-            </roles>
-        </developer>
-
-    </developers>
-
-    <!-- Source Code -->
-
-    <scm>
-
-        <connection>scm:git:https://Telenav/kivakit.git</connection>
-        <developerConnection>scm:git:https://Telenav/kivakit.git</developerConnection>
-        <url>https://Telenav/kivakit.git</url>
-
-    </scm>
-
-    <!-- Publishing -->
-
-    <distributionManagement>
-
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-
-    </distributionManagement>
-
-    <!-- Repositories -->
-
-    <repositories>
-
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>Maven Central</name>
-            <url>https://repo1.maven.org/maven2</url>
-        </repository>
-
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-
-    </repositories>
 
     <!-- Properties -->
 
@@ -144,7 +48,6 @@
         <!-- Build -->
 
         <java.version>11</java.version>
-
         <maven.version>3.8.5</maven.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
@@ -157,30 +60,29 @@
         <maven-exec-plugin.version>3.0.0</maven-exec-plugin.version>
         <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
         <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
-
         <cactus.version>1.4.0</cactus.version>
         <cactus.download.version>${cactus.version}</cactus.download.version>
         <cactus.downloads.folder>${user.home}/.cactus-build/downloads</cactus.downloads.folder>
         <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-build-metadata/${cactus.download.version}/cactus-build-metadata-${cactus.download.version}.jar</cactus.url>
         <cactus.jar>${cactus.downloads.folder}/cactus-build-metadata-${cactus.download.version}.jar</cactus.jar>
-
         <lexakai.version>1.0.5</lexakai.version>
         <lexakai.annotations.version>1.0.0</lexakai.annotations.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Cluster -->
 
         <zookeeper.version>3.5.6</zookeeper.version>
-        <!-- Creates a conflict with zookeeper over commons.io -->
-        <!--<zookeeper.version>3.8.0</zookeeper.version>-->
 
+        <!-- Creates a conflict with zookeeper over commons.io -->
+        <!-- <zookeeper.version>3.8.0</zookeeper.version> -->
         <!-- File Systems -->
 
         <hdfs.version>3.3.0</hdfs.version>
+
         <!-- Creates a conflict with zookeeper over commons.io -->
-        <!--<hdfs.version>3.3.3</hdfs.version>-->
+        <!-- <hdfs.version>3.3.3</hdfs.version> -->
+
         <s3.version>2.17.31</s3.version>
         <github.api.version>1.132</github.api.version>
         <ow2.asm.version>8.0.1</ow2.asm.version>
@@ -198,23 +100,29 @@
         <kivakit.version>1.5.1-SNAPSHOT</kivakit.version>
 
         <!-- Merged JARs -->
+
         <kivakit.merged.version>1.5.2</kivakit.merged.version>
 
         <!-- Parsing -->
+
         <antlr.version>4.10.1</antlr.version>
 
         <!-- Protocols -->
 
         <protobuf.version>3.18.2</protobuf.version>
         <gson.version>2.8.0</gson.version>
-        <!--<gson.version>2.9.0</gson.version>-->
+
+        <!-- <gson.version>2.9.0</gson.version> -->
+
         <jettison.version>1.4.1</jettison.version>
         <protostuff.version>1.1.6</protostuff.version>
 
         <!-- Serialization -->
 
         <kryo.version>4.0.2</kryo.version>
-        <!--<kryo.version>5.3.0</kryo.version>-->
+
+        <!-- <kryo.version>5.3.0</kryo.version> -->
+
         <kryo.serializers.version>0.45</kryo.serializers.version>
         <jdk.serializable.functional.version>1.9.0</jdk.serializable.functional.version>
         <objenesis.version>3.2</objenesis.version>
@@ -228,7 +136,7 @@
         <!-- Testing -->
 
         <junit.version>4.13.2</junit.version>
-        <mockito>3.11.2</mockito>
+        <mockito.version>3.11.2</mockito.version>
 
         <!-- User Interface -->
 
@@ -268,6 +176,7 @@
         <jakarta.xml.version>2.3.2</jakarta.xml.version>
         <jackson.version>2.12.3</jackson.version>
         <xerces.version>2.11.0</xerces.version>
+
         <!-- MesaKit Version -->
 
         <mesakit.version>0.9.13</mesakit.version>
@@ -276,105 +185,8 @@
 
         <osmosis.version>0.48.1</osmosis.version>
         <josm.version>17428</josm.version>
+
     </properties>
-
-    <!-- Profiles -->
-
-    <profiles>
-
-        <!-- Exclude Slow Tests -->
-
-        <profile>
-            <id>test-quick</id>
-            <properties>
-                <exclude.test.groups>com.telenav.kivakit.core.test.annotations.SlowTests</exclude.test.groups>
-                <testQuick>true</testQuick>
-            </properties>
-        </profile>
-
-        <!-- Attach JARs -->
-
-        <profile>
-            <id>attach-jars</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <version>${maven-source-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>attach-source-jar</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>${maven-javadoc-plugin.version}</version>
-                        <configuration>
-                            <show>protected</show>
-                            <source>11</source>
-                            <sourcepath>src/main/java</sourcepath>
-                            <failOnError>false</failOnError>
-                            <detectJavaApiLink>false</detectJavaApiLink>
-                            <doclint>none</doclint>
-                            <nohelp>true</nohelp>
-                            <additionalOptions>-notimestamp --show-module-contents all --show-packages all --show-types private</additionalOptions>
-                            <destDir>target/attached-javadocs</destDir>
-                            <sourceFileIncludes>
-                                <sourceFileInclude>**/*.java</sourceFileInclude>
-                            </sourceFileIncludes>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>attach-javadoc-jar</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-
-        <!-- Sign Artifacts -->
-
-        <profile>
-
-            <id>sign-artifacts</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <configuration>
-                                    <gpgArguments>
-                                        <arg>--pinentry-mode</arg>
-                                        <arg>loopback</arg>
-                                    </gpgArguments>
-                                </configuration>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-
-        </profile>
-
-    </profiles>
 
     <build>
 
@@ -397,6 +209,7 @@
                 </includes>
             </resource>
         </resources>
+
         <testResources>
             <testResource>
                 <directory>src/test/java</directory>
@@ -422,80 +235,136 @@
             <!-- Dependencies -->
 
             <plugin>
+
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>3.0.0</version>
                 <executions>
+
                     <execution>
+
                         <id>enforce</id>
                         <configuration>
                             <rules>
                                 <dependencyConvergence/>
                                 <requireMavenVersion>
                                     <version>[${maven.version},)</version>
-                                    <message>Build requires Maven version ${maven.version}.</message>
+                                    <message>
+                                        Build requires Maven version ${maven.version}.
+                                    </message>
                                 </requireMavenVersion>
                             </rules>
                         </configuration>
                         <goals>
                             <goal>enforce</goal>
                         </goals>
+
                     </execution>
+
                 </executions>
+
             </plugin>
 
             <!-- Build Metadata -->
 
             <plugin>
+
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>3.0.0</version>
                 <executions>
+
                     <execution>
+
                         <id>project-metadata</id>
                         <phase>validate</phase>
                         <configuration>
-                            <target name = "build-metadata">
-                                <property name = "project.groupId" value = "${project.groupId}"/>
-                                <property name = "project.artifactId" value = "${project.artifactId}"/>
-                                <property name = "project.version" value = "${project.version}"/>
-                                <property name = "project.name" value = "${project.name}"/>
-                                <condition property = "source.exists">
-                                    <available file = "src" type = "dir"/>
+                            <target
+                                name="build-metadata">
+
+                                <property
+                                    name="project.groupId"
+                                    value="${project.groupId}"/>
+                                <property
+                                    name="project.artifactId"
+                                    value="${project.artifactId}"/>
+                                <property
+                                    name="project.version"
+                                    value="${project.version}"/>
+                                <property
+                                    name="project.name"
+                                    value="${project.name}"/>
+                                <condition
+                                    property="source.exists">
+                                    <available
+                                        file="src"
+                                        type="dir"/>
                                 </condition>
-                                <taskdef resource = "net/sf/antcontrib/antcontrib.properties" classpathref = "maven.plugin.classpath"/>
+                                <taskdef
+                                    classpathref="maven.plugin.classpath"
+                                    resource="net/sf/antcontrib/antcontrib.properties"/>
                                 <if>
-                                    <equals arg1 = "${maven.multiModuleProjectDirectory}" arg2 = "${project.basedir}"/>
+                                    <equals
+                                        arg1="${maven.multiModuleProjectDirectory}"
+                                        arg2="${project.basedir}"/>
                                     <then>
-                                        <mkdir dir = "${cactus.downloads.folder}"/>
-                                        <get ignoreerrors = "true" src = "${cactus.url}" dest = "${cactus.jar}"/>
+                                        <mkdir
+                                            dir="${cactus.downloads.folder}"/>
+                                        <get
+                                            dest="${cactus.jar}"
+                                            ignoreerrors="true"
+                                            src="${cactus.url}"/>
                                     </then>
                                 </if>
+
                                 <if>
-                                    <equals arg1 = "${source.exists}" arg2 = "true"/>
+
+                                    <equals
+                                        arg1="${source.exists}"
+                                        arg2="true"/>
                                     <then>
-                                        <echo file = "src/main/java/project.properties">
-                                            project-name = ${project.name}${line.separator}project-version = ${project.version}${line.separator}project-group-id = ${project.groupId}${line.separator}project-artifact-id = ${project.artifactId}
+                                        <echo
+                                            file="src/main/java/project.properties">
+                                            project-name = ${project.name}${line.separator}project-version
+                                            = ${project.version}${line.separator}project-group-id
+                                            = ${project.groupId}${line.separator}project-artifact-id
+                                            = ${project.artifactId}
                                         </echo>
-                                        <java jar = "${cactus.jar}" failonerror = "true" fork = "true">
-                                            <arg value = "src/main/java"/>
+                                        <java
+                                            failonerror="true"
+                                            fork="true"
+                                            jar="${cactus.jar}">
+                                            <arg
+                                                value="src/main/java"/>
                                         </java>
                                     </then>
                                     <else>
-                                        <echo file = "${project.basedir}/project.properties">
-                                            project-name = ${project.name}${line.separator}project-version = ${project.version}${line.separator}project-group-id = ${project.groupId}${line.separator}project-artifact-id = ${project.artifactId}
+                                        <echo
+                                            file="${project.basedir}/project.properties">
+                                            project-name = ${project.name}${line.separator}project-version
+                                            = ${project.version}${line.separator}project-group-id
+                                            = ${project.groupId}${line.separator}project-artifact-id
+                                            = ${project.artifactId}
                                         </echo>
-                                        <java jar = "${cactus.jar}" failonerror = "true" fork = "true">
-                                            <arg value = "${project.basedir}"/>
+                                        <java
+                                            failonerror="true"
+                                            fork="true"
+                                            jar="${cactus.jar}">
+                                            <arg
+                                                value="${project.basedir}"/>
                                         </java>
                                     </else>
+
                                 </if>
+
                             </target>
                         </configuration>
                         <goals>
                             <goal>run</goal>
                         </goals>
+
                     </execution>
+
                 </executions>
                 <dependencies>
                     <dependency>
@@ -504,17 +373,18 @@
                         <version>20020829</version>
                     </dependency>
                 </dependencies>
+
             </plugin>
 
         </plugins>
 
         <pluginManagement>
-
             <plugins>
 
                 <!-- Compiling -->
 
                 <plugin>
+
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
@@ -528,6 +398,7 @@
                             <compilerArg>-Xlint:deprecation</compilerArg>
                         </compilerArgs>
                     </configuration>
+
                 </plugin>
 
                 <!-- Building -->
@@ -541,27 +412,30 @@
                 <!-- Testing -->
 
                 <plugin>
+
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M6</version>
                     <configuration>
                         <excludedGroups>${exclude.test.groups}</excludedGroups>
+
                         <systemPropertyVariables>
                             <testQuick>${testQuick}</testQuick>
                         </systemPropertyVariables>
-                        <argLine>
-                            -Xmx2g
-                        </argLine>
+                        <argLine>-Xmx2g</argLine>
                     </configuration>
+
                 </plugin>
 
                 <!-- Documentation -->
 
                 <plugin>
+
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${maven-javadoc-plugin.version}</version>
                     <configuration>
+
                         <show>public</show>
                         <source>11</source>
                         <detectJavaApiLink>false</detectJavaApiLink>
@@ -569,7 +443,11 @@
                         <nohelp>true</nohelp>
                         <reportOutputDirectory>${env.KIVAKIT_ASSETS_HOME}/docs/${env.KIVAKIT_VERSION}/javadoc</reportOutputDirectory>
                         <destDir>${project.name}</destDir>
-                        <additionalOptions>-notimestamp --show-module-contents all --show-packages all --show-types private</additionalOptions>
+                        <additionalOptions>
+                            -notimestamp --show-module-contents all --show-packages
+                            all --show-types private
+                        </additionalOptions>
+
                     </configuration>
                     <executions>
                         <execution>
@@ -580,6 +458,7 @@
                             </goals>
                         </execution>
                     </executions>
+
                 </plugin>
 
                 <!-- Publishing -->
@@ -595,12 +474,154 @@
                         <autoReleaseAfterClose>false</autoReleaseAfterClose>
                     </configuration>
                 </plugin>
-
             </plugins>
 
         </pluginManagement>
 
     </build>
+
+    <!-- Profiles -->
+
+    <profiles>
+
+        <!-- Exclude Slow Tests -->
+
+        <profile>
+            <id>test-quick</id>
+            <properties>
+                <exclude.test.groups>com.telenav.kivakit.core.test.annotations.SlowTests</exclude.test.groups>
+                <testQuick>true</testQuick>
+            </properties>
+        </profile>
+
+        <!-- Attach JARs -->
+
+        <profile>
+            <id>attach-jars</id>
+            <build>
+                <plugins>
+
+                    <plugin>
+
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${maven-source-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-source-jar</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+
+                    </plugin>
+
+                    <plugin>
+
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven-javadoc-plugin.version}</version>
+                        <configuration>
+
+                            <show>protected</show>
+                            <source>11</source>
+                            <sourcepath>src/main/java</sourcepath>
+                            <failOnError>false</failOnError>
+                            <detectJavaApiLink>false</detectJavaApiLink>
+                            <doclint>none</doclint>
+                            <nohelp>true</nohelp>
+                            <additionalOptions>
+                                -notimestamp --show-module-contents all --show-packages
+                                all --show-types private
+                            </additionalOptions>
+                            <destDir>target/attached-javadocs</destDir>
+                            <sourceFileIncludes>
+                                <sourceFileInclude>**/*.java</sourceFileInclude>
+                            </sourceFileIncludes>
+
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>attach-javadoc-jar</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+
+                    </plugin>
+
+                </plugins>
+
+            </build>
+        </profile>
+
+        <!-- Sign Artifacts -->
+
+        <profile>
+            <id>sign-artifacts</id>
+            <build>
+                <plugins>
+
+                    <plugin>
+
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${maven-gpg-plugin.version}</version>
+                        <executions>
+
+                            <execution>
+
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+
+                            </execution>
+
+                        </executions>
+
+                    </plugin>
+
+                </plugins>
+
+            </build>
+        </profile>
+
+    </profiles>
+
+    <!-- Repositories -->
+
+    <repositories>
+
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2</url>
+        </repository>
+
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -639,6 +660,7 @@
             <!-- Cluster -->
 
             <dependency>
+
                 <groupId>org.apache.zookeeper</groupId>
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
@@ -652,7 +674,9 @@
                         <artifactId>*</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
                 <groupId>org.apache.zookeeper</groupId>
                 <artifactId>zookeeper-jute</artifactId>
@@ -678,10 +702,12 @@
             <!-- Hadoop -->
 
             <dependency>
+
                 <groupId>org.apache.hadoop</groupId>
                 <artifactId>hadoop-hdfs</artifactId>
                 <version>${hdfs.version}</version>
                 <exclusions>
+
                     <exclusion>
                         <groupId>io.netty</groupId>
                         <artifactId>netty</artifactId>
@@ -730,9 +756,13 @@
                         <groupId>org.eclipse.jetty</groupId>
                         <artifactId>jetty-util</artifactId>
                     </exclusion>
+
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>org.apache.hadoop</groupId>
                 <artifactId>hadoop-hdfs-client</artifactId>
                 <version>${hdfs.version}</version>
@@ -750,12 +780,16 @@
                         <artifactId>jackson-annotations</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>org.apache.hadoop</groupId>
                 <artifactId>hadoop-common</artifactId>
                 <version>${hdfs.version}</version>
                 <exclusions>
+
                     <exclusion>
                         <groupId>org.eclipse.jetty</groupId>
                         <artifactId>jetty-util</artifactId>
@@ -808,12 +842,15 @@
                         <groupId>org.apache.commons</groupId>
                         <artifactId>commons-compress</artifactId>
                     </exclusion>
+
                 </exclusions>
+
             </dependency>
 
             <!-- HTTP -->
 
             <dependency>
+
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
@@ -823,6 +860,7 @@
                         <artifactId>jsr311-api</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
 
             <!-- Java -->
@@ -841,10 +879,12 @@
             <!-- Jersey -->
 
             <dependency>
+
                 <groupId>org.glassfish.jersey.media</groupId>
                 <artifactId>jersey-media-json-jackson</artifactId>
                 <version>${jersey.version}</version>
                 <exclusions>
+
                     <exclusion>
                         <groupId>com.fasterxml.jackson.core</groupId>
                         <artifactId>jackson-annotations</artifactId>
@@ -869,9 +909,13 @@
                         <groupId>jakarta.ws.rs</groupId>
                         <artifactId>*</artifactId>
                     </exclusion>
+
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>org.glassfish.jersey.containers</groupId>
                 <artifactId>jersey-container-servlet</artifactId>
                 <version>${jersey.version}</version>
@@ -881,8 +925,11 @@
                         <artifactId>jakarta.activation-api</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>org.glassfish.jersey.core</groupId>
                 <artifactId>jersey-client</artifactId>
                 <version>${jersey.version}</version>
@@ -892,7 +939,9 @@
                         <artifactId>jakarta.activation-api</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
                 <groupId>org.glassfish.jersey.inject</groupId>
                 <artifactId>jersey-hk2</artifactId>
@@ -988,32 +1037,32 @@
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-test-internal</artifactId>
                 <version>${kivakit.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-resource-tests</artifactId>
                 <version>${kivakit.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-test</artifactId>
                 <version>${kivakit.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-testing</artifactId>
                 <version>${kivakit.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-internal-testing</artifactId>
                 <version>${kivakit.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
-                <artifactId>kivakit-serialization-kryo-test</artifactId>
+                <artifactId>kivakit-serialization-kryo-testing</artifactId>
                 <version>${kivakit.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-conversion</artifactId>
@@ -1163,6 +1212,7 @@
             <!-- Jetty -->
 
             <dependency>
+
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-server</artifactId>
                 <version>${jetty.version}</version>
@@ -1229,8 +1279,11 @@
                     </exclusion>
 
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-webapp</artifactId>
                 <version>${jetty.version}</version>
@@ -1295,6 +1348,7 @@
                 </exclusions>
 
             </dependency>
+
             <dependency>
                 <groupId>jakarta.servlet</groupId>
                 <artifactId>jakarta.servlet-api</artifactId>
@@ -1304,6 +1358,7 @@
             <!-- Mail -->
 
             <dependency>
+
                 <groupId>com.sun.mail</groupId>
                 <artifactId>javax.mail</artifactId>
                 <version>${java.mail.version}</version>
@@ -1313,6 +1368,7 @@
                         <artifactId>*</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
 
             <!-- Merged JARs -->
@@ -1357,6 +1413,7 @@
             <!-- S3 -->
 
             <dependency>
+
                 <groupId>software.amazon.awssdk</groupId>
                 <artifactId>s3</artifactId>
                 <version>${s3.version}</version>
@@ -1374,11 +1431,13 @@
                         <artifactId>netty-handler</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
 
             <!-- Serialization -->
 
             <dependency>
+
                 <groupId>com.esotericsoftware</groupId>
                 <artifactId>kryo</artifactId>
                 <version>${kryo.version}</version>
@@ -1388,8 +1447,11 @@
                         <artifactId>asm</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>de.javakaffee</groupId>
                 <artifactId>kryo-serializers</artifactId>
                 <version>${kryo.serializers.version}</version>
@@ -1399,7 +1461,9 @@
                         <artifactId>kryo</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
                 <groupId>org.ow2.asm</groupId>
                 <artifactId>asm</artifactId>
@@ -1427,6 +1491,7 @@
             <!-- Swagger -->
 
             <dependency>
+
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-jaxrs2</artifactId>
                 <version>${swagger.version}</version>
@@ -1452,8 +1517,11 @@
                         <artifactId>jackson-annotations</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-core</artifactId>
                 <version>${swagger.version}</version>
@@ -1471,8 +1539,11 @@
                         <artifactId>jackson-annotations</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-models</artifactId>
                 <version>${swagger.version}</version>
@@ -1482,7 +1553,9 @@
                         <artifactId>jackson-annotations</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
                 <groupId>org.webjars</groupId>
                 <artifactId>swagger-ui</artifactId>
@@ -1496,7 +1569,9 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
             </dependency>
+
             <dependency>
+
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>3.11.2</version>
@@ -1507,6 +1582,7 @@
                         <artifactId>objenesis</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
 
             <!-- User Interface -->
@@ -1564,7 +1640,9 @@
                 <artifactId>classgraph</artifactId>
                 <version>${classgraph.version}</version>
             </dependency>
+
             <dependency>
+
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
                 <version>${log4j.version}</version>
@@ -1574,8 +1652,11 @@
                         <artifactId>org.osgi.core</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-1.2-api</artifactId>
                 <version>${log4j.version}</version>
@@ -1585,8 +1666,11 @@
                         <artifactId>org.osgi.core</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
@@ -1596,6 +1680,7 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
 
             <!-- Web -->
@@ -1664,6 +1749,7 @@
             <!-- XML -->
 
             <dependency>
+
                 <groupId>jakarta.xml.bind</groupId>
                 <artifactId>jakarta.xml.bind-api</artifactId>
                 <version>${jakarta.xml.version}</version>
@@ -1673,8 +1759,11 @@
                         <artifactId>javax.activation-api</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
+
                 <groupId>jakarta.ws.rs</groupId>
                 <artifactId>jakarta.ws.rs-api</artifactId>
                 <version>${jakarta.ws.rs.version}</version>
@@ -1684,7 +1773,9 @@
                         <artifactId>jakarta.activation-api</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
                 <groupId>jakarta.activation</groupId>
                 <artifactId>jakarta.activation-api</artifactId>
@@ -1705,6 +1796,7 @@
                 <artifactId>jackson-jaxrs-json-provider</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
+
             <!-- MesaKit -->
 
             <dependency>
@@ -1754,27 +1846,32 @@
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-map-measurements-test</artifactId>
+                <artifactId>mesakit-map-measurements-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-map-geography-test</artifactId>
+                <artifactId>mesakit-map-geography-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-map-region-test</artifactId>
+                <artifactId>mesakit-map-shapefile</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-graph-world-test</artifactId>
+                <artifactId>mesakit-map-region-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.mesakit</groupId>
-                <artifactId>mesakit-graph-core-test</artifactId>
+                <artifactId>mesakit-graph-world-testing</artifactId>
+                <version>${mesakit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.mesakit</groupId>
+                <artifactId>mesakit-graph-core-testing</artifactId>
                 <version>${mesakit.version}</version>
             </dependency>
             <dependency>
@@ -1854,6 +1951,7 @@
             <!-- OSM -->
 
             <dependency>
+
                 <groupId>org.openstreetmap.osmosis</groupId>
                 <artifactId>osmosis-core</artifactId>
                 <version>${osmosis.version}</version>
@@ -1867,7 +1965,9 @@
                         <artifactId>xml-apis</artifactId>
                     </exclusion>
                 </exclusions>
+
             </dependency>
+
             <dependency>
                 <groupId>org.openstreetmap.osmosis</groupId>
                 <artifactId>osmosis-osm-binary</artifactId>
@@ -1878,7 +1978,9 @@
                 <artifactId>osmosis-xml</artifactId>
                 <version>${osmosis.version}</version>
             </dependency>
+
             <dependency>
+
                 <groupId>org.openstreetmap.osmosis</groupId>
                 <artifactId>osmosis-pbf</artifactId>
                 <version>${osmosis.version}</version>
@@ -1888,9 +1990,89 @@
                         <artifactId>jsr311-api</artifactId>
                     </exclusion>
                 </exclusions>
-            </dependency>
-        </dependencies>
 
+            </dependency>
+
+        </dependencies>
     </dependencyManagement>
+
+    <!-- Publishing -->
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- Source Code -->
+
+    <scm>
+        <connection>scm:git:https://Telenav/kivakit.git</connection>
+        <developerConnection>scm:git:https://Telenav/kivakit.git</developerConnection>
+        <url>https://Telenav/kivakit.git</url>
+    </scm>
+
+    <url>https://www.telenav.com/</url>
+
+    <inceptionYear>2011</inceptionYear>
+
+    <organization>
+        <name>Telenav</name>
+        <url>https://www.telenav.com</url>
+    </organization>
+
+    <!-- Contributors -->
+
+    <developers>
+
+        <developer>
+
+            <id>jonathanl</id>
+            <name>Jonathan Locke (Luo Shibo)</name>
+            <email>jonathanl@telenav.com</email>
+            <organization>Telenav</organization>
+            <organizationUrl>https://www.telenav.com/</organizationUrl>
+            <roles>
+                <role>lead</role>
+                <role>administrator</role>
+            </roles>
+
+        </developer>
+
+        <developer>
+
+            <id>haifeng</id>
+            <name>Haifeng Zhu</name>
+            <email>hfzhu@telenav.com</email>
+            <organization>Telenav</organization>
+            <organizationUrl>https://www.telenav.com/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>administrator</role>
+            </roles>
+
+        </developer>
+
+        <developer>
+
+            <id>timboudreau</id>
+            <name>Tim Boudreau</name>
+            <email>tim@timboudreau.com</email>
+            <organization>Telenav</organization>
+            <organizationUrl>https://www.telenav.com/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>administrator</role>
+            </roles>
+
+        </developer>
+
+    </developers>
 
 </project>
