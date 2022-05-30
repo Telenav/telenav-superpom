@@ -12,8 +12,9 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
-    <version>1.5.1-SNAPSHOT</version>
+    <version>1.6.0</version>
 
+    <name>telenav-superpom</name>
     <description>The Telenav superpom is used by all Telenav Open Source projects.</description>
 
     <packaging>pom</packaging>
@@ -1691,6 +1692,7 @@
                 <artifactId>jackson-jaxrs-json-provider</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
+
             <!-- MesaKit -->
 
             <dependency>
