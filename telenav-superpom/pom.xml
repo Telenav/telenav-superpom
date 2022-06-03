@@ -299,8 +299,10 @@
                                      classpathref="maven.plugin.classpath"
                                      resource="net/sf/antcontrib/antcontrib.properties"/>
 
+                                <echo>Creating cactus download folder</echo>
                                 <mkdir
                                      dir="${cactus.downloads.folder}"/>
+                                <echo>Downloading cactus</echo>
                                 <get
                                      dest="${cactus.jar}"
                                      ignoreerrors="true"
@@ -319,6 +321,7 @@
                                             = ${project.groupId}${line.separator}project-artifact-id
                                             = ${project.artifactId}
                                         </echo>
+                                        <echo>Running cactus</echo>
                                         <java
                                              failonerror="true"
                                              fork="true"
@@ -335,6 +338,7 @@
                                             = ${project.groupId}${line.separator}project-artifact-id
                                             = ${project.artifactId}
                                         </echo>
+                                        <echo>Running cactus</echo>
                                         <java
                                              failonerror="true"
                                              fork="true"
