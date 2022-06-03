@@ -298,19 +298,13 @@
                                 <taskdef
                                      classpathref="maven.plugin.classpath"
                                      resource="net/sf/antcontrib/antcontrib.properties"/>
-                                <if>
-                                    <equals
-                                         arg1="${maven.multiModuleProjectDirectory}"
-                                         arg2="${project.basedir}"/>
-                                    <then>
-                                        <mkdir
-                                             dir="${cactus.downloads.folder}"/>
-                                        <get
-                                             dest="${cactus.jar}"
-                                             ignoreerrors="true"
-                                             src="${cactus.url}"/>
-                                    </then>
-                                </if>
+
+                                <mkdir
+                                     dir="${cactus.downloads.folder}"/>
+                                <get
+                                     dest="${cactus.jar}"
+                                     ignoreerrors="true"
+                                     src="${cactus.url}"/>
 
                                 <if>
 
