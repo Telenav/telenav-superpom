@@ -17,16 +17,16 @@
 
     <parent>
         <groupId>com.telenav</groupId>
-        <artifactId>telenav-superpom</artifactId>
+        <artifactId>telenav-nonbuild</artifactId>
         <version>1.5.1-SNAPSHOT</version>
-        <relativePath>../telenav-superpom/pom.xml</relativePath>
+        <relativePath>../telenav-nonbuild/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.kivakit</groupId>
     <artifactId>kivakit</artifactId>
 
     <packaging>pom</packaging>
-    <name>kivakit-superpom</name>
+    <name>superpom-superpom</name>
     <description>
         Dev-time configuration for mesakit, customizations.
     </description>

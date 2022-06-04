@@ -17,9 +17,9 @@
 
     <parent>
         <groupId>com.telenav</groupId>
-        <artifactId>telenav-superpom</artifactId>
+        <artifactId>telenav-nonbuild</artifactId>
         <version>1.5.1-SNAPSHOT</version>
-        <relativePath>../telenav-superpom/pom.xml</relativePath>
+        <relativePath>../telenav-nonbuild/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.mesakit</groupId>
@@ -27,7 +27,7 @@
     <version>0.9.13</version>
 
     <packaging>pom</packaging>
-    <name>mesakit-superpom</name>
+    <name>superpom-mesakit</name>
     <description>
         Dev-time configuration for mesakit, customizations.
     </description>

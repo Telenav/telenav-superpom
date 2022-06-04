@@ -27,6 +27,7 @@
     
     <modules>
         <module>telenav-superpom</module>
+        <module>telenav-nonbuild</module>
         <module>kivakit</module>
         <module>mesakit</module>
         <module>cactus</module>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //
+ // © 2011-2022 Telenav, Inc.
+ // Licensed under Apache License, Version 2.0
+ //
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ -->
+
+<project
+     xmlns="http://maven.apache.org/POM/4.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.telenav</groupId>
+        <artifactId>telenav-superpom</artifactId>
+        <version>1.5.1-SNAPSHOT</version>
+        <relativePath>../telenav-superpom/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>telenav-nonbuild</artifactId>
+
+    <packaging>pom</packaging>
+    <name>superpom-nonbuild</name>
+    <description>
+        Intermediate parent pom for all projects that use the cactus-build-maven-plugin
+        (i.e. everything but cactus-build, which cannot depend on itself).
+    </description>
+
+    <properties>
+        <cactus.plugin.version>1.4.1</cactus.plugin.version>
+        <cactus.plugin.verbose>true</cactus.plugin.verbose>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.telenav.cactus</groupId>
+                    <artifactId>cactus-build-maven-plugin</artifactId>
+                    <version>${cactus.plugin.version}</version>
+                    <configuration>
+                        <verbose>${cactus.plugin.verbose}</verbose>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>com.telenav.cactus</groupId>
+                <artifactId>cactus-build-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>project-metadata</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>build-metadata</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

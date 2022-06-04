@@ -24,10 +24,10 @@
 
     <groupId>com.telenav.cactus</groupId>
     <artifactId>cactus-build</artifactId>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
 
     <packaging>pom</packaging>
-    <name>cactus-superpom</name>
+    <name>superpom-cactus</name>
     <description>
         Dev-time configuration for cactus, customizations.
     </description>
