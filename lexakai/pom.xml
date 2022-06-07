@@ -24,7 +24,7 @@
 
     <groupId>com.telenav.lexakai</groupId>
     <artifactId>lexakai-superpom</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
 
     <packaging>pom</packaging>
     <name>superpom-lexakai</name>
