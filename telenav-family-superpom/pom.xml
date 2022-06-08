@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //
+ // © 2011-2022 Telenav, Inc.
+ // Licensed under Apache License, Version 2.0
+ //
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ -->
+
+<project
+     xmlns="http://maven.apache.org/POM/4.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.telenav</groupId>
+    <artifactId>telenav-family-superpom</artifactId>
+    <version>1.0</version>
+
+    <packaging>pom</packaging>
+    <name>superpom-cactus</name>
+    <description>
+        Provides the release profile that runs lexakai when building kivakit, kivakit-stuff, mesakit, etc,
+        so that you simply add `--activateProfiles release` when building to automatically build lexakai
+        documentation.
+    </description>
+
+    <properties>
+        <cactus.plugin.version>1.4.4</cactus.plugin.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.telenav.cactus</groupId>
+                        <artifactId>cactus-build-maven-plugin</artifactId>
+                        <version>${cactus.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>lexakai</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>lexakai</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <overwrite-resources>true</overwrite-resources>
+                            <update-readme>true</update-readme>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>                        
+
+</project>

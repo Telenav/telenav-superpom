@@ -26,6 +26,7 @@
     </description>
     
     <modules>
+        <module>telenav-family-superpom</module>
         <module>telenav-superpom</module>
         <module>telenav-project-superpom</module>
         <module>kivakit</module>
