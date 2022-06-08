@@ -18,12 +18,12 @@
     <parent>
         <groupId>com.telenav</groupId>
         <artifactId>telenav-nonbuild</artifactId>
-        <version>1.5.1-SNAPSHOT</version>
-        <relativePath>../telenav-nonbuild/pom.xml</relativePath>
+        <version>1.6.0</version>
+        <relativePath>../telenav-project-superpom/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.kivakit</groupId>
-    <artifactId>kivakit</artifactId>
+    <artifactId>kivakit-superpom</artifactId>
 
     <packaging>pom</packaging>
     <name>superpom-superpom</name>

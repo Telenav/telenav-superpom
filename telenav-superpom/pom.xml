@@ -15,7 +15,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
-    <version>1.5.1-SNAPSHOT</version>
+    <version>1.6.0</version>
 
     <packaging>pom</packaging>
     <name>superpom-telenav</name>
@@ -94,7 +94,7 @@
 
         <!-- KivaKit Version -->
 
-        <kivakit.version>1.5.1-SNAPSHOT</kivakit.version>
+        <kivakit.version>1.6.0</kivakit.version>
 
         <!-- Merged JARs -->
 
