@@ -17,9 +17,9 @@
 
     <parent>
         <groupId>com.telenav</groupId>
-        <artifactId>telenav-nonbuild</artifactId>
-        <version>1.5.1-SNAPSHOT</version>
-        <relativePath>../telenav-nonbuild/pom.xml</relativePath>
+        <artifactId>telenav-project-superpom</artifactId>
+        <version>1.6.0</version>
+        <relativePath>../telenav-project-superpom/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.lexakai</groupId>

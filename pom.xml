@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom-bom</artifactId>
-    <version>1.5.1-SNAPSHOT</version>
+    <version>1.6.0</version>
 
     <packaging>pom</packaging>
     <name>telenav-superpom-bom</name>
@@ -27,7 +27,7 @@
     
     <modules>
         <module>telenav-superpom</module>
-        <module>telenav-nonbuild</module>
+        <module>telenav-project-superpom</module>
         <module>kivakit</module>
         <module>mesakit</module>
         <module>cactus</module>
