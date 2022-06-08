@@ -32,10 +32,11 @@
     </description>
 
     <properties>
-        <cactus.plugin.version>1.4.3</cactus.plugin.version>
+        <cactus.plugin.version>1.4.4</cactus.plugin.version>
         <cactus.plugin.verbose>true</cactus.plugin.verbose>
     </properties>
 
+<!--
     <build>
         <pluginManagement>
             <plugins>
@@ -67,5 +68,6 @@
             </plugin>
         </plugins>
     </build>
+-->
 
 </project>
