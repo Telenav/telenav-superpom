@@ -22,10 +22,10 @@
         <relativePath>../telenav-superpom/pom.xml</relativePath>
     </parent>
 
-    <artifactId>telenav-nonbuild</artifactId>
+    <artifactId>telenav-project-superpom</artifactId>
 
     <packaging>pom</packaging>
-    <name>superpom-nonbuild</name>
+    <name>telenav-project-superpom</name>
     <description>
         Intermediate parent pom for all projects that use the cactus-build-maven-plugin
         (i.e. everything but cactus-build, which cannot depend on itself).
