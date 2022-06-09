@@ -28,7 +28,7 @@
     </description>
 
     <properties>
-        <cactus.plugin.version>1.4.4</cactus.plugin.version>
+        <cactus.plugin.version>1.4.2</cactus.plugin.version>
     </properties>
 
     <profiles>
