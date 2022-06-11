@@ -26,13 +26,13 @@
     </description>
     
     <modules>
-        <module>telenav-family-superpom</module>
         <module>telenav-superpom</module>
-        <module>telenav-project-superpom</module>
-        <module>kivakit</module>
-        <module>mesakit</module>
-        <module>cactus</module>
-        <module>lexakai</module>
+        <module>telenav-superpom-project-family</module>
+        <module>telenav-superpom-project</module>
+        <module>telenav-superpom-kivakit</module>
+        <module>telenav-superpom-mesakit</module>
+        <module>telenav-superpom-cactus-build</module>
+        <module>telenav-superpom-lexakai</module>
     </modules>
 
     <!-- Licensing -->
@@ -44,6 +44,7 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <!-- Publishing -->
 
     <distributionManagement>

@@ -17,13 +17,13 @@
 
     <parent>
         <groupId>com.telenav</groupId>
-        <artifactId>telenav-project-superpom</artifactId>
+        <artifactId>telenav-superpom-project</artifactId>
         <version>1.6.0</version> <!-- [version] -->
-        <relativePath>../telenav-project-superpom/pom.xml</relativePath>
+        <relativePath>../telenav-superpom-project/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.mesakit</groupId>
-    <artifactId>mesakit-superpom</artifactId>
+    <artifactId>telenav-superpom-mesakit</artifactId>
     <version>0.9.13</version>
 
     <packaging>pom</packaging>

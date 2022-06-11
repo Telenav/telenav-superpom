@@ -17,13 +17,13 @@
 
     <parent>
         <groupId>com.telenav</groupId>
-        <artifactId>telenav-project-superpom</artifactId>
+        <artifactId>telenav-superpom-project</artifactId>
         <version>1.6.0</version> <!-- [version] -->
-        <relativePath>../telenav-project-superpom/pom.xml</relativePath>
+        <relativePath>../telenav-superpom-project/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.lexakai</groupId>
-    <artifactId>lexakai-superpom</artifactId>
+    <artifactId>telenav-superpom-lexakai</artifactId>
     <version>1.0.7</version>
 
     <packaging>pom</packaging>

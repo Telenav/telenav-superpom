@@ -4,7 +4,7 @@ Telenav Superpom
 Shared configuration for a number of Telenav's open-source projects, such as KivaKit,
 MesaKit and Lexakai.
 
-## Release Process
+### Superpom Release Process
 
 To release a new version of the Telenav superpom:
  
@@ -13,3 +13,9 @@ To release a new version of the Telenav superpom:
 2. Sign into [OSSRH](https://s01.oss.sonatype.org/#stagingRepositories), close the staging repository and release to Maven Central
 
 3. Update any dependent projects, as appropriate
+
+### Structure
+
+The structure of the Telenav superpom hierarchy is shown below. 
+
+<img src="documentation/pom-inheritance.png" width="1400"/>

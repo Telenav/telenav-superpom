@@ -1,0 +1,60 @@
+@startuml
+
+    !include lexakai.theme
+
+    title "Telenav Superpom Hierarchy"
+
+    top to bottom direction
+
+    class TelenavSuperpom
+    class TelenavSuperpomCactusBuild
+    class TelenavSuperpomKivaKit
+    class TelenavSuperpomLexakai
+    class TelenavSuperpomMesaKit
+    class TelenavSuperpomProject
+    class TelenavSuperpomProjectFamily
+
+    TelenavSuperpomProject -u-|> TelenavSuperpom
+    TelenavSuperpomCactusBuild -u-|> TelenavSuperpom
+    TelenavSuperpomKivaKit -u-|> TelenavSuperpomProject
+    TelenavSuperpomMesaKit -u-|> TelenavSuperpomProject
+    TelenavSuperpomLexakai -u-|> TelenavSuperpomProject
+
+    KivaKitApplication --u-|> TelenavSuperpomKivaKit
+    KivaKitComponent --u-|> TelenavSuperpomKivaKit
+    KivaKitCore --u-|> TelenavSuperpomKivaKit
+
+    TelenavSuperpomProjectFamily -[hidden]up-|> KivaKitCore
+
+    KivaKit -u-|> TelenavSuperpomProjectFamily
+    MesaKit -u-|> TelenavSuperpomProjectFamily
+    Lexakai -u-|> TelenavSuperpomProjectFamily
+    CactusBuild -u-|> TelenavSuperpomProjectFamily
+
+    CactusBuildMavenPlugin -u-|> TelenavSuperpomCactusBuild
+    CactusBuildMetadata -u-|> TelenavSuperpomCactusBuild
+
+    note left of TelenavSuperpom
+        All Telenav Open Source projects inherit from telenav-superpom
+    end note
+
+    note top of TelenavSuperpomProjectFamily
+        Project families have a separate inheritance hierarchy
+    end note
+
+    note left of TelenavSuperpomProject
+        All Telenav projects inherit from telenav-superpom-project
+    end note
+
+    note bottom of TelenavSuperpomKivaKit
+        All KivaKit family projects inherit from telenav-superpom-kivakit
+    end note
+
+    note top of TelenavSuperpomCactusBuild
+        The cactus-build superpom inherits directly from
+        telenav-superpom because telenav-superpom-project
+        references cactus-build, which would result in a cycle.
+    end note
+
+
+@enduml
