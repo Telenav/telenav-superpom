@@ -34,7 +34,7 @@
 
     <properties>
         <!-- dev-time customizations go here -->
-        <cactus.version>1.4.4</cactus.version>
+        <cactus.version>1.4.5</cactus.version>
     </properties>
 
     <profiles>
