@@ -27,13 +27,13 @@
     <version>0.9.13</version>
 
     <packaging>pom</packaging>
-    <name>superpom-mesakit</name>
+    <name>telenav-superpom-mesakit</name>
     <description>
-        Dev-time configuration for mesakit, customizations.
+        Superpom for mesakit.
     </description>
 
     <properties>
-        <!-- dev-time customizations go here -->
+        <javadoc.output.folder>${env.MESAKIT_ASSETS_HOME}/docs/${env.MESAKIT_VERSION}/javadoc</javadoc.output.folder>
     </properties>    
 
 </project>

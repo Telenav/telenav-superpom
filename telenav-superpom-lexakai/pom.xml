@@ -27,13 +27,13 @@
     <version>1.0.7</version>
 
     <packaging>pom</packaging>
-    <name>superpom-lexakai</name>
+    <name>telenav-superpom-lexakai</name>
     <description>
-        Dev-time configuration for lexakai, customizations.
+        Superpom for Lexakai
     </description>
 
     <properties>
-        <!-- dev-time customizations go here -->
+        <javadoc.output.folder>${env.LEXAKAI_ASSETS_HOME}/docs/${env.LEXAKAI_VERSION}/javadoc</javadoc.output.folder>
         <cactus.version>1.4.5</cactus.version>
     </properties>
 

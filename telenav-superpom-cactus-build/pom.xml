@@ -27,13 +27,13 @@
     <version>1.4.5</version>
 
     <packaging>pom</packaging>
-    <name>superpom-cactus</name>
+    <name>telenav-superpom-cactus-build</name>
     <description>
-        Dev-time configuration for cactus, customizations.
+        Superpom for cactus-build
     </description>
 
     <properties>
-        <!-- dev-time customizations go here -->
+        <javadoc.output.folder>${env.CACTUS_ASSETS_HOME}/docs/${env.CACTUS_VERSION}/javadoc</javadoc.output.folder>
     </properties>    
 
 </project>

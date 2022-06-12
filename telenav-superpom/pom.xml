@@ -7,9 +7,9 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <project
-     xmlns="http://maven.apache.org/POM/4.0.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+        xmlns = "http://maven.apache.org/POM/4.0.0"
+        xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -63,6 +63,7 @@
         <cactus.jar>${cactus.downloads.folder}/cactus-build-metadata-${cactus.download.version}.jar</cactus.jar>
         <lexakai.version>1.0.7</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
+        <javadoc.output.folder>javadoc-output</javadoc.output.folder>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -156,7 +157,7 @@
 
         <jetty.version>9.4.44.v20210927</jetty.version>
         <jersey.version>2.33</jersey.version>
-        <wicket.version>9.8.0</wicket.version>
+        <wicket.version>9.9.1</wicket.version>
         <wicket.jquery.version>9.5.0</wicket.jquery.version>
         <swagger.version>2.1.10</swagger.version>
         <swagger.webjar.version>3.51.2</swagger.webjar.version>
@@ -322,11 +323,12 @@
                     <configuration>
 
                         <show>public</show>
-                        <source>11</source>
+                        <source>17</source>
                         <detectJavaApiLink>false</detectJavaApiLink>
                         <doclint>none</doclint>
                         <nohelp>true</nohelp>
-                        <reportOutputDirectory>${env.KIVAKIT_ASSETS_HOME}/docs/${env.KIVAKIT_VERSION}/javadoc</reportOutputDirectory>
+                        <outputDirectory>${javadoc.output.folder}</outputDirectory>
+                        <reportOutputDirectory>${javadoc.output.folder}</reportOutputDirectory>
                         <destDir>${project.name}</destDir>
                         <additionalOptions>
                             -notimestamp --show-module-contents all --show-packages
