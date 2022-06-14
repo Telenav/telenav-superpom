@@ -24,6 +24,11 @@
     <description>
         Aggregator for telenav superpoms.
     </description>
+
+    <properties>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+    </properties>
     
     <modules>
         <module>telenav-superpom</module>
@@ -34,10 +39,6 @@
         <module>telenav-superpom-cactus</module>
         <module>telenav-superpom-lexakai</module>
     </modules>
-    
-    <properties>
-        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
-    </properties>
 
     <!-- Licensing -->
 
