@@ -57,7 +57,7 @@
                 <executions>
                     <execution>
                         <id>project-metadata</id>
-                        <phase>validate</phase>
+                        <phase>compile</phase>
                         <goals>
                             <goal>project-info</goal>
                             <goal>build-metadata</goal>
