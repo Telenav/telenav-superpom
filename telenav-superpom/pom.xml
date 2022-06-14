@@ -15,7 +15,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
-    <version>1.6.0</version> <!-- [version] -->
+    <version>1.0.0</version> <!-- [version] -->
 
     <packaging>pom</packaging>
     <name>superpom-telenav</name>

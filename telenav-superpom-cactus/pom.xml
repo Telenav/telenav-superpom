@@ -18,13 +18,13 @@
     <parent>
         <groupId>com.telenav</groupId>
         <artifactId>telenav-superpom</artifactId>
-        <version>1.6.0</version> <!-- [version] -->
+        <version>1.0.0</version> <!-- [version] -->
         <relativePath>../telenav-superpom/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.cactus</groupId>
     <artifactId>telenav-superpom-cactus</artifactId>
-    <version>1.4.5</version>
+    <version>1.0.0</version>
 
     <packaging>pom</packaging>
     <name>telenav-superpom-cactus</name>
