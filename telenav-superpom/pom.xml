@@ -58,9 +58,9 @@
         <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
         <cactus.version>1.4.5</cactus.version>
         <cactus.download.version>1.4.5</cactus.download.version>
-        <cactus.downloads.folder>${user.home}/.cactus-build/downloads</cactus.downloads.folder>
-        <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-build-metadata/${cactus.download.version}/cactus-build-metadata-${cactus.download.version}.jar</cactus.url>
-        <cactus.jar>${cactus.downloads.folder}/cactus-build-metadata-${cactus.download.version}.jar</cactus.jar>
+        <cactus.downloads.folder>${user.home}/.cactus/downloads</cactus.downloads.folder>
+        <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-metadata/${cactus.download.version}/cactus-metadata-${cactus.download.version}.jar</cactus.url>
+        <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
         <lexakai.version>1.0.7</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
         <javadoc.output.folder>javadoc-output</javadoc.output.folder>
@@ -540,7 +540,7 @@
 
             <dependency>
                 <groupId>com.telenav.cactus</groupId>
-                <artifactId>cactus-build-metadata</artifactId>
+                <artifactId>cactus-metadata</artifactId>
                 <version>${cactus.version}</version>
             </dependency>
 

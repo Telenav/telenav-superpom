@@ -27,8 +27,8 @@
     <packaging>pom</packaging>
     <name>telenav-superpom-project</name>
     <description>
-        Intermediate parent pom for all projects that use the cactus-build-maven-plugin
-        (i.e. everything but cactus-build, which cannot depend on itself).
+        Intermediate parent pom for all projects that use the cactus-maven-plugin
+        (i.e. everything but cactus, which cannot depend on itself).
     </description>
 
     <properties>
@@ -41,7 +41,7 @@
             <plugins>
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
-                    <artifactId>cactus-build-maven-plugin</artifactId>
+                    <artifactId>cactus-maven-plugin</artifactId>
                     <version>${cactus.plugin.version}</version>
                     <configuration>
                         <verbose>${cactus.plugin.verbose}</verbose>
@@ -53,7 +53,7 @@
         <plugins>
             <plugin>
                 <groupId>com.telenav.cactus</groupId>
-                <artifactId>cactus-build-maven-plugin</artifactId>
+                <artifactId>cactus-maven-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>project-metadata</id>

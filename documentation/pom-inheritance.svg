@@ -11,11 +11,11 @@
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="530.7292" x2="670.3125" y1="94.8486" y2="94.8486"/>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="530.7292" x2="670.3125" y1="103.182" y2="103.182"/>
     </g>
-    <g id="elem_TelenavSuperpomCactusBuild">
-      <rect codeline="9" fill="#282828" height="47.9167" id="TelenavSuperpomCactusBuild" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="808.8542" y="178.7028"/>
+    <g id="elem_TelenavSuperpomCactus">
+      <rect codeline="9" fill="#282828" height="47.9167" id="TelenavSuperpomCactus" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="808.8542" y="178.7028"/>
       <ellipse cx="823.4375" cy="194.3278" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
       <path d="M825.3479,198.7528 Q824.9207,198.9726 824.4507,199.0824 Q823.9807,199.1923 823.4619,199.1923 Q821.6187,199.1923 820.6482,197.9777 Q819.6777,196.7631 819.6777,194.4682 Q819.6777,192.1672 820.6482,190.9526 Q821.6187,189.738 823.4619,189.738 Q823.9807,189.738 824.4568,189.8478 Q824.9329,189.9577 825.3479,190.1774 L825.3479,192.1794 Q824.884,191.7521 824.4476,191.5538 Q824.0112,191.3554 823.5474,191.3554 Q822.5586,191.3554 822.0551,192.1397 Q821.5515,192.924 821.5515,194.4682 Q821.5515,196.0063 822.0551,196.7906 Q822.5586,197.5749 823.5474,197.5749 Q824.0112,197.5749 824.4476,197.3765 Q824.884,197.1781 825.3479,196.7509 Z " fill="#000000"/>
-      <text lengthAdjust="spacing" textLength="172.9167" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="840.104" y="198.658">TelenavSuperpomCactusBuild</text>
+      <text lengthAdjust="spacing" textLength="172.9167" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="840.104" y="198.658">TelenavSuperpomCactus</text>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="809.8958" x2="1018.2292" y1="209.9528" y2="209.9528"/>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="809.8958" x2="1018.2292" y1="218.2861" y2="218.2861"/>
     </g>
@@ -107,27 +107,27 @@
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="390.625" x2="468.75" y1="744.3278" y2="744.3278"/>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="390.625" x2="468.75" y1="752.6611" y2="752.6611"/>
     </g>
-    <g id="elem_CactusBuild">
-      <rect fill="#282828" height="47.9167" id="CactusBuild" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="106.25" x="506.7708" y="713.0778"/>
+    <g id="elem_Cactus">
+      <rect fill="#282828" height="47.9167" id="Cactus" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="106.25" x="506.7708" y="713.0778"/>
       <ellipse cx="521.3542" cy="728.7028" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
       <path d="M523.2646,733.1278 Q522.8373,733.3476 522.3674,733.4574 Q521.8974,733.5673 521.3786,733.5673 Q519.5353,733.5673 518.5649,732.3527 Q517.5944,731.1381 517.5944,728.8432 Q517.5944,726.5422 518.5649,725.3276 Q519.5353,724.113 521.3786,724.113 Q521.8974,724.113 522.3735,724.2228 Q522.8495,724.3327 523.2646,724.5524 L523.2646,726.5544 Q522.8007,726.1271 522.3643,725.9288 Q521.9279,725.7304 521.464,725.7304 Q520.4753,725.7304 519.9717,726.5147 Q519.4682,727.299 519.4682,728.8432 Q519.4682,730.3813 519.9717,731.1656 Q520.4753,731.9499 521.464,731.9499 Q521.9279,731.9499 522.3643,731.7515 Q522.8007,731.5531 523.2646,731.1259 Z " fill="#000000"/>
-      <text lengthAdjust="spacing" textLength="68.75" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="538.021" y="733.033">CactusBuild</text>
+      <text lengthAdjust="spacing" textLength="68.75" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="538.021" y="733.033">Cactus</text>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="507.8125" x2="611.9792" y1="744.3278" y2="744.3278"/>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="507.8125" x2="611.9792" y1="752.6611" y2="752.6611"/>
     </g>
-    <g id="elem_CactusBuildMavenPlugin">
-      <rect fill="#282828" height="47.9167" id="CactusBuildMavenPlugin" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="181.25" x="1029.6875" y="289.1195"/>
+    <g id="elem_CactusMavenPlugin">
+      <rect fill="#282828" height="47.9167" id="CactusMavenPlugin" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="181.25" x="1029.6875" y="289.1195"/>
       <ellipse cx="1044.2708" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
       <path d="M1046.1812,309.1695 Q1045.754,309.3892 1045.284,309.4991 Q1044.814,309.609 1044.2952,309.609 Q1042.452,309.609 1041.4815,308.3944 Q1040.5111,307.1798 1040.5111,304.8848 Q1040.5111,302.5838 1041.4815,301.3692 Q1042.452,300.1546 1044.2952,300.1546 Q1044.814,300.1546 1045.2901,300.2645 Q1045.7662,300.3743 1046.1812,300.5941 L1046.1812,302.596 Q1045.7174,302.1688 1045.281,301.9704 Q1044.8446,301.7721 1044.3807,301.7721 Q1043.3919,301.7721 1042.8884,302.5564 Q1042.3848,303.3407 1042.3848,304.8848 Q1042.3848,306.4229 1042.8884,307.2072 Q1043.3919,307.9915 1044.3807,307.9915 Q1044.8446,307.9915 1045.281,307.7932 Q1045.7174,307.5948 1046.1812,307.1676 Z " fill="#000000"/>
-      <text lengthAdjust="spacing" textLength="143.75" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="1060.94" y="309.075">CactusBuildMavenPlugin</text>
+      <text lengthAdjust="spacing" textLength="143.75" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="1060.94" y="309.075">CactusMavenPlugin</text>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1030.7292" x2="1209.8958" y1="320.3695" y2="320.3695"/>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1030.7292" x2="1209.8958" y1="328.7028" y2="328.7028"/>
     </g>
-    <g id="elem_CactusBuildMetadata">
-      <rect fill="#282828" height="47.9167" id="CactusBuildMetadata" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="835.4167" y="289.1195"/>
+    <g id="elem_CactusMetadata">
+      <rect fill="#282828" height="47.9167" id="CactusMetadata" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="835.4167" y="289.1195"/>
       <ellipse cx="850" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
       <path d="M851.9104,309.1695 Q851.4832,309.3892 851.0132,309.4991 Q850.5432,309.609 850.0244,309.609 Q848.1812,309.609 847.2107,308.3944 Q846.2402,307.1798 846.2402,304.8848 Q846.2402,302.5838 847.2107,301.3692 Q848.1812,300.1546 850.0244,300.1546 Q850.5432,300.1546 851.0193,300.2645 Q851.4954,300.3743 851.9104,300.5941 L851.9104,302.596 Q851.4465,302.1688 851.0101,301.9704 Q850.5737,301.7721 850.1099,301.7721 Q849.1211,301.7721 848.6176,302.5564 Q848.114,303.3407 848.114,304.8848 Q848.114,306.4229 848.6176,307.2072 Q849.1211,307.9915 850.1099,307.9915 Q850.5737,307.9915 851.0101,307.7932 Q851.4465,307.5948 851.9104,307.1676 Z " fill="#000000"/>
-      <text lengthAdjust="spacing" textLength="119.7917" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="866.667" y="309.075">CactusBuildMetadata</text>
+      <text lengthAdjust="spacing" textLength="119.7917" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="866.667" y="309.075">CactusMetadata</text>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="836.4583" x2="991.6667" y1="320.3695" y2="320.3695"/>
       <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="836.4583" x2="991.6667" y1="328.7028" y2="328.7028"/>
     </g>
@@ -154,16 +154,16 @@
     <g id="elem_GMN60635">
       <path d="M747.9167,67.2445 L747.9167,107.7291 A8.3333,8.3333 0 0 0 756.25,116.0624 L909.8958,116.0624 L914.0625,178.4424 L918.2292,116.0624 L1071.875,116.0624 A8.3333,8.3333 0 0 0 1080.2083,107.7291 L1080.2083,69.3278 L1069.7917,58.9111 L756.25,58.9111 A8.3333,8.3333 0 0 0 747.9167,67.2445 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
       <path d="M1069.7917,58.9111 L1069.7917,65.1611 A4.1667,4.1667 0 0 0 1073.9583,69.3278 L1080.2083,69.3278 L1069.7917,58.9111 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
-      <text lengthAdjust="spacing" textLength="276.0417" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="78.3223">The cactus-build superpom inherits directly from</text>
+      <text lengthAdjust="spacing" textLength="276.0417" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="78.3223">The cactus superpom inherits directly from</text>
       <text lengthAdjust="spacing" textLength="304.1667" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="91.8172">telenav-superpom because telenav-superpom-project</text>
-      <text lengthAdjust="spacing" textLength="301.0417" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="105.312">references cactus-build, which would result in a cycle.</text>
+      <text lengthAdjust="spacing" textLength="301.0417" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="105.312">references cactus, which would result in a cycle.</text>
     </g>
     <g id="link_TelenavSuperpom_TelenavSuperpomProject">
       <path codeline="16" d="M572.2292,128.9945 C560.5833,145.609 547.5208,164.2653 537.5417,178.5049 " fill="none" id="TelenavSuperpom-backto-TelenavSuperpomProject" style="stroke:#545454;stroke-width:1.5625;"/>
       <polygon fill="none" points="566.3854,124.6195,584.3125,111.7445,578.3333,132.9945,566.3854,124.6195" style="stroke:#545454;stroke-width:1.5625;"/>
     </g>
-    <g id="link_TelenavSuperpom_TelenavSuperpomCactusBuild">
-      <path codeline="17" d="M683.9583,118.6715 C736.1563,137.484 802.3438,161.3486 850.3229,178.6403 " fill="none" id="TelenavSuperpom-backto-TelenavSuperpomCactusBuild" style="stroke:#545454;stroke-width:1.5625;"/>
+    <g id="link_TelenavSuperpom_TelenavSuperpomCactus">
+      <path codeline="17" d="M683.9583,118.6715 C736.1563,137.484 802.3438,161.3486 850.3229,178.6403 " fill="none" id="TelenavSuperpom-backto-TelenavSuperpomCactus" style="stroke:#545454;stroke-width:1.5625;"/>
       <polygon fill="none" points="681.4792,125.5257,664.3438,111.609,686.4167,111.807,681.4792,125.5257" style="stroke:#545454;stroke-width:1.5625;"/>
     </g>
     <g id="link_TelenavSuperpomProject_TelenavSuperpomKivaKit">
@@ -202,16 +202,16 @@
       <path codeline="30" d="M393,669.057 C401.1771,683.984 410.1146,700.2757 417.1146,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-Lexakai" style="stroke:#545454;stroke-width:1.5625;"/>
       <polygon fill="none" points="386.5208,672.4111,382.9063,650.6403,399.3125,665.4007,386.5208,672.4111" style="stroke:#545454;stroke-width:1.5625;"/>
     </g>
-    <g id="link_TelenavSuperpomProjectFamily_CactusBuild">
-      <path codeline="31" d="M428.9479,661.1611 C458.4167,678.0049 493.3646,697.984 519.75,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-CactusBuild" style="stroke:#545454;stroke-width:1.5625;"/>
+    <g id="link_TelenavSuperpomProjectFamily_Cactus">
+      <path codeline="31" d="M428.9479,661.1611 C458.4167,678.0049 493.3646,697.984 519.75,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-Cactus" style="stroke:#545454;stroke-width:1.5625;"/>
       <polygon fill="none" points="424.9896,667.307,410.5208,650.6403,432.2292,654.6403,424.9896,667.307" style="stroke:#545454;stroke-width:1.5625;"/>
     </g>
-    <g id="link_TelenavSuperpomCactusBuild_CactusBuildMavenPlugin">
-      <path codeline="33" d="M976.4792,236.484 C1008.8229,253.4736 1047.5313,273.807 1076.6354,289.0986 " fill="none" id="TelenavSuperpomCactusBuild-backto-CactusBuildMavenPlugin" style="stroke:#545454;stroke-width:1.5625;"/>
+    <g id="link_TelenavSuperpomCactus_CactusMavenPlugin">
+      <path codeline="33" d="M976.4792,236.484 C1008.8229,253.4736 1047.5313,273.807 1076.6354,289.0986 " fill="none" id="TelenavSuperpomCactus-backto-CactusMavenPlugin" style="stroke:#545454;stroke-width:1.5625;"/>
       <polygon fill="none" points="972.8542,242.8174,957.8021,226.682,979.6354,229.9111,972.8542,242.8174" style="stroke:#545454;stroke-width:1.5625;"/>
     </g>
-    <g id="link_TelenavSuperpomCactusBuild_CactusBuildMetadata">
-      <path codeline="34" d="M914.0625,247.6195 C914.0625,261.8382 914.0625,277.0361 914.0625,289.0986 " fill="none" id="TelenavSuperpomCactusBuild-backto-CactusBuildMetadata" style="stroke:#545454;stroke-width:1.5625;"/>
+    <g id="link_TelenavSuperpomCactus_CactusMetadata">
+      <path codeline="34" d="M914.0625,247.6195 C914.0625,261.8382 914.0625,277.0361 914.0625,289.0986 " fill="none" id="TelenavSuperpomCactus-backto-CactusMetadata" style="stroke:#545454;stroke-width:1.5625;"/>
       <polygon fill="none" points="906.7708,247.5153,914.0625,226.682,921.3542,247.5153,906.7708,247.5153" style="stroke:#545454;stroke-width:1.5625;"/>
     </g>
   </g>

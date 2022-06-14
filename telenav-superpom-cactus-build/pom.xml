@@ -23,13 +23,13 @@
     </parent>
 
     <groupId>com.telenav.cactus</groupId>
-    <artifactId>telenav-superpom-cactus-build</artifactId>
+    <artifactId>telenav-superpom-cactus</artifactId>
     <version>1.4.5</version>
 
     <packaging>pom</packaging>
-    <name>telenav-superpom-cactus-build</name>
+    <name>telenav-superpom-cactus</name>
     <description>
-        Superpom for cactus-build
+        Superpom for cactus
     </description>
 
     <properties>

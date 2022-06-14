@@ -7,7 +7,7 @@ Telenav Open Source projects, including:
 - kivakit
 - mesakit
 - lexakai
-- cactus-build
+- cactus
 
 ### Releasing Telenav Superpoms to Maven Central
 

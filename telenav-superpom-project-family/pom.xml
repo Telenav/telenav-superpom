@@ -41,7 +41,7 @@
                 <plugins>
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
-                        <artifactId>cactus-build-maven-plugin</artifactId>
+                        <artifactId>cactus-maven-plugin</artifactId>
                         <version>${cactus.plugin.version}</version>
                         <executions>
                             <execution>

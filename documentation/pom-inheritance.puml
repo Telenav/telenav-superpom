@@ -7,7 +7,7 @@
     top to bottom direction
 
     class TelenavSuperpom
-    class TelenavSuperpomCactusBuild
+    class TelenavSuperpomCactus
     class TelenavSuperpomKivaKit
     class TelenavSuperpomLexakai
     class TelenavSuperpomMesaKit
@@ -15,7 +15,7 @@
     class TelenavSuperpomProjectFamily
 
     TelenavSuperpomProject -u-|> TelenavSuperpom
-    TelenavSuperpomCactusBuild -u-|> TelenavSuperpom
+    TelenavSuperpomCactus -u-|> TelenavSuperpom
     TelenavSuperpomKivaKit -u-|> TelenavSuperpomProject
     TelenavSuperpomMesaKit -u-|> TelenavSuperpomProject
     TelenavSuperpomLexakai -u-|> TelenavSuperpomProject
@@ -29,10 +29,10 @@
     KivaKit -u-|> TelenavSuperpomProjectFamily
     MesaKit -u-|> TelenavSuperpomProjectFamily
     Lexakai -u-|> TelenavSuperpomProjectFamily
-    CactusBuild -u-|> TelenavSuperpomProjectFamily
+    Cactus -u-|> TelenavSuperpomProjectFamily
 
-    CactusBuildMavenPlugin -u-|> TelenavSuperpomCactusBuild
-    CactusBuildMetadata -u-|> TelenavSuperpomCactusBuild
+    CactusMavenPlugin -u-|> TelenavSuperpomCactus
+    CactusMetadata -u-|> TelenavSuperpomCactus
 
     note left of TelenavSuperpom
         All Telenav Open Source projects inherit from telenav-superpom
@@ -50,10 +50,10 @@
         All KivaKit family projects inherit from telenav-superpom-kivakit
     end note
 
-    note top of TelenavSuperpomCactusBuild
-        The cactus-build superpom inherits directly from
+    note top of TelenavSuperpomCactus
+        The cactus superpom inherits directly from
         telenav-superpom because telenav-superpom-project
-        references cactus-build, which would result in a cycle.
+        references cactus, which would result in a cycle.
     end note
 
 
