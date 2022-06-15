@@ -79,7 +79,6 @@
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.allowConvertToStaticStarImport>true</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.allowConvertToStaticStarImport>
     </properties>
 
-    <!--
     <build>
         <pluginManagement>
             <plugins>
@@ -101,7 +100,7 @@
                 <executions>
                     <execution>
                         <id>project-metadata</id>
-                        <phase>compile</phase>
+                        <phase>generate-resources</phase>
                         <goals>
                             <goal>project-information</goal>
                             <goal>build-metadata</goal>
@@ -111,6 +110,5 @@
             </plugin>
         </plugins>
     </build>
-    -->
 
 </project>
