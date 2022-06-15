@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //
+ // © 2011-2022 Telenav, Inc.
+ // Licensed under Apache License, Version 2.0
+ //
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ -->
+
+<project
+     xmlns="http://maven.apache.org/POM/4.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.telenav</groupId>
+        <artifactId>telenav-superpom-project</artifactId>
+        <version>2.0.0</version>
+        <relativePath>../telenav-superpom-project/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.telenav.lexakai</groupId>
+    <artifactId>telenav-superpom-lexakai</artifactId>
+
+    <packaging>pom</packaging>
+    <name>telenav-superpom-lexakai</name>
+    <description>
+        Superpom for Lexakai
+    </description>
+
+    <properties>
+        <javadoc.output.folder>${env.LEXAKAI_ASSETS_HOME}/docs/${env.LEXAKAI_VERSION}/javadoc</javadoc.output.folder>
+        <cactus.version>1.4.7</cactus.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.telenav.cactus</groupId>
+                        <artifactId>cactus-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>lexakai</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>lexakai</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <overwrite-resources>true</overwrite-resources>
+                            <update-readme>true</update-readme>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg contentstyletype="text/css" height="767.7083px" preserveAspectRatio="none" style="width:1217px;height:767px;background:#333333;" version="1.1" viewBox="0 0 1217 767" width="1217.7083px" zoomAndPan="magnify" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="329.1667" x="437.2396" y="5.2083"/>
+    <text lengthAdjust="spacing" textLength="312.5" style="fill: rgb(192, 192, 192); font-family: Avenir; font-size: 20.8333px; font-weight: 700; white-space: pre;" x="445.573" y="33.6833">Telenav Superpom Hierarchy</text>
+    <g id="elem_TelenavSuperpom">
+      <rect codeline="8" fill="#282828" height="47.9167" id="TelenavSuperpom" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="141.6667" x="529.6875" y="63.5986"/>
+      <ellipse cx="544.2708" cy="79.2236" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M546.1812,83.6487 Q545.754,83.8684 545.284,83.9783 Q544.814,84.0881 544.2952,84.0881 Q542.452,84.0881 541.4815,82.8735 Q540.5111,81.6589 540.5111,79.364 Q540.5111,77.063 541.4815,75.8484 Q542.452,74.6338 544.2952,74.6338 Q544.814,74.6338 545.2901,74.7437 Q545.7662,74.8535 546.1812,75.0732 L546.1812,77.0752 Q545.7174,76.6479 545.281,76.4496 Q544.8446,76.2512 544.3807,76.2512 Q543.3919,76.2512 542.8884,77.0355 Q542.3848,77.8198 542.3848,79.364 Q542.3848,80.9021 542.8884,81.6864 Q543.3919,82.4707 544.3807,82.4707 Q544.8446,82.4707 545.281,82.2723 Q545.7174,82.074 546.1812,81.6467 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="104.1667" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="560.938" y="83.5541">TelenavSuperpom</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="530.7292" x2="670.3125" y1="94.8486" y2="94.8486"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="530.7292" x2="670.3125" y1="103.182" y2="103.182"/>
+    </g>
+    <g id="elem_TelenavSuperpomCactus">
+      <rect codeline="9" fill="#282828" height="47.9167" id="TelenavSuperpomCactus" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="808.8542" y="178.7028"/>
+      <ellipse cx="823.4375" cy="194.3278" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M825.3479,198.7528 Q824.9207,198.9726 824.4507,199.0824 Q823.9807,199.1923 823.4619,199.1923 Q821.6187,199.1923 820.6482,197.9777 Q819.6777,196.7631 819.6777,194.4682 Q819.6777,192.1672 820.6482,190.9526 Q821.6187,189.738 823.4619,189.738 Q823.9807,189.738 824.4568,189.8478 Q824.9329,189.9577 825.3479,190.1774 L825.3479,192.1794 Q824.884,191.7521 824.4476,191.5538 Q824.0112,191.3554 823.5474,191.3554 Q822.5586,191.3554 822.0551,192.1397 Q821.5515,192.924 821.5515,194.4682 Q821.5515,196.0063 822.0551,196.7906 Q822.5586,197.5749 823.5474,197.5749 Q824.0112,197.5749 824.4476,197.3765 Q824.884,197.1781 825.3479,196.7509 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="172.9167" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="840.104" y="198.658">TelenavSuperpomCactus</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="809.8958" x2="1018.2292" y1="209.9528" y2="209.9528"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="809.8958" x2="1018.2292" y1="218.2861" y2="218.2861"/>
+    </g>
+    <g id="elem_TelenavSuperpomKivaKit">
+      <rect codeline="10" fill="#282828" height="47.9167" id="TelenavSuperpomKivaKit" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="184.375" x="168.75" y="289.1195"/>
+      <ellipse cx="183.3333" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M185.2437,309.1695 Q184.8165,309.3892 184.3465,309.4991 Q183.8765,309.609 183.3577,309.609 Q181.5145,309.609 180.544,308.3944 Q179.5736,307.1798 179.5736,304.8848 Q179.5736,302.5838 180.544,301.3692 Q181.5145,300.1546 183.3577,300.1546 Q183.8765,300.1546 184.3526,300.2645 Q184.8287,300.3743 185.2437,300.5941 L185.2437,302.596 Q184.7799,302.1688 184.3435,301.9704 Q183.9071,301.7721 183.4432,301.7721 Q182.4544,301.7721 181.9509,302.5564 Q181.4473,303.3407 181.4473,304.8848 Q181.4473,306.4229 181.9509,307.2072 Q182.4544,307.9915 183.4432,307.9915 Q183.9071,307.9915 184.3435,307.7932 Q184.7799,307.5948 185.2437,307.1676 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="146.875" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="200" y="309.075">TelenavSuperpomKivaKit</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="169.7917" x2="352.0833" y1="320.3695" y2="320.3695"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="169.7917" x2="352.0833" y1="328.7028" y2="328.7028"/>
+    </g>
+    <g id="elem_TelenavSuperpomLexakai">
+      <rect codeline="11" fill="#282828" height="47.9167" id="TelenavSuperpomLexakai" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="184.375" x="389.5833" y="289.1195"/>
+      <ellipse cx="404.1667" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M406.0771,309.1695 Q405.6498,309.3892 405.1799,309.4991 Q404.7099,309.609 404.1911,309.609 Q402.3478,309.609 401.3774,308.3944 Q400.4069,307.1798 400.4069,304.8848 Q400.4069,302.5838 401.3774,301.3692 Q402.3478,300.1546 404.1911,300.1546 Q404.7099,300.1546 405.186,300.2645 Q405.662,300.3743 406.0771,300.5941 L406.0771,302.596 Q405.6132,302.1688 405.1768,301.9704 Q404.7404,301.7721 404.2765,301.7721 Q403.2878,301.7721 402.7842,302.5564 Q402.2807,303.3407 402.2807,304.8848 Q402.2807,306.4229 402.7842,307.2072 Q403.2878,307.9915 404.2765,307.9915 Q404.7404,307.9915 405.1768,307.7932 Q405.6132,307.5948 406.0771,307.1676 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="146.875" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="420.833" y="309.075">TelenavSuperpomLexakai</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="390.625" x2="572.9167" y1="320.3695" y2="320.3695"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="390.625" x2="572.9167" y1="328.7028" y2="328.7028"/>
+    </g>
+    <g id="elem_TelenavSuperpomMesaKit">
+      <rect codeline="12" fill="#282828" height="47.9167" id="TelenavSuperpomMesaKit" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="187.5" x="610.9375" y="289.1195"/>
+      <ellipse cx="625.5208" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M627.4312,309.1695 Q627.004,309.3892 626.534,309.4991 Q626.064,309.609 625.5452,309.609 Q623.702,309.609 622.7315,308.3944 Q621.7611,307.1798 621.7611,304.8848 Q621.7611,302.5838 622.7315,301.3692 Q623.702,300.1546 625.5452,300.1546 Q626.064,300.1546 626.5401,300.2645 Q627.0162,300.3743 627.4312,300.5941 L627.4312,302.596 Q626.9674,302.1688 626.531,301.9704 Q626.0946,301.7721 625.6307,301.7721 Q624.6419,301.7721 624.1384,302.5564 Q623.6348,303.3407 623.6348,304.8848 Q623.6348,306.4229 624.1384,307.2072 Q624.6419,307.9915 625.6307,307.9915 Q626.0946,307.9915 626.531,307.7932 Q626.9674,307.5948 627.4312,307.1676 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="150" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="642.188" y="309.075">TelenavSuperpomMesaKit</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="611.9792" x2="797.3958" y1="320.3695" y2="320.3695"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="611.9792" x2="797.3958" y1="328.7028" y2="328.7028"/>
+    </g>
+    <g id="elem_TelenavSuperpomProject">
+      <rect codeline="13" fill="#282828" height="47.9167" id="TelenavSuperpomProject" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="182.2917" x="430.2083" y="178.7028"/>
+      <ellipse cx="444.7917" cy="194.3278" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M446.7021,198.7528 Q446.2748,198.9726 445.8049,199.0824 Q445.3349,199.1923 444.8161,199.1923 Q442.9728,199.1923 442.0024,197.9777 Q441.0319,196.7631 441.0319,194.4682 Q441.0319,192.1672 442.0024,190.9526 Q442.9728,189.738 444.8161,189.738 Q445.3349,189.738 445.811,189.8478 Q446.287,189.9577 446.7021,190.1774 L446.7021,192.1794 Q446.2382,191.7521 445.8018,191.5538 Q445.3654,191.3554 444.9015,191.3554 Q443.9128,191.3554 443.4092,192.1397 Q442.9057,192.924 442.9057,194.4682 Q442.9057,196.0063 443.4092,196.7906 Q443.9128,197.5749 444.9015,197.5749 Q445.3654,197.5749 445.8018,197.3765 Q446.2382,197.1781 446.7021,196.7509 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="144.7917" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="461.458" y="198.658">TelenavSuperpomProject</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="431.25" x2="611.4583" y1="209.9528" y2="209.9528"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="431.25" x2="611.4583" y1="218.2861" y2="218.2861"/>
+    </g>
+    <g id="elem_TelenavSuperpomProjectFamily">
+      <rect codeline="14" fill="#282828" height="47.9167" id="TelenavSuperpomProjectFamily" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="220.8333" x="259.8958" y="602.6611"/>
+      <ellipse cx="274.4792" cy="618.2861" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M276.3896,622.7112 Q275.9623,622.9309 275.4924,623.0408 Q275.0224,623.1506 274.5036,623.1506 Q272.6603,623.1506 271.6899,621.936 Q270.7194,620.7214 270.7194,618.4265 Q270.7194,616.1255 271.6899,614.9109 Q272.6603,613.6963 274.5036,613.6963 Q275.0224,613.6963 275.4985,613.8062 Q275.9745,613.916 276.3896,614.1357 L276.3896,616.1377 Q275.9257,615.7104 275.4893,615.5121 Q275.0529,615.3137 274.589,615.3137 Q273.6003,615.3137 273.0967,616.098 Q272.5932,616.8823 272.5932,618.4265 Q272.5932,619.9646 273.0967,620.7489 Q273.6003,621.5332 274.589,621.5332 Q275.0529,621.5332 275.4893,621.3348 Q275.9257,621.1365 276.3896,620.7092 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="183.3333" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="291.146" y="622.617">TelenavSuperpomProjectFamily</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="260.9375" x2="479.6875" y1="633.9111" y2="633.9111"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="260.9375" x2="479.6875" y1="642.2445" y2="642.2445"/>
+    </g>
+    <g id="elem_KivaKitApplication">
+      <rect fill="#282828" height="47.9167" id="KivaKitApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="146.875" x="151.0417" y="492.2445"/>
+      <ellipse cx="165.625" cy="507.8695" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M167.5354,512.2945 Q167.1082,512.5142 166.6382,512.6241 Q166.1682,512.734 165.6494,512.734 Q163.8062,512.734 162.8357,511.5194 Q161.8652,510.3048 161.8652,508.0098 Q161.8652,505.7088 162.8357,504.4942 Q163.8062,503.2796 165.6494,503.2796 Q166.1682,503.2796 166.6443,503.3895 Q167.1204,503.4993 167.5354,503.7191 L167.5354,505.721 Q167.0715,505.2938 166.6351,505.0954 Q166.1987,504.8971 165.7349,504.8971 Q164.7461,504.8971 164.2426,505.6814 Q163.739,506.4657 163.739,508.0098 Q163.739,509.5479 164.2426,510.3322 Q164.7461,511.1165 165.7349,511.1165 Q166.1987,511.1165 166.6351,510.9182 Q167.0715,510.7198 167.5354,510.2926 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="109.375" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="182.292" y="512.2">KivaKitApplication</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="152.0833" x2="296.875" y1="523.4945" y2="523.4945"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="152.0833" x2="296.875" y1="531.8278" y2="531.8278"/>
+    </g>
+    <g id="elem_KivaKitComponent">
+      <rect fill="#282828" height="47.9167" id="KivaKitComponent" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="146.875" x="334.375" y="492.2445"/>
+      <ellipse cx="348.9583" cy="507.8695" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M350.8687,512.2945 Q350.4415,512.5142 349.9715,512.6241 Q349.5015,512.734 348.9827,512.734 Q347.1395,512.734 346.169,511.5194 Q345.1986,510.3048 345.1986,508.0098 Q345.1986,505.7088 346.169,504.4942 Q347.1395,503.2796 348.9827,503.2796 Q349.5015,503.2796 349.9776,503.3895 Q350.4537,503.4993 350.8687,503.7191 L350.8687,505.721 Q350.4049,505.2938 349.9685,505.0954 Q349.5321,504.8971 349.0682,504.8971 Q348.0794,504.8971 347.5759,505.6814 Q347.0723,506.4657 347.0723,508.0098 Q347.0723,509.5479 347.5759,510.3322 Q348.0794,511.1165 349.0682,511.1165 Q349.5321,511.1165 349.9685,510.9182 Q350.4049,510.7198 350.8687,510.2926 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="109.375" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="365.625" y="512.2">KivaKitComponent</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="335.4167" x2="480.2083" y1="523.4945" y2="523.4945"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="335.4167" x2="480.2083" y1="531.8278" y2="531.8278"/>
+    </g>
+    <g id="elem_KivaKitCore">
+      <rect fill="#282828" height="47.9167" id="KivaKitCore" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="107.2917" x="7.2917" y="492.2445"/>
+      <ellipse cx="21.875" cy="507.8695" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M23.7854,512.2945 Q23.3582,512.5142 22.8882,512.6241 Q22.4182,512.734 21.8994,512.734 Q20.0562,512.734 19.0857,511.5194 Q18.1152,510.3048 18.1152,508.0098 Q18.1152,505.7088 19.0857,504.4942 Q20.0562,503.2796 21.8994,503.2796 Q22.4182,503.2796 22.8943,503.3895 Q23.3704,503.4993 23.7854,503.7191 L23.7854,505.721 Q23.3215,505.2938 22.8851,505.0954 Q22.4487,504.8971 21.9849,504.8971 Q20.9961,504.8971 20.4926,505.6814 Q19.989,506.4657 19.989,508.0098 Q19.989,509.5479 20.4926,510.3322 Q20.9961,511.1165 21.9849,511.1165 Q22.4487,511.1165 22.8851,510.9182 Q23.3215,510.7198 23.7854,510.2926 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="69.7917" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="38.5417" y="512.2">KivaKitCore</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="113.5417" y1="523.4945" y2="523.4945"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="113.5417" y1="531.8278" y2="531.8278"/>
+    </g>
+    <g id="elem_KivaKit">
+      <rect fill="#282828" height="47.9167" id="KivaKit" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="80.2083" x="152.0833" y="713.0778"/>
+      <ellipse cx="166.6667" cy="728.7028" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M168.5771,733.1278 Q168.1498,733.3476 167.6799,733.4574 Q167.2099,733.5673 166.6911,733.5673 Q164.8478,733.5673 163.8774,732.3527 Q162.9069,731.1381 162.9069,728.8432 Q162.9069,726.5422 163.8774,725.3276 Q164.8478,724.113 166.6911,724.113 Q167.2099,724.113 167.686,724.2228 Q168.162,724.3327 168.5771,724.5524 L168.5771,726.5544 Q168.1132,726.1271 167.6768,725.9288 Q167.2404,725.7304 166.7765,725.7304 Q165.7878,725.7304 165.2842,726.5147 Q164.7807,727.299 164.7807,728.8432 Q164.7807,730.3813 165.2842,731.1656 Q165.7878,731.9499 166.7765,731.9499 Q167.2404,731.9499 167.6768,731.7515 Q168.1132,731.5531 168.5771,731.1259 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="42.7083" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="183.333" y="733.033">KivaKit</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="153.125" x2="231.25" y1="744.3278" y2="744.3278"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="153.125" x2="231.25" y1="752.6611" y2="752.6611"/>
+    </g>
+    <g id="elem_MesaKit">
+      <rect fill="#282828" height="47.9167" id="MesaKit" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="83.3333" x="269.2708" y="713.0778"/>
+      <ellipse cx="283.8542" cy="728.7028" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M285.7646,733.1278 Q285.3373,733.3476 284.8674,733.4574 Q284.3974,733.5673 283.8786,733.5673 Q282.0353,733.5673 281.0649,732.3527 Q280.0944,731.1381 280.0944,728.8432 Q280.0944,726.5422 281.0649,725.3276 Q282.0353,724.113 283.8786,724.113 Q284.3974,724.113 284.8735,724.2228 Q285.3495,724.3327 285.7646,724.5524 L285.7646,726.5544 Q285.3007,726.1271 284.8643,725.9288 Q284.4279,725.7304 283.964,725.7304 Q282.9753,725.7304 282.4717,726.5147 Q281.9682,727.299 281.9682,728.8432 Q281.9682,730.3813 282.4717,731.1656 Q282.9753,731.9499 283.964,731.9499 Q284.4279,731.9499 284.8643,731.7515 Q285.3007,731.5531 285.7646,731.1259 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="45.8333" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="300.521" y="733.033">MesaKit</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="270.3125" x2="351.5625" y1="744.3278" y2="744.3278"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="270.3125" x2="351.5625" y1="752.6611" y2="752.6611"/>
+    </g>
+    <g id="elem_Lexakai">
+      <rect fill="#282828" height="47.9167" id="Lexakai" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="80.2083" x="389.5833" y="713.0778"/>
+      <ellipse cx="404.1667" cy="728.7028" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M406.0771,733.1278 Q405.6498,733.3476 405.1799,733.4574 Q404.7099,733.5673 404.1911,733.5673 Q402.3478,733.5673 401.3774,732.3527 Q400.4069,731.1381 400.4069,728.8432 Q400.4069,726.5422 401.3774,725.3276 Q402.3478,724.113 404.1911,724.113 Q404.7099,724.113 405.186,724.2228 Q405.662,724.3327 406.0771,724.5524 L406.0771,726.5544 Q405.6132,726.1271 405.1768,725.9288 Q404.7404,725.7304 404.2765,725.7304 Q403.2878,725.7304 402.7842,726.5147 Q402.2807,727.299 402.2807,728.8432 Q402.2807,730.3813 402.7842,731.1656 Q403.2878,731.9499 404.2765,731.9499 Q404.7404,731.9499 405.1768,731.7515 Q405.6132,731.5531 406.0771,731.1259 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="42.7083" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="420.833" y="733.033">Lexakai</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="390.625" x2="468.75" y1="744.3278" y2="744.3278"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="390.625" x2="468.75" y1="752.6611" y2="752.6611"/>
+    </g>
+    <g id="elem_Cactus">
+      <rect fill="#282828" height="47.9167" id="Cactus" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="106.25" x="506.7708" y="713.0778"/>
+      <ellipse cx="521.3542" cy="728.7028" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M523.2646,733.1278 Q522.8373,733.3476 522.3674,733.4574 Q521.8974,733.5673 521.3786,733.5673 Q519.5353,733.5673 518.5649,732.3527 Q517.5944,731.1381 517.5944,728.8432 Q517.5944,726.5422 518.5649,725.3276 Q519.5353,724.113 521.3786,724.113 Q521.8974,724.113 522.3735,724.2228 Q522.8495,724.3327 523.2646,724.5524 L523.2646,726.5544 Q522.8007,726.1271 522.3643,725.9288 Q521.9279,725.7304 521.464,725.7304 Q520.4753,725.7304 519.9717,726.5147 Q519.4682,727.299 519.4682,728.8432 Q519.4682,730.3813 519.9717,731.1656 Q520.4753,731.9499 521.464,731.9499 Q521.9279,731.9499 522.3643,731.7515 Q522.8007,731.5531 523.2646,731.1259 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="68.75" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="538.021" y="733.033">Cactus</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="507.8125" x2="611.9792" y1="744.3278" y2="744.3278"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="507.8125" x2="611.9792" y1="752.6611" y2="752.6611"/>
+    </g>
+    <g id="elem_CactusMavenPlugin">
+      <rect fill="#282828" height="47.9167" id="CactusMavenPlugin" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="181.25" x="1029.6875" y="289.1195"/>
+      <ellipse cx="1044.2708" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M1046.1812,309.1695 Q1045.754,309.3892 1045.284,309.4991 Q1044.814,309.609 1044.2952,309.609 Q1042.452,309.609 1041.4815,308.3944 Q1040.5111,307.1798 1040.5111,304.8848 Q1040.5111,302.5838 1041.4815,301.3692 Q1042.452,300.1546 1044.2952,300.1546 Q1044.814,300.1546 1045.2901,300.2645 Q1045.7662,300.3743 1046.1812,300.5941 L1046.1812,302.596 Q1045.7174,302.1688 1045.281,301.9704 Q1044.8446,301.7721 1044.3807,301.7721 Q1043.3919,301.7721 1042.8884,302.5564 Q1042.3848,303.3407 1042.3848,304.8848 Q1042.3848,306.4229 1042.8884,307.2072 Q1043.3919,307.9915 1044.3807,307.9915 Q1044.8446,307.9915 1045.281,307.7932 Q1045.7174,307.5948 1046.1812,307.1676 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="143.75" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="1060.94" y="309.075">CactusMavenPlugin</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1030.7292" x2="1209.8958" y1="320.3695" y2="320.3695"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1030.7292" x2="1209.8958" y1="328.7028" y2="328.7028"/>
+    </g>
+    <g id="elem_CactusMetadata">
+      <rect fill="#282828" height="47.9167" id="CactusMetadata" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="835.4167" y="289.1195"/>
+      <ellipse cx="850" cy="304.7445" fill="#ADD1B2" rx="10.4167" ry="10.4167" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M851.9104,309.1695 Q851.4832,309.3892 851.0132,309.4991 Q850.5432,309.609 850.0244,309.609 Q848.1812,309.609 847.2107,308.3944 Q846.2402,307.1798 846.2402,304.8848 Q846.2402,302.5838 847.2107,301.3692 Q848.1812,300.1546 850.0244,300.1546 Q850.5432,300.1546 851.0193,300.2645 Q851.4954,300.3743 851.9104,300.5941 L851.9104,302.596 Q851.4465,302.1688 851.0101,301.9704 Q850.5737,301.7721 850.1099,301.7721 Q849.1211,301.7721 848.6176,302.5564 Q848.114,303.3407 848.114,304.8848 Q848.114,306.4229 848.6176,307.2072 Q849.1211,307.9915 850.1099,307.9915 Q850.5737,307.9915 851.0101,307.7932 Q851.4465,307.5948 851.9104,307.1676 Z " fill="#000000"/>
+      <text lengthAdjust="spacing" textLength="119.7917" style="fill: rgb(216, 188, 0); font-family: Avenir; font-size: 11.4583px; font-weight: 700; white-space: pre;" x="866.667" y="309.075">CactusMetadata</text>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="836.4583" x2="991.6667" y1="320.3695" y2="320.3695"/>
+      <line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="836.4583" x2="991.6667" y1="328.7028" y2="328.7028"/>
+    </g>
+    <g id="elem_GMN60623">
+      <path d="M104.1667,80.7861 L104.1667,94.281 A8.3333,8.3333 0 0 0 112.5,102.6143 L484.375,102.6143 A8.3333,8.3333 0 0 0 492.7083,94.281 L492.7083,91.7236 L529.4375,87.557 L492.7083,83.3903 L492.7083,82.8695 L482.2917,72.4528 L112.5,72.4528 A8.3333,8.3333 0 0 0 104.1667,80.7861 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M482.2917,72.4528 L482.2917,78.7028 A4.1667,4.1667 0 0 0 486.4583,82.8695 L492.7083,82.8695 L482.2917,72.4528 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <text lengthAdjust="spacing" textLength="360.4167" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="113.542" y="91.864">All Telenav Open Source projects inherit from telenav-superpom</text>
+    </g>
+    <g id="elem_GMN60626">
+      <path d="M517.7083,509.432 L517.7083,522.9268 A8.3333,8.3333 0 0 0 526.0417,531.2602 L635.0729,531.2602 L435.9063,602.609 L643.4063,531.2602 L833.3333,531.2602 A8.3333,8.3333 0 0 0 841.6667,522.9268 L841.6667,511.5153 L831.25,501.0986 L526.0417,501.0986 A8.3333,8.3333 0 0 0 517.7083,509.432 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M831.25,501.0986 L831.25,507.3486 A4.1667,4.1667 0 0 0 835.4167,511.5153 L841.6667,511.5153 L831.25,501.0986 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <text lengthAdjust="spacing" textLength="295.8333" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="527.083" y="520.51">Project families have a separate inheritance hierarchy</text>
+    </g>
+    <g id="elem_GMN60629">
+      <path d="M34.375,195.8903 L34.375,209.3852 A8.3333,8.3333 0 0 0 42.7083,217.7185 L385.4167,217.7185 A8.3333,8.3333 0 0 0 393.75,209.3852 L393.75,206.8278 L430.1875,202.6611 L393.75,198.4945 L393.75,197.9736 L383.3333,187.557 L42.7083,187.557 A8.3333,8.3333 0 0 0 34.375,195.8903 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M383.3333,187.557 L383.3333,193.807 A4.1667,4.1667 0 0 0 387.5,197.9736 L393.75,197.9736 L383.3333,187.557 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <text lengthAdjust="spacing" textLength="331.25" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="43.75" y="206.968">All Telenav projects inherit from telenav-superpom-project</text>
+    </g>
+    <g id="elem_GMN60632">
+      <path d="M408.3333,407.8695 L408.3333,421.3643 A8.3333,8.3333 0 0 0 416.6667,429.6977 L786.4583,429.6977 A8.3333,8.3333 0 0 0 794.7917,421.3643 L794.7917,409.9528 L784.375,399.5361 L557.5208,399.5361 L339.5104,337.0674 L549.1875,399.5361 L416.6667,399.5361 A8.3333,8.3333 0 0 0 408.3333,407.8695 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M784.375,399.5361 L784.375,405.7861 A4.1667,4.1667 0 0 0 788.5417,409.9528 L794.7917,409.9528 L784.375,399.5361 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <text lengthAdjust="spacing" textLength="358.3333" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="417.708" y="418.947">All KivaKit family projects inherit from telenav-superpom-kivakit</text>
+    </g>
+    <g id="elem_GMN60635">
+      <path d="M747.9167,67.2445 L747.9167,107.7291 A8.3333,8.3333 0 0 0 756.25,116.0624 L909.8958,116.0624 L914.0625,178.4424 L918.2292,116.0624 L1071.875,116.0624 A8.3333,8.3333 0 0 0 1080.2083,107.7291 L1080.2083,69.3278 L1069.7917,58.9111 L756.25,58.9111 A8.3333,8.3333 0 0 0 747.9167,67.2445 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <path d="M1069.7917,58.9111 L1069.7917,65.1611 A4.1667,4.1667 0 0 0 1073.9583,69.3278 L1080.2083,69.3278 L1069.7917,58.9111 " fill="#1B1B1A" style="stroke:#181818;stroke-width:1.0416666666666667;"/>
+      <text lengthAdjust="spacing" textLength="276.0417" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="78.3223">The cactus superpom inherits directly from</text>
+      <text lengthAdjust="spacing" textLength="304.1667" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="91.8172">telenav-superpom because telenav-superpom-project</text>
+      <text lengthAdjust="spacing" textLength="301.0417" style="fill: rgb(160, 160, 160); font-family: Avenir; font-size: 11.4583px; white-space: pre;" x="757.292" y="105.312">references cactus, which would result in a cycle.</text>
+    </g>
+    <g id="link_TelenavSuperpom_TelenavSuperpomProject">
+      <path codeline="16" d="M572.2292,128.9945 C560.5833,145.609 547.5208,164.2653 537.5417,178.5049 " fill="none" id="TelenavSuperpom-backto-TelenavSuperpomProject" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="566.3854,124.6195,584.3125,111.7445,578.3333,132.9945,566.3854,124.6195" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpom_TelenavSuperpomCactus">
+      <path codeline="17" d="M683.9583,118.6715 C736.1563,137.484 802.3438,161.3486 850.3229,178.6403 " fill="none" id="TelenavSuperpom-backto-TelenavSuperpomCactus" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="681.4792,125.5257,664.3438,111.609,686.4167,111.807,681.4792,125.5257" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProject_TelenavSuperpomKivaKit">
+      <path codeline="18" d="M446.8229,234.7028 C405.1667,252.0361 354.1354,273.2653 316.0833,289.0986 " fill="none" id="TelenavSuperpomProject-backto-TelenavSuperpomKivaKit" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="444.0938,227.9424,466.125,226.682,449.6875,241.4111,444.0938,227.9424" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProject_TelenavSuperpomMesaKit">
+      <path codeline="19" d="M578.4583,237.4528 C606.875,254.234 640.4792,274.0882 665.8646,289.0986 " fill="none" id="TelenavSuperpomProject-backto-TelenavSuperpomMesaKit" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="574.4583,243.557,560.2396,226.682,581.875,230.9945,574.4583,243.557" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProject_TelenavSuperpomLexakai">
+      <path codeline="20" d="M505.6771,246.609 C500.375,261.1195 494.6667,276.7445 490.1563,289.0986 " fill="none" id="TelenavSuperpomProject-backto-TelenavSuperpomLexakai" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="498.9583,243.7445,512.9583,226.682,512.6563,248.7445,498.9583,243.7445" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomKivaKit_KivaKitApplication">
+      <path codeline="22" d="M253.0104,357.859 C245.5208,399.1299 234.5938,459.4007 228.6667,492.057 " fill="none" id="TelenavSuperpomKivaKit-backto-KivaKitApplication" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="245.8646,356.3799,256.7604,337.182,260.2083,358.984,245.8646,356.3799" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomKivaKit_KivaKitComponent">
+      <path codeline="23" d="M290.2083,354.182 C320.375,395.4736 366.3542,458.4215 390.9375,492.057 " fill="none" id="TelenavSuperpomKivaKit-backto-KivaKitComponent" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="284.1875,358.307,277.7813,337.182,295.9688,349.7028,284.1875,358.307" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomKivaKit_KivaKitCore">
+      <path codeline="24" d="M223.2708,351.984 C182.2604,393.2028 117.9896,457.8174 83.9167,492.057 " fill="none" id="TelenavSuperpomKivaKit-backto-KivaKitCore" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="218.1354,346.807,238,337.182,228.4688,357.0986,218.1354,346.807" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProjectFamily_KivaKit">
+      <path codeline="28" d="M314.4271,661.6507 C286.9063,678.3903 254.4583,698.1195 229.9063,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-KivaKit" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="310.9479,655.234,332.5417,650.6403,318.5208,667.6924,310.9479,655.234" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProjectFamily_MesaKit">
+      <path codeline="29" d="M347.625,669.057 C339.4479,683.984 330.5104,700.2757 323.5104,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-MesaKit" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="341.3125,665.4007,357.7188,650.6403,354.1042,672.4111,341.3125,665.4007" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProjectFamily_Lexakai">
+      <path codeline="30" d="M393,669.057 C401.1771,683.984 410.1146,700.2757 417.1146,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-Lexakai" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="386.5208,672.4111,382.9063,650.6403,399.3125,665.4007,386.5208,672.4111" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomProjectFamily_Cactus">
+      <path codeline="31" d="M428.9479,661.1611 C458.4167,678.0049 493.3646,697.984 519.75,713.057 " fill="none" id="TelenavSuperpomProjectFamily-backto-Cactus" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="424.9896,667.307,410.5208,650.6403,432.2292,654.6403,424.9896,667.307" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomCactus_CactusMavenPlugin">
+      <path codeline="33" d="M976.4792,236.484 C1008.8229,253.4736 1047.5313,273.807 1076.6354,289.0986 " fill="none" id="TelenavSuperpomCactus-backto-CactusMavenPlugin" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="972.8542,242.8174,957.8021,226.682,979.6354,229.9111,972.8542,242.8174" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+    <g id="link_TelenavSuperpomCactus_CactusMetadata">
+      <path codeline="34" d="M914.0625,247.6195 C914.0625,261.8382 914.0625,277.0361 914.0625,289.0986 " fill="none" id="TelenavSuperpomCactus-backto-CactusMetadata" style="stroke:#545454;stroke-width:1.5625;"/>
+      <polygon fill="none" points="906.7708,247.5153,914.0625,226.682,921.3542,247.5153,906.7708,247.5153" style="stroke:#545454;stroke-width:1.5625;"/>
+    </g>
+  </g>
+</svg>
