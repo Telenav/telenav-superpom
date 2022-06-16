@@ -36,7 +36,6 @@
         <module>telenav-superpom-project</module>
         <module>telenav-superpom-kivakit</module>
         <module>telenav-superpom-mesakit</module>
-        <module>telenav-superpom-cactus</module>
         <module>telenav-superpom-lexakai</module>
     </modules>
 
