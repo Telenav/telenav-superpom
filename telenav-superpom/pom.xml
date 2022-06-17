@@ -36,6 +36,8 @@
     <!-- Properties -->
 
     <properties>
+        <!-- Disable nexus staging (for internal unit tests only projects and similar -->
+        <do.not.publish>false</do.not.publish>
 
         <!-- Annotations -->
 
@@ -361,6 +363,7 @@
                         <serverId>ossrh</serverId>
                         <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                         <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                        <skipStaging>${do.not.publish}</skipStaging>
                     </configuration>
                 </plugin>
 
