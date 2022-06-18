@@ -178,6 +178,8 @@
                         <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                         <autoReleaseAfterClose>${release.on.close}</autoReleaseAfterClose>
                         <skipStaging>${do.not.publish}</skipStaging>
+                        <skipLocalStaging>true</skipLocalStaging>
+                        <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
                     </configuration>
                 </plugin>
             </plugins>
