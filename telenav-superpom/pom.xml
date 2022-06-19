@@ -59,14 +59,14 @@
         <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
         <maven-release-plugin.version>3.0.0-M6</maven-release-plugin.version>
         <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
-        <cactus.version>1.4.10</cactus.version>
-        <cactus.download.version>1.4.10</cactus.download.version>
+        <cactus.version>1.4.11</cactus.version>
+        <cactus.download.version>1.4.11</cactus.download.version>
         <cactus.downloads.folder>${user.home}/.cactus/downloads</cactus.downloads.folder>
         <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-metadata/${cactus.download.version}/cactus-metadata-${cactus.download.version}.jar</cactus.url>
         <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
         <lexakai.version>1.0.7</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
-<!--        <javadoc.output.folder>javadoc-output</javadoc.output.folder>-->
+        <!--        <javadoc.output.folder>javadoc-output</javadoc.output.folder>-->
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -118,7 +118,7 @@
 
         <!-- Serialization -->
 
-         <kryo.version>5.3.0</kryo.version> 
+        <kryo.version>5.3.0</kryo.version>
 
         <kryo.serializers.version>0.45</kryo.serializers.version>
         <jdk.serializable.functional.version>1.9.0</jdk.serializable.functional.version>
