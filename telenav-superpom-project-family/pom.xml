@@ -89,9 +89,9 @@
                                     <goal>lexakai</goal>
                                 </goals>
                                 <configuration>
-                                    <verbose>true</verbose>
-                                    <overwrite-resources>true</overwrite-resources>
-                                    <update-readme>true</update-readme>
+                                    <cactus.verbose>true</cactus.verbose>
+                                    <cactus.overwrite-resources>true</cactus.overwrite-resources>
+                                    <cactus.update-readme>true</cactus.update-readme>
                                 </configuration>
                             </execution>
                             <execution>
@@ -102,7 +102,7 @@
                                     <goal>codeflowers</goal>
                                 </goals>
                                 <configuration>
-                                    <telenav.family>FAMILY_OR_CHILD_FAMILY</telenav.family>
+                                    <cactus.family>FAMILY_OR_CHILD_FAMILY</cactus.family>
                                 </configuration>
                             </execution>
                         </executions>
