@@ -31,8 +31,8 @@
     </description>
 
     <properties>
-        <cactus.plugin.version>1.4.11</cactus.plugin.version>
-        <cactus.plugin.verbose>true</cactus.plugin.verbose>
+        <cactus.maven.plugin.version>1.4.10</cactus.maven.plugin.version>
+        <cactus.maven.plugin.verbose>true</cactus.maven.plugin.verbose>
         <!-- NetBeans code formatting global options for all Java projects -->
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.otherBracePlacement>NEW_LINE</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.otherBracePlacement>
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.enable-indent>true</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.enable-indent>
@@ -85,9 +85,9 @@
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
-                    <version>${cactus.plugin.version}</version>
+                    <version>${cactus.maven.plugin.version}</version>
                     <configuration>
-                        <verbose>${cactus.plugin.verbose}</verbose>
+                        <verbose>${cactus.maven.plugin.verbose}</verbose>
                     </configuration>
                 </plugin>
             </plugins>

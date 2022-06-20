@@ -28,7 +28,7 @@
     </description>
 
     <properties>
-        <cactus.plugin.version>1.4.11</cactus.plugin.version>
+        <cactus.maven.plugin.version>1.4.10</cactus.maven.plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven.javadoc.plugin.version>3.4.0</maven.javadoc.plugin.version>
@@ -80,7 +80,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.plugin.version}</version>
+                        <version>${cactus.maven.plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>lexakai</id>
