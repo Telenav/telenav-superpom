@@ -66,7 +66,6 @@
         <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
         <lexakai.version>1.0.7</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
-        <!--        <javadoc.output.folder>javadoc-output</javadoc.output.folder>-->
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
