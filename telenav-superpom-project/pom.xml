@@ -31,7 +31,7 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.4.10</cactus.maven.plugin.version>
+        <cactus.maven.plugin.version>1.4.12</cactus.maven.plugin.version>
         <cactus.maven.plugin.verbose>true</cactus.maven.plugin.verbose>
         <!-- NetBeans code formatting global options for all Java projects -->
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.otherBracePlacement>NEW_LINE</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.otherBracePlacement>
