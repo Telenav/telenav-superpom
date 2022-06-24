@@ -100,7 +100,7 @@
                 <executions>
                     <execution>
                         <id>project-metadata</id>
-                        <phase>generate-resources</phase>
+                        <phase>process-sources</phase>
                         <goals>
                             <goal>project-information</goal>
                             <goal>build-metadata</goal>
