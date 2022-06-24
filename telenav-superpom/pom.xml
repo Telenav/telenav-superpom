@@ -15,7 +15,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
 
     <packaging>pom</packaging>
     <name>superpom-telenav</name>
@@ -59,12 +59,12 @@
         <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
         <maven-release-plugin.version>3.0.0-M6</maven-release-plugin.version>
         <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
-        <cactus.version>1.4.12</cactus.version>
+        <cactus.version>1.4.13</cactus.version>
         <cactus.download.version>1.4.10</cactus.download.version>
         <cactus.downloads.folder>${user.home}/.cactus/downloads</cactus.downloads.folder>
         <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-metadata/${cactus.download.version}/cactus-metadata-${cactus.download.version}.jar</cactus.url>
         <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
-        <lexakai.version>1.0.7</lexakai.version>
+        <lexakai.version>1.0.8</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
