@@ -32,6 +32,10 @@
     </description>
 
     <properties>
+        <!-- KivaKit Version -->
+
+        <kivakit.version>1.6.0</kivakit.version>
+        
         <javadoc.output.folder>${env.MESAKIT_ASSETS_HOME}/docs/${env.MESAKIT_VERSION}/javadoc</javadoc.output.folder>
     </properties>    
 

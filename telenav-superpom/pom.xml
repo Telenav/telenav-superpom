@@ -59,11 +59,6 @@
         <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
         <maven-release-plugin.version>3.0.0-M6</maven-release-plugin.version>
         <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
-        <cactus.version>1.4.13</cactus.version>
-        <cactus.download.version>1.4.10</cactus.download.version>
-        <cactus.downloads.folder>${user.home}/.cactus/downloads</cactus.downloads.folder>
-        <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-metadata/${cactus.download.version}/cactus-metadata-${cactus.download.version}.jar</cactus.url>
-        <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
         <lexakai.version>1.0.8</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
@@ -94,14 +89,6 @@
         <java.mail.version>1.6.2</java.mail.version>
         <java.activation.version>1.2.0</java.activation.version>
         <javax.servlet.api.version>3.1.0</javax.servlet.api.version>
-
-        <!-- KivaKit Version -->
-
-        <kivakit.version>1.6.0</kivakit.version>
-
-        <!-- Merged JARs -->
-
-        <kivakit.merged.version>1.5.2</kivakit.merged.version>
 
         <!-- Parsing -->
 
@@ -378,16 +365,6 @@
     <!-- Profiles -->
 
     <profiles>
-
-        <!-- Exclude Slow Tests -->
-
-        <profile>
-            <id>test-quick</id>
-            <properties>
-                <exclude.test.groups>com.telenav.kivakit.core.test.annotations.SlowTests</exclude.test.groups>
-                <testQuick>true</testQuick>
-            </properties>
-        </profile>
 
         <!-- Attach JARs -->
 

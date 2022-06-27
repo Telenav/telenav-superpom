@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- //
- // © 2011-2022 Telenav, Inc.
- // Licensed under Apache License, Version 2.0
- //
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- -->
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// © 2011-2022 Telenav, Inc.
+// Licensed under Apache License, Version 2.0
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
 
 <project
-     xmlns="http://maven.apache.org/POM/4.0.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -28,10 +28,14 @@
     <packaging>pom</packaging>
     <name>telenav-superpom-kivakit</name>
     <description>
-       Superpom for KivaKit
+        Superpom for KivaKit
     </description>
 
     <properties>
+        <!-- KivaKit Version -->
+
+        <kivakit.version>1.6.0</kivakit.version>
+        
         <javadoc.output.folder>${env.KIVAKIT_ASSETS_HOME}/docs/${env.KIVAKIT_VERSION}/javadoc/</javadoc.output.folder>
     </properties>
 

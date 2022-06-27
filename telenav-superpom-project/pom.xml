@@ -31,8 +31,19 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.4.12</cactus.maven.plugin.version>
+        <cactus.maven.plugin.version>1.4.13</cactus.maven.plugin.version>
         <cactus.maven.plugin.verbose>true</cactus.maven.plugin.verbose>
+        
+        <cactus.version>1.4.13</cactus.version>
+        <cactus.download.version>1.4.13</cactus.download.version>
+        <cactus.downloads.folder>${user.home}/.cactus/downloads</cactus.downloads.folder>
+        <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-metadata/${cactus.download.version}/cactus-metadata-${cactus.download.version}.jar</cactus.url>
+        <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
+
+        <!-- Merged JARs -->
+
+        <kivakit.merged.version>1.5.2</kivakit.merged.version>
+        
         <!-- NetBeans code formatting global options for all Java projects -->
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.otherBracePlacement>NEW_LINE</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.otherBracePlacement>
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.enable-indent>true</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.enable-indent>
@@ -111,6 +122,17 @@
         </plugins>
     </build>
     <profiles>
+        <!-- Exclude Slow Tests -->
+
+        <profile>
+            <id>test-quick</id>
+            <properties>
+                <exclude.test.groups>com.telenav.kivakit.core.test.annotations.SlowTests</exclude.test.groups>
+                <testQuick>true</testQuick>
+            </properties>
+        </profile>
+
+        <!-- Builds javadoc, lexakai docs, codeflowers, etc. -->
         <profile>
             <id>release</id>
             <activation>
