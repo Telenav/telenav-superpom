@@ -32,7 +32,7 @@
 
     <properties>
         <cactus.maven.plugin.version>1.4.13</cactus.maven.plugin.version>
-        <cactus.maven.plugin.verbose>true</cactus.maven.plugin.verbose>
+        <cactus.maven.plugin.verbose>false</cactus.maven.plugin.verbose>
         
         <cactus.version>1.4.13</cactus.version>
         <cactus.download.version>1.4.13</cactus.download.version>
@@ -116,6 +116,9 @@
                             <goal>project-information</goal>
                             <goal>build-metadata</goal>
                         </goals>
+                        <configuration>
+                            <verbose>${cactus.maven.plugin.verbose}</verbose>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
