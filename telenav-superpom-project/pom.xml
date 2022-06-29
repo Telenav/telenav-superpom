@@ -31,11 +31,11 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.4.13</cactus.maven.plugin.version>
+        <cactus.maven.plugin.version>1.4.14</cactus.maven.plugin.version>
         <cactus.maven.plugin.verbose>false</cactus.maven.plugin.verbose>
         
-        <cactus.version>1.4.13</cactus.version>
-        <cactus.download.version>1.4.13</cactus.download.version>
+        <cactus.version>1.4.14</cactus.version>
+        <cactus.download.version>1.4.14</cactus.download.version>
         <cactus.downloads.folder>${user.home}/.cactus/downloads</cactus.downloads.folder>
         <cactus.url>https://repo1.maven.org/maven2/com/telenav/cactus/cactus-metadata/${cactus.download.version}/cactus-metadata-${cactus.download.version}.jar</cactus.url>
         <cactus.jar>${cactus.downloads.folder}/cactus-metadata-${cactus.download.version}.jar</cactus.jar>
