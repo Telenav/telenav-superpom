@@ -28,7 +28,7 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.4.14</cactus.maven.plugin.version>
+        <cactus.maven.plugin.version>1.4.16</cactus.maven.plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven.javadoc.plugin.version>3.4.0</maven.javadoc.plugin.version>
