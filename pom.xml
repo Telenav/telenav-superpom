@@ -37,6 +37,7 @@
         <module>telenav-superpom-kivakit</module>
         <module>telenav-superpom-mesakit</module>
         <module>telenav-superpom-lexakai</module>
+        <module>telenav-superpom-intermediate-bom</module>
     </modules>
 
     <!-- Licensing -->
