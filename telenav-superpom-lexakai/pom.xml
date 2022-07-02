@@ -39,7 +39,6 @@
         <kivakit.version>1.6.0</kivakit.version>
         <telenav.superpom.kivakit.version>2.0.2</telenav.superpom.kivakit.version>
 
-        <javadoc.output.folder>${env.LEXAKAI_ASSETS_HOME}/docs/${env.LEXAKAI_VERSION}/javadoc</javadoc.output.folder>
     </properties>
 
     <dependencyManagement>

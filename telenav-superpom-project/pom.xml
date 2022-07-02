@@ -120,6 +120,14 @@
                         <verbose>${cactus.maven.plugin.verbose}</verbose>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>${maven-shade-plugin.version}</version>
+                    <configuration>
+                        <skip>${maven.shade.skip}</skip>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
 
