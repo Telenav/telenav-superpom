@@ -196,6 +196,19 @@
                                 </configuration>
                             </execution>
                             <execution>
+                                <!-- This will check each pom against maven central
+                                to see if it has already been published.  If it
+                                has been and the published pom is identical, it
+                                will tell nexus to skip publishing it; if it has
+                                been published but the pom is not identical, it
+                                will fail the build here. -->
+                                <id>check-published</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>check-published</goal>
+                                </goals>
+                            </execution>
+                            <execution>
                                 <id>lexakai</id>
                                 <phase>package</phase>
                                 <goals>
