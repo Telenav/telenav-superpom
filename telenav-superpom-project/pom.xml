@@ -196,6 +196,17 @@
                                     <goal>check-published</goal>
                                 </goals>
                             </execution>
+                            <execution>
+                                <id>project-metadata</id>
+                                <phase>process-sources</phase>
+                                <goals>
+                                    <goal>project-information</goal>
+                                    <goal>build-metadata</goal>
+                                </goals>
+                                <configuration>
+                                    <verbose>${cactus.maven.plugin.verbose}</verbose>
+                                </configuration>
+                            </execution>                            
                         </executions>
                     </plugin>
                 </plugins>
