@@ -28,12 +28,12 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.4.21</cactus.maven.plugin.version>
-        <cactus.maven.plugin.prev.version>1.4.20</cactus.maven.plugin.prev.version>
+        <cactus.maven.plugin.version>1.4.22</cactus.maven.plugin.version>
+        <cactus.maven.plugin.prev.version>1.4.21</cactus.maven.plugin.prev.version>
         <!-- Version range for cactus - the bump-version will automatically update will
-             automatically update the above two properties, and we use this in a
-             dependencyManagement section, which allows plugin resolution to pick it up 
-             (you can't use a verison range directly in a plugin block)-->
+        automatically update the above two properties, and we use this in a
+        dependencyManagement section, which allows plugin resolution to pick it up 
+        (you can't use a verison range directly in a plugin block)-->
         <cactus.maven.plugin.verbose>false</cactus.maven.plugin.verbose>
         <cactus.maven.plugin.versions>[${cactus.maven.plugin.prev.version}, ${cactus.maven.plugin.version}]</cactus.maven.plugin.versions>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
@@ -62,9 +62,9 @@
         <dependencies>
             <dependency>
                 <!-- stupid maven tricks - we can't use a range dependency in
-                     a plugin block, but we can do it here, omit it from the
-                     block in pluginManagement, and it will be used to resolve 
-                     the plugin. -->
+                a plugin block, but we can do it here, omit it from the
+                block in pluginManagement, and it will be used to resolve 
+                the plugin. -->
                 <groupId>com.telenav.cactus</groupId>
                 <artifactId>cactus-maven-plugin</artifactId>
                 <version>${cactus.maven.plugin.versions}</version>
@@ -185,6 +185,17 @@
                         <artifactId>cactus-maven-plugin</artifactId>
                         <executions>
                             <execution>
+                                <id>sanity-check</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                                <configuration>
+                                    <versionFlavor>release</versionFlavor>
+                                    <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
+                                </configuration>
+                            </execution>
+                            <execution>
                                 <id>lexakai</id>
                                 <phase>package</phase>
                                 <goals>
@@ -204,7 +215,7 @@
                                     <goal>codeflowers</goal>
                                 </goals>
                                 <configuration>
-                                    <cactus.family>FAMILY_OR_CHILD_FAMILY</cactus.family>
+                                    <cactus.family>family-or-child-family</cactus.family>
                                 </configuration>
                             </execution>
                         </executions>
