@@ -224,11 +224,11 @@
                                 <id>copy-javadoc</id>
                                 <phase>install</phase>
                                 <goals>
-                                    <goal>copy-aggregated-javadoc</goal>
                                     <goal>codeflowers</goal>
+                                    <goal>copy-aggregated-javadoc</goal>
                                 </goals>
                                 <configuration>
-                                    <cactus.family>family-or-child-family</cactus.family>
+                                    <cactus.scope>family-or-child-family</cactus.scope>
                                 </configuration>
                             </execution>
                         </executions>
