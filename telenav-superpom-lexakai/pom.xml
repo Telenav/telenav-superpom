@@ -32,14 +32,13 @@
     </description>
 
     <properties>
-        <cactus.version>1.4.22</cactus.version>
+        <cactus.version>1.4.24</cactus.version>
         <lexakai.version>1.0.8</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
         <!-- KivaKit Version -->
         <kivakit.version>1.6.0</kivakit.version>
         <telenav.superpom.kivakit.version>2.0.2</telenav.superpom.kivakit.version>
 
-        <javadoc.output.folder>${env.LEXAKAI_ASSETS_HOME}/docs/${env.LEXAKAI_VERSION}/javadoc</javadoc.output.folder>
     </properties>
 
     <dependencyManagement>

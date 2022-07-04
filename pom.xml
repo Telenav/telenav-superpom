@@ -31,12 +31,14 @@
     </properties>
     
     <modules>
+        <module>telenav-root-superpom</module>
         <module>telenav-superpom</module>
         <module>telenav-superpom-project-family</module>
         <module>telenav-superpom-project</module>
         <module>telenav-superpom-kivakit</module>
         <module>telenav-superpom-mesakit</module>
         <module>telenav-superpom-lexakai</module>
+        <module>telenav-superpom-intermediate-bom</module>
     </modules>
 
     <!-- Licensing -->
@@ -71,64 +73,6 @@
         <url>https://Telenav/kivakit.git</url>
     </scm>
 
-    <!-- Project -->
-
-    <url>https://www.telenav.com/</url>
-
-    <inceptionYear>2022</inceptionYear>
-
-    <organization>
-        <name>Telenav</name>
-        <url>https://www.telenav.com</url>
-    </organization>
-
-    <!-- Contributors -->
-
-    <developers>
-
-        <developer>
-
-            <id>jonathanl</id>
-            <name>Jonathan Locke (Luo Shibo)</name>
-            <email>jonathanl@telenav.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>lead</role>
-                <role>administrator</role>
-            </roles>
-
-        </developer>
-
-        <developer>
-
-            <id>haifeng</id>
-            <name>Haifeng Zhu</name>
-            <email>hfzhu@telenav.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>developer</role>
-                <role>administrator</role>
-            </roles>
-
-        </developer>
-
-        <developer>
-
-            <id>timboudreau</id>
-            <name>Tim Boudreau</name>
-            <email>tim@timboudreau.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>developer</role>
-                <role>administrator</role>
-            </roles>
-
-        </developer>
-
-    </developers>
     <profiles>
         <profile>
             <id>sign-artifacts</id>
@@ -201,5 +145,64 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- Project -->
+
+    <url>https://www.telenav.com/</url>
+
+    <inceptionYear>2022</inceptionYear>
+
+    <organization>
+        <name>Telenav</name>
+        <url>https://www.telenav.com</url>
+    </organization>
+
+    <!-- Contributors -->
+
+    <developers>
+
+        <developer>
+
+            <id>jonathanl</id>
+            <name>Jonathan Locke (Luo Shibo)</name>
+            <email>jonathanl@telenav.com</email>
+            <organization>Telenav</organization>
+            <organizationUrl>https://www.telenav.com/</organizationUrl>
+            <roles>
+                <role>lead</role>
+                <role>administrator</role>
+            </roles>
+
+        </developer>
+
+        <developer>
+
+            <id>haifeng</id>
+            <name>Haifeng Zhu</name>
+            <email>hfzhu@telenav.com</email>
+            <organization>Telenav</organization>
+            <organizationUrl>https://www.telenav.com/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>administrator</role>
+            </roles>
+
+        </developer>
+
+        <developer>
+
+            <id>timboudreau</id>
+            <name>Tim Boudreau</name>
+            <email>tim@timboudreau.com</email>
+            <organization>Telenav</organization>
+            <organizationUrl>https://www.telenav.com/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>administrator</role>
+            </roles>
+
+        </developer>
+
+    </developers>
 
 </project>

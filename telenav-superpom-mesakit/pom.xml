@@ -44,7 +44,6 @@
         <lexakai.version>1.0.8</lexakai.version>
         <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
 
-        <javadoc.output.folder>${env.MESAKIT_ASSETS_HOME}/docs/${env.MESAKIT_VERSION}/javadoc</javadoc.output.folder>
     </properties>
 
     <dependencyManagement>

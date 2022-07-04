@@ -12,8 +12,13 @@
     xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.telenav</groupId>
+        <artifactId>telenav-root-superpom</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../telenav-root-superpom</relativePath>
+    </parent>
 
-    <groupId>com.telenav</groupId>
     <artifactId>telenav-superpom</artifactId>
     <version>2.0.2</version>
 
@@ -42,26 +47,6 @@
         <!-- Annotations -->
 
         <jetbrains.annotations.version>23.0.0</jetbrains.annotations.version>
-
-        <!-- Build -->
-
-        <java.version>11</java.version>
-        <maven.version>3.8.5</maven.version>
-        <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
-        <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
-        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-exec-plugin.version>3.0.0</maven-exec-plugin.version>
-        <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
-        <maven-release-plugin.version>3.0.0-M6</maven-release-plugin.version>
-        <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
-        <moditect-maven-plugin.version>1.0.0.RC1</moditect-maven-plugin.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Cluster -->
 
@@ -117,6 +102,7 @@
         <!-- Testing -->
 
         <junit.version>4.13.2</junit.version>
+        <junit5.version>5.8.2</junit5.version>
         <mockito>3.11.2</mockito>
 
         <!-- User Interface -->
@@ -164,331 +150,6 @@
         <josm.version>17428</josm.version>
 
     </properties>
-
-    <build>
-
-        <!-- Resource Copying -->
-
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-            </resource>
-        </resources>
-
-        <testResources>
-            <testResource>
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </testResource>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-            </testResource>
-        </testResources>
-
-        <!-- Plugins -->
-
-        <plugins>
-
-            <!-- Dependencies -->
-
-            <plugin>
-
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-
-                    <execution>
-
-                        <id>enforce</id>
-                        <configuration>
-                            <rules>
-                                <dependencyConvergence/>
-                                <requireMavenVersion>
-                                    <version>[${maven.version},)</version>
-                                    <message>
-                                        Build requires Maven version ${maven.version}.
-                                    </message>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-
-                    </execution>
-
-                </executions>
-
-            </plugin>
-
-            <!-- Build Metadata -->
-
-        </plugins>
-
-        <pluginManagement>
-            <plugins>
-
-                <!-- Compiling -->
-
-                <plugin>
-
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven-compiler-plugin.version}</version>
-                    <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                        <release>${java.version}</release>
-                        <compilerArgs>
-                            <compilerArg>-Xlint:unchecked</compilerArg>
-                            <compilerArg>-Xlint:-requires-transitive-automatic</compilerArg>
-                            <compilerArg>-Xlint:deprecation</compilerArg>
-                        </compilerArgs>
-                    </configuration>
-
-                </plugin>
-
-                <!-- Building -->
-
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>3.2.0</version>
-                </plugin>
-
-                <!-- Testing -->
-
-                <plugin>
-
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M7</version>
-                    <configuration>
-                        <excludedGroups>${exclude.test.groups}</excludedGroups>
-
-                        <systemPropertyVariables>
-                            <testQuick>${testQuick}</testQuick>
-                            <unit.test>true</unit.test>
-                        </systemPropertyVariables>
-                        <argLine>-Xmx2g</argLine>
-                    </configuration>
-
-                </plugin>
-
-                <!-- Documentation -->
-
-                <plugin>
-
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${maven-javadoc-plugin.version}</version>
-                    <configuration>
-
-                        <show>public</show>
-                        <source>17</source>
-                        <detectJavaApiLink>false</detectJavaApiLink>
-                        <doclint>none</doclint>
-                        <nohelp>true</nohelp>
-                        <additionalOptions>
-                            -notimestamp --show-module-contents all --show-packages
-                            all --show-types private
-                        </additionalOptions>
-
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>aggregate</id>
-                            <phase>site</phase>
-                            <goals>
-                                <goal>aggregate</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-
-                </plugin>
-
-                <!-- Publishing -->
-
-                <plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${nexus-staging-maven-plugin.version}</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <serverId>ossrh</serverId>
-                        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                        <skipStaging>${do.not.publish}</skipStaging>
-                        <skipLocalStaging>true</skipLocalStaging>
-                        <autoReleaseAfterClose>${release.on.close}</autoReleaseAfterClose>
-                        <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
-                    </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>${maven-release-plugin.version}</version>
-                </plugin>
-
-            </plugins>
-
-        </pluginManagement>
-
-    </build>
-
-    <!-- Profiles -->
-
-    <profiles>
-
-        <!-- Attach JARs -->
-
-        <profile>
-            <id>attach-jars</id>
-            <build>
-                <plugins>
-
-                    <plugin>
-
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <version>${maven-source-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>attach-source-jar</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-
-                    </plugin>
-
-                    <plugin>
-
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>${maven-javadoc-plugin.version}</version>
-                        <configuration>
-
-                            <show>protected</show>
-                            <source>11</source>
-                            <sourcepath>src/main/java</sourcepath>
-                            <failOnError>false</failOnError>
-                            <detectJavaApiLink>false</detectJavaApiLink>
-                            <doclint>none</doclint>
-                            <nohelp>true</nohelp>
-                            <additionalOptions>
-                                -notimestamp --show-module-contents all --show-packages
-                                all --show-types private
-                            </additionalOptions>
-                            <destDir>target/attached-javadocs</destDir>
-                            <sourceFileIncludes>
-                                <sourceFileInclude>**/*.java</sourceFileInclude>
-                            </sourceFileIncludes>
-
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>attach-javadoc-jar</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-
-                    </plugin>
-
-                </plugins>
-
-            </build>
-        </profile>
-
-        <!-- Sign Artifacts -->
-
-        <profile>
-            <id>sign-artifacts</id>
-            <build>
-                <plugins>
-
-                    <plugin>
-
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
-                        <executions>
-
-                            <execution>
-
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <configuration>
-                                    <gpgArguments>
-                                        <arg>--pinentry-mode</arg>
-                                        <arg>loopback</arg>
-                                    </gpgArguments>
-                                </configuration>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-
-                            </execution>
-
-                        </executions>
-
-                    </plugin>
-
-                </plugins>
-
-            </build>
-        </profile>
-
-    </profiles>
-
-    <!-- Repositories -->
-
-    <repositories>
-
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>Maven Central</name>
-            <url>https://repo1.maven.org/maven2</url>
-        </repository>
-
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -1175,6 +836,42 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
             </dependency>
+            
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-migrationsupport</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-commons</artifactId>
+                <version>1.8.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apiguardian</groupId>
+                <artifactId>apiguardian-api</artifactId>
+                <version>1.1.2</version>
+            </dependency>
 
             <dependency>
 
@@ -1458,86 +1155,5 @@
 
         </dependencies>
     </dependencyManagement>
-
-    <!-- Publishing -->
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
-    <!-- Source Code -->
-
-    <scm>
-        <connection>scm:git:https://Telenav/kivakit.git</connection>
-        <developerConnection>scm:git:https://Telenav/kivakit.git</developerConnection>
-        <url>https://Telenav/kivakit.git</url>
-    </scm>
-
-    <!-- Project -->
-
-    <url>https://www.telenav.com/</url>
-
-    <inceptionYear>2011</inceptionYear>
-
-    <organization>
-        <name>Telenav</name>
-        <url>https://www.telenav.com</url>
-    </organization>
-
-    <!-- Contributors -->
-
-    <developers>
-
-        <developer>
-
-            <id>jonathanl</id>
-            <name>Jonathan Locke (Luo Shibo)</name>
-            <email>jonathanl@telenav.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>lead</role>
-                <role>administrator</role>
-            </roles>
-
-        </developer>
-
-        <developer>
-
-            <id>haifeng</id>
-            <name>Haifeng Zhu</name>
-            <email>hfzhu@telenav.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>developer</role>
-                <role>administrator</role>
-            </roles>
-
-        </developer>
-
-        <developer>
-
-            <id>timboudreau</id>
-            <name>Tim Boudreau</name>
-            <email>tim@timboudreau.com</email>
-            <organization>Telenav</organization>
-            <organizationUrl>https://www.telenav.com/</organizationUrl>
-            <roles>
-                <role>developer</role>
-                <role>administrator</role>
-            </roles>
-
-        </developer>
-
-    </developers>
 
 </project>
