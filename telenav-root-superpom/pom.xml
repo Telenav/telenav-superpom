@@ -462,6 +462,18 @@
                             </execution>
 
                             <execution>
+                                <id>consistency-check</id>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                                <configuration>
+                                    <checkDirty>false</checkDirty>
+                                    <!-- fixme -->
+                                    <checkRemoteModifications>false</checkRemoteModifications>
+                                </configuration>
+                            </execution>
+
+                            <execution>
                                 <id>bump-versions-of-famlies</id>
                                 <goals>
                                     <goal>bump-version</goal>
@@ -812,7 +824,11 @@
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
-                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
+                            <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
+                            <push>${forRealz}</push>
+                            <commitChanges>true</commitChanges>
+                            <includeRoot>true</includeRoot>
+                            <commitMessage>Commit docs for release</commitMessage>
                         </configuration>
                         <executions>
                             <execution>
@@ -832,6 +848,7 @@
                                 <goals>
                                     <goal>bump-version</goal>
                                 </goals>
+                                <phase>generate-sources</phase>
                                 <configuration>
                                     <commitChanges>true</commitChanges>
                                     <scope>all</scope>
@@ -846,6 +863,7 @@
                                 <goals>
                                     <goal>push</goal>
                                 </goals>
+                                <phase>generate-sources</phase>
                                 <configuration>
                                     <!-- for now -->
                                     <pretend>true</pretend>
@@ -857,6 +875,7 @@
                                 <goals>
                                     <goal>print-message</goal>
                                 </goals>
+                                <phase>generate-sources</phase>
                                 <configuration>
                                     <message>
                                         Assuming this build succeeded, you are now back on
