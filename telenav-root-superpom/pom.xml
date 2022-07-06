@@ -694,6 +694,13 @@
                             </execution>
 
                             <execution>
+                                <id>copy-javadoc-to-assets</id>
+                                <goals>
+                                    <goal>copy-aggregated-javadoc</goal>
+                                </goals>
+                            </execution>
+
+                            <execution>
                                 <id>print-phase-three-message</id>
                                 <goals>
                                     <goal>print-message</goal>
