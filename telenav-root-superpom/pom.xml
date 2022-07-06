@@ -444,6 +444,7 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
+                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
                         </configuration>
                         <executions>
 
@@ -513,6 +514,7 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
+                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
                         </configuration>
 
                         <executions>
@@ -615,6 +617,7 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
+                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
                         </configuration>
                         <executions>
 
@@ -777,6 +780,7 @@
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
+                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
                         </configuration>
                         <executions>
                             <execution>
