@@ -851,7 +851,7 @@
                                 <phase>generate-sources</phase>
                                 <configuration>
                                     <commitChanges>true</commitChanges>
-                                    <scope>all</scope>
+                                    <scope>family</scope>
                                     <includeRoot>true</includeRoot>
                                     <versionFlavor>to-snapshot</versionFlavor>
                                     <updateDocs>false</updateDocs>
