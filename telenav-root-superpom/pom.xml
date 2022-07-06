@@ -504,6 +504,7 @@
                                     <goal>print-message</goal>
                                 </goals>
                                 <configuration>
+                                    <onFailure>false</onFailure>
                                     <message>
                                         Versions have been bumped and family checkouts are now on a new release branch.
                                         Review the changes, and when you're ready, rebuild your
@@ -609,6 +610,7 @@
                                 </goals>
                                 <phase>install</phase>
                                 <configuration>
+                                    <onFailure>false</onFailure>
                                     <message>
                                         Documentation has been generated and READMEs have been updated.
 
@@ -733,6 +735,7 @@
                                 </goals>
                                 <phase>deploy</phase>
                                 <configuration>
+                                    <onFailure>false</onFailure>
                                     <message>
                                         Documentation changes have been commited, and
                                         perhaps pushed? ${forRealz}.
@@ -924,6 +927,7 @@
                                 </goals>
                                 <phase>generate-sources</phase>
                                 <configuration>
+                                    <onFailure>false</onFailure>
                                     <message>
                                         Assuming this build succeeded, you are now back on
                                         the development branch, with new snapshot versions of
