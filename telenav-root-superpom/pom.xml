@@ -535,6 +535,7 @@
             </activation>
             <properties>
                 <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+                <maven.shade.skip>true</maven.shade.skip>
             </properties>
             <build>
                 <plugins>
