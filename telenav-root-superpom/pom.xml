@@ -540,10 +540,19 @@
                         </configuration>
 
                         <executions>
+
                             <execution>
                                 <id>filter-families-from-plugins</id>
                                 <goals>
                                     <goal>filter-families</goal>
+                                </goals>
+                            </execution>
+                            
+                            <execution>
+                                <!-- Generate magic lexakai files from data in the pom  -->
+                                <id>generate-lexakai-properties-files</id>
+                                <goals>
+                                    <goal>lexakai-generate</goal>
                                 </goals>
                             </execution>
 
@@ -552,6 +561,7 @@
                                 <goals>
                                     <goal>codeflowers</goal>
                                 </goals>
+                                <phase>install</phase>
                                 <configuration>
                                     <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
                                 </configuration>
@@ -562,6 +572,7 @@
                                 <goals>
                                     <goal>lexakai</goal>
                                 </goals>
+                                <phase>install</phase>
                             </execution>
 
                             <execution>
@@ -569,6 +580,7 @@
                                 <goals>
                                     <goal>copy-javadoc</goal>
                                 </goals>
+                                <phase>verify</phase>
                             </execution>
 
                             <execution>
@@ -576,6 +588,7 @@
                                 <goals>
                                     <goal>copy-aggregated-javadoc</goal>
                                 </goals>
+                                <phase>verify</phase>
                             </execution>
 
                             <execution>
@@ -613,6 +626,7 @@
                                 <goals>
                                     <goal>javadoc-no-fork</goal>
                                 </goals>
+                                <phase>verify</phase>
                             </execution>
 
                             <execution>
@@ -620,6 +634,7 @@
                                 <goals>
                                     <goal>aggregate-no-fork</goal>
                                 </goals>
+                                <phase>install</phase>
                             </execution>
 
                         </executions>
