@@ -167,37 +167,37 @@
 
             </plugin>
 
-                <plugin>
+            <plugin>
 
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${maven-javadoc-plugin.version}</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven-javadoc-plugin.version}</version>
 
-                    <configuration>
+                <configuration>
 
-                        <show>public</show>
-                        <source>11</source>
-                        <detectJavaApiLink>false</detectJavaApiLink>
-                        <doclint>none</doclint>
-                        <nohelp>true</nohelp>
-                        <additionalOptions>
-                            -notimestamp --show-module-contents all --show-packages
-                            all --show-types private --add-reads cactus.maven.plugin=ALL-UNNAMED
-                        </additionalOptions>
+                    <show>public</show>
+                    <source>11</source>
+                    <detectJavaApiLink>false</detectJavaApiLink>
+                    <doclint>none</doclint>
+                    <nohelp>true</nohelp>
+                    <additionalOptions>
+                        -notimestamp --show-module-contents all --show-packages
+                        all --show-types private --add-reads cactus.maven.plugin=ALL-UNNAMED
+                    </additionalOptions>
 
 
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>aggregate</id>
-                            <phase>site</phase>
-                            <goals>
-                                <goal>aggregate</goal>
-                            </goals>
-                        </execution>
-                    </executions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>aggregate</id>
+                        <phase>site</phase>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
 
-                </plugin>
+            </plugin>
 
         </plugins>
 
@@ -236,6 +236,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.3.0</version>
                 </plugin>
 
                 <plugin>
@@ -317,8 +318,8 @@
                     <configuration>
                         <serverId>ossrh</serverId>
                         <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                        <skipStaging>${do.not.publish}</skipStaging>
                         <skipLocalStaging>true</skipLocalStaging>
+                        <skipStaging>${do.not.publish}</skipStaging>
                         <autoReleaseAfterClose>${release.on.close}</autoReleaseAfterClose>
                         <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
                     </configuration>
@@ -448,7 +449,8 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
-                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
+                            <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
+                            <properties>maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
                         <executions>
 
@@ -483,11 +485,11 @@
                                         Versions have been bumped and family checkouts are now on a new release branch.
                                         Review the changes, and when you're ready, rebuild your
                                         superpoms - e.g.
-                                        
+
                                         `mvn -f telenav-superpoms/pom.xml install`
-                                        
+
                                         and you are ready for phase 2, building documentation:
-                                        
+
                                         `mvn -P release-phase-2 install site`
 
                                         to build documentation and generate signed code, source and javadoc jars.
@@ -521,7 +523,8 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
-                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
+                            <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
+                            <properties>maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
 
                         <executions>
@@ -568,6 +571,7 @@
                                 <goals>
                                     <goal>print-message</goal>
                                 </goals>
+                                <phase>install</phase>
                                 <configuration>
                                     <message>
                                         Documentation has been generated and READMEs have been updated.
@@ -576,7 +580,7 @@
 
                                         When you are happy with the results, run phase 3 to commit the
                                         changes and prepare the release:
-                                        
+
                                         `mvn -P release-phase-3 clean install`
 
                                     </message>
@@ -612,6 +616,7 @@
                 </plugins>
             </build>
         </profile>
+
         <profile>
             <id>release-phase-3</id>
             <activation>
@@ -622,6 +627,7 @@
             </properties>
             <build>
                 <plugins>
+
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
@@ -630,7 +636,8 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
-                            <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
+                            <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
+                            <properties>maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
                         <executions>
 
@@ -679,6 +686,7 @@
                                 <goals>
                                     <goal>print-message</goal>
                                 </goals>
+                                <phase>deploy</phase>
                                 <configuration>
                                     <message>
                                         Documentation changes have been commited, and
@@ -741,7 +749,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
+                        <version>3.0.1</version>
                         <executions>
 
                             <execution>
@@ -766,6 +774,13 @@
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
                         <version>${nexus-staging-maven-plugin.version}</version>
+                        <configuration>
+                            <skipLocalStaging>true</skipLocalStaging>
+                            <skipStaging>${do.not.publish}</skipStaging>
+                            <autoReleaseAfterClose>${release.on.close}</autoReleaseAfterClose>
+                            <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
+                        </configuration>
+
                         <executions>
                             <execution>
                                 <goals>
@@ -773,6 +788,7 @@
                                 </goals>
                             </execution>
                         </executions>
+
                     </plugin>
 
                 </plugins>
@@ -998,9 +1014,9 @@
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
 
         <!-- We want to specify a version of the site plugin that won't
-             crash hard, which the 3.3 default does - but we don't actually
-             want it to do anything, so our own plugins can use the
-             site target without causing a bunch of pointless work to run. -->
+        crash hard, which the 3.3 default does - but we don't actually
+        want it to do anything, so our own plugins can use the
+        site target without causing a bunch of pointless work to run. -->
         <maven.site.skip>true</maven.site.skip>
         <maven-site-plugin.version>4.0.0-M1</maven-site-plugin.version>
 
