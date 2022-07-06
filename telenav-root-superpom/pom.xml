@@ -447,7 +447,7 @@
             </activation>
             <properties>
                 <maven.test.skip.exec>true</maven.test.skip.exec>
-                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+                <cactus.maven.plugin.version>1.4.25</cactus.maven.plugin.version>
             </properties>
             <build>
                 <plugins>
@@ -534,7 +534,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+                <cactus.maven.plugin.version>1.4.25</cactus.maven.plugin.version>
                 <maven.shade.skip>true</maven.shade.skip>
             </properties>
             <build>
@@ -664,7 +664,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+                <cactus.maven.plugin.version>1.4.25</cactus.maven.plugin.version>
             </properties>
             <build>
                 <plugins>
@@ -850,7 +850,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+                <cactus.maven.plugin.version>1.4.25</cactus.maven.plugin.version>
             </properties>
             <build>
                 <plugins>
