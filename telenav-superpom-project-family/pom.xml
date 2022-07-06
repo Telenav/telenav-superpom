@@ -514,11 +514,8 @@
                                 <phase>generate-sources</phase>
                                 <configuration>
                                     <commitMessage>Update to new snapshot version</commitMessage>
-                                    <commitChanges>true</commitChanges>
-                                    <scope>family</scope>
+                                    <scope>all</scope>
                                     <includeRoot>true</includeRoot>
-                                    <versionFlavor>to-snapshot</versionFlavor>
-                                    <updateDocs>false</updateDocs>
                                 </configuration>
                             </execution>
 
