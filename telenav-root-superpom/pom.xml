@@ -433,6 +433,10 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
+            <properties>
+                <maven.test.skip.exec>true</maven.test.skip.exec>
+                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+            </properties>
             <build>
                 <plugins>
 
@@ -503,6 +507,9 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
+            <properties>
+                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+            </properties>
             <build>
                 <plugins>
 
@@ -530,6 +537,9 @@
                                 <goals>
                                     <goal>codeflowers</goal>
                                 </goals>
+                                <configuration>
+                                    <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
+                                </configuration>
                             </execution>
 
                             <execution>
@@ -607,6 +617,9 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
+            <properties>
+                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -771,6 +784,9 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
+            <properties>
+                <cactus.maven.plugin.version>1.4.24</cactus.maven.plugin.version>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
