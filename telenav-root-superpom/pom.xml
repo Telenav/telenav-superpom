@@ -549,7 +549,7 @@
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
                             <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
-                            <properties>maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                            <properties>maven.main.skip,maven.install.skip,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
 
                         <executions>
