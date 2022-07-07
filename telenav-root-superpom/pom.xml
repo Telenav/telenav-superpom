@@ -504,7 +504,7 @@
                                 </goals>
                                 <configuration>
                                     <scope>family</scope>
-                                    <bumpUnpublished>true</bumpUnpublished>
+                                    <bumpPublished>true</bumpPublished>
                                     <commitChanges>true</commitChanges>
                                     <commitMessage>Prepare for release</commitMessage>
                                     <versionFlavor>to-release</versionFlavor>
