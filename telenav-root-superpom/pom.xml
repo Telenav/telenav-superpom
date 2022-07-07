@@ -549,7 +549,6 @@
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
                             <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
-                            <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
 
                         <executions>
@@ -559,6 +558,9 @@
                                 <goals>
                                     <goal>filter-families</goal>
                                 </goals>
+                                <configuration>
+                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                </configuration>
                             </execution>
                             
                             <execution>
