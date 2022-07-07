@@ -514,9 +514,12 @@
 
                                         and you are ready for phase 2, building documentation:
 
-                                        `mvn -P release-phase-2 install site`
+                                        `mvn -P release-phase-2 clean install \
+                                        \t-Dcactus.families=${FAMILIES_TO_RELEASE} \
+                                        \torg.apache.maven.plugins:maven-site-plugin:4.0.0-M1:site verify`
 
-                                        to build documentation and generate signed code, source and javadoc jars.
+                                        to build documentation, after which you can review what was built,
+                                        and, if satisfactory, move on to commiting it and publishing.
                                     </message>
                                 </configuration>
                             </execution>
@@ -577,9 +580,6 @@
                                     <goal>codeflowers</goal>
                                 </goals>
                                 <phase>install</phase>
-                                <configuration>
-                                    <cactus.tolerate.version.inconsistencies.families>lexakai</cactus.tolerate.version.inconsistencies.families>
-                                </configuration>
                             </execution>
 
                             <execution>
@@ -666,7 +666,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <!--<cactus.maven.plugin.version>1.4.26</cactus.maven.plugin.version>-->
+                <forRealz>false</forRealz>
             </properties>
             <build>
                 <plugins>
@@ -680,7 +680,6 @@
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
                             <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
-                            <properties>maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
                         <executions>
 
@@ -689,6 +688,9 @@
                                 <goals>
                                     <goal>filter-families</goal>
                                 </goals>
+                                <configuration>
+                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                </configuration>
                             </execution>
 
                             <execution>
@@ -730,6 +732,13 @@
                                     <goal>copy-aggregated-javadoc</goal>
                                 </goals>
                             </execution>
+                            
+                            <execution>
+                                <id>update-metadata-post-commit</id>
+                                <goals>
+                                    <goal>build-metadata</goal>
+                                </goals>
+                            </execution>
 
                             <execution>
                                 <id>print-phase-three-message</id>
@@ -741,10 +750,10 @@
                                     <onFailure>false</onFailure>
                                     <message>
                                         Documentation changes have been commited, and
-                                        perhaps pushed? ${forRealz}.
+                                        perhaps pushed? (${forRealz})
 
-                                        And if the build succeeded, artifacts have been
-                                        uploaded to nexus.  Review, and release the repository
+                                        Artifacts have been uploaded to nexus.  Review, 
+                                        and release the repository
                                         if things look right.
 
                                         The next phase will merge your changes back to the
@@ -852,7 +861,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <!--<cactus.maven.plugin.version>1.4.26</cactus.maven.plugin.version>-->
+                <forRealz>false</forRealz>
             </properties>
             <build>
                 <plugins>
@@ -903,7 +912,7 @@
                                 <goals>
                                     <goal>commit</goal>
                                 </goals>
-                                <phase>generate-sources</phase>
+                                <phase>generate-resources</phase>
                                 <configuration>
                                     <commitMessage>Update to new snapshot version</commitMessage>
                                     <scope>all</scope>
@@ -916,7 +925,7 @@
                                 <goals>
                                     <goal>push</goal>
                                 </goals>
-                                <phase>generate-sources</phase>
+                                <phase>process-resources</phase>
                                 <configuration>
                                     <!-- for now -->
                                     <pretend>true</pretend>
@@ -932,12 +941,11 @@
                                 <configuration>
                                     <onFailure>false</onFailure>
                                     <message>
-                                        Assuming this build succeeded, you are now back on
-                                        the development branch, with new snapshot versions of
-                                        everything that was published locally and pushed to
-                                        the git server.
+                                        You are now back on the development branch, with 
+                                        new snapshot versions of everything that was published
+                                        locally and pushed (${forRealz}) to the git server.
 
-                                        Congratulations!  You released a thing!
+                                        Congratulations!  You released ${cactus.families}!
                                     </message>
                                 </configuration>
                             </execution>
