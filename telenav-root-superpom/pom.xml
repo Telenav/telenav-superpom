@@ -657,7 +657,7 @@
                                 <goals>
                                     <goal>javadoc-no-fork</goal>
                                 </goals>
-                                <phase>verify</phase>
+                                <phase>prepare-package</phase>
                             </execution>
 
                             <execution>
@@ -665,7 +665,7 @@
                                 <goals>
                                     <goal>aggregate-no-fork</goal>
                                 </goals>
-                                <phase>install</phase>
+                                <phase>prepare-package</phase>
                             </execution>
 
                         </executions>
