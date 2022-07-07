@@ -936,9 +936,10 @@
                                     <includeRoot>true</includeRoot>
                                     <versionFlavor>to-snapshot</versionFlavor>
                                     <updateDocs>false</updateDocs>
+                                    <superpomBumpPolicy>BUMP_ACQUIRING_NEW_FAMILY_FLAVOR</superpomBumpPolicy>
                                 </configuration>
                             </execution>
-                            
+
                             <execution>
                                 <id>commit-new-snapshots</id>
                                 <goals>
