@@ -479,6 +479,7 @@
                                 <goals>
                                     <goal>update-assets-checkouts</goal>
                                 </goals>
+                                <phase>initialize</phase>
                                 <configuration>
                                     <pull>true</pull>
                                     <commit>true</commit>
