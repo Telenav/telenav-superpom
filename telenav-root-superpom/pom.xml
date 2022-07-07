@@ -474,6 +474,8 @@
                                 </configuration>
                             </execution>
                             
+                            <!-- pulling this out for now -->
+                            <!-- 
                             <execution>
                                 <id>pull-assets-checkouts</id>
                                 <goals>
@@ -485,6 +487,7 @@
                                     <commit>true</commit>
                                 </configuration>
                             </execution>
+                            -->
 
                             <execution>
                                 <id>consistency-check</id>
