@@ -637,7 +637,8 @@
                                         When you are happy with the results, run phase 3 to commit the
                                         changes and prepare the release:
 
-                                        `mvn -P release-phase-3 clean install`
+                                        `mvn -P release-phase-3 -Dcactus.families=${FAMILIES_TO_RELEASE} \
+                                        \tdeploy`
 
                                     </message>
                                 </configuration>
