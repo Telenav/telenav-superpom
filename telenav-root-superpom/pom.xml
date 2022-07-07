@@ -447,7 +447,6 @@
             </activation>
             <properties>
                 <maven.test.skip.exec>true</maven.test.skip.exec>
-                <!--<cactus.maven.plugin.version>1.4.26</cactus.maven.plugin.version>-->
             </properties>
             <build>
                 <plugins>
@@ -461,7 +460,6 @@
                             <verbose>true</verbose>
                             <includeRoot>true</includeRoot>
                             <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
-                            <properties>maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                         </configuration>
                         <executions>
 
@@ -470,6 +468,21 @@
                                 <goals>
                                     <goal>filter-families</goal>
                                 </goals>
+                                <configuration>
+                                    <familiesRequired>true</familiesRequired>
+                                    <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
+                                </configuration>
+                            </execution>
+                            
+                            <execution>
+                                <id>pull-assets-checkouts</id>
+                                <goals>
+                                    <goal>update-assets-checkouts</goal>
+                                </goals>
+                                <configuration>
+                                    <pull>true</pull>
+                                    <commit>true</commit>
+                                </configuration>
                             </execution>
 
                             <execution>
@@ -562,6 +575,7 @@
                                     <goal>filter-families</goal>
                                 </goals>
                                 <configuration>
+                                    <familiesRequired>true</familiesRequired>
                                     <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                                 </configuration>
                             </execution>
@@ -689,6 +703,7 @@
                                     <goal>filter-families</goal>
                                 </goals>
                                 <configuration>
+                                    <familiesRequired>true</familiesRequired>
                                     <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
                                 </configuration>
                             </execution>
@@ -879,6 +894,18 @@
                             <commitMessage>Commit docs for release</commitMessage>
                         </configuration>
                         <executions>
+
+                            <execution>
+                                <id>filter-families-from-plugins-4</id>
+                                <goals>
+                                    <goal>filter-families</goal>
+                                </goals>
+                                <configuration>
+                                    <familiesRequired>true</familiesRequired>
+                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                </configuration>
+                            </execution>
+
                             <execution>
                                 <id>merge-release-into-develop</id>
                                 <phase>validate</phase>
