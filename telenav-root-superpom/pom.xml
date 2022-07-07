@@ -685,7 +685,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <forRealz>false</forRealz>
+                <releasePush>false</releasePush>
             </properties>
             <build>
                 <plugins>
@@ -720,7 +720,7 @@
                                 </goals>
                                 <phase>validate</phase>
                                 <configuration>
-                                    <push>${forRealz}</push>
+                                    <push>${releasePush}</push>
                                     <scope>all-project-families</scope>
                                     <commitChanges>true</commitChanges>
                                     <includeRoot>true</includeRoot>
@@ -735,7 +735,7 @@
                                 </goals>
                                 <phase>validate</phase>
                                 <configuration>
-                                    <push>${forRealz}</push>
+                                    <push>${releasePush}</push>
                                 </configuration>
                             </execution>
 
@@ -770,7 +770,7 @@
                                     <onFailure>false</onFailure>
                                     <message>
                                         Documentation changes have been commited, and
-                                        perhaps pushed? (${forRealz})
+                                        perhaps pushed? (${releasePush})
 
                                         Artifacts have been uploaded to nexus.  Review, 
                                         and release the repository
@@ -881,7 +881,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <forRealz>false</forRealz>
+                <releasePush>false</releasePush>
             </properties>
             <build>
                 <plugins>
@@ -893,7 +893,7 @@
                             <scope>family</scope>
                             <verbose>true</verbose>
                             <tolerateVersionInconsistenciesIn>lexakai</tolerateVersionInconsistenciesIn>
-                            <push>${forRealz}</push>
+                            <push>${releasePush}</push>
                             <commitChanges>true</commitChanges>
                             <includeRoot>true</includeRoot>
                             <commitMessage>Commit docs for release</commitMessage>
@@ -976,7 +976,7 @@
                                     <message>
                                         You are now back on the development branch, with 
                                         new snapshot versions of everything that was published
-                                        locally and pushed (${forRealz}) to the git server.
+                                        locally and pushed (${releasePush}) to the git server.
 
                                         Congratulations!  You released ${cactus.families}!
                                     </message>
