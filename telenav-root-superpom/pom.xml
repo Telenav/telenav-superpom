@@ -489,6 +489,7 @@
                                 <goals>
                                     <goal>clone</goal>
                                 </goals>
+                                <phase>validate</phase>
                             </execution>
                                                         
                             <execution>
