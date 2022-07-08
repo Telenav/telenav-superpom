@@ -483,8 +483,16 @@
                                     <checkRemoteModifications>false</checkRemoteModifications>
                                 </configuration>
                             </execution>
+
                             <execution>
-                                <id>print-phase-two-message</id>
+                                <id>clone-into-temp</id>
+                                <goals>
+                                    <goal>clone</goal>
+                                </goals>
+                            </execution>
+                                                        
+                            <execution>
+                                <id>print-phase-zero-message</id>
                                 <goals>
                                     <goal>print-message</goal>
                                 </goals>
@@ -550,14 +558,6 @@
                                     <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
-                            
-                            <execution>
-                                <id>clone-into-temp</id>
-                                <goals>
-                                    <goal>clone</goal>
-                                </goals>
-                            </execution>
-                            
                             
                             <!-- pulling this out for now -->
                             <!-- 
