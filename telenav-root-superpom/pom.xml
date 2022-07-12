@@ -8,9 +8,9 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 <project
-    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
-    xmlns = "http://maven.apache.org/POM/4.0.0"
-    xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+        xmlns = "http://maven.apache.org/POM/4.0.0"
+        xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -509,7 +509,7 @@
                                         \t-P release-phase-1 \
                                         \t-Denforcer.skip=true \
                                         \t-Dcactus.expected.branch=develop \
-                                        \t-Dcactus.maven.plugin.version="${CACTUS_V}" \
+                                        \t-Dcactus.maven.plugin.version="${CACTUS_VERSION}" \
                                         \t-Dcactus.families=${FAMILIES_TO_RELEASE} \
                                         \t-DreleaseBranchPrefix=${RELEASE_BRANCH_PREFIX} \
                                         \t-Dmaven.test.skip.exec=true \
@@ -540,7 +540,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
+                        <version>${cactus.maven.plugin.versions}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -559,7 +559,7 @@
                                     <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
-                            
+
                             <!-- pulling this out for now -->
                             <!-- 
                             <execution>
