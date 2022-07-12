@@ -8,9 +8,9 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 <project
-    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
-    xmlns = "http://maven.apache.org/POM/4.0.0"
-    xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+        xmlns = "http://maven.apache.org/POM/4.0.0"
+        xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -112,6 +112,7 @@
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
+                    <version>${cactus.maven.plugin.prev.version}</version>
                     <configuration>
                         <verbose>${cactus.maven.plugin.verbose}</verbose>
                     </configuration>
