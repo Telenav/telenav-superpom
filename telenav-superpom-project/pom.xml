@@ -112,7 +112,6 @@
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
-                    <version>${cactus.maven.plugin.previous.version}</version>
                     <configuration>
                         <verbose>${cactus.maven.plugin.verbose}</verbose>
                     </configuration>

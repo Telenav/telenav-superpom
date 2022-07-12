@@ -28,7 +28,7 @@
     <name>telenav-root-superpom</name>
     <description>
         The uber-root telenav superpom, containing global plugin configuration, possibly a few
-        rarely changing depedency management elements and NOTHING ELSE.  Anything here must be
+        rarely changing dependency management elements and NOTHING ELSE.  Anything here must be
         safe to include in the build of EVERY SINGLE PROJECT.
     </description>
 
@@ -36,7 +36,7 @@
         <!-- Plugins only here - libraries belong in a child superpom for
         a more specific purpose.  Using dependencyManagement to manage
         plugin version simply buys us the flexibility to use range
-        dependencies and similer -->
+        dependencies and similar -->
         <dependencies>
             <dependency>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -588,7 +588,7 @@
                             </execution>
 
                             <execution>
-                                <id>bump-versions-of-famlies</id>
+                                <id>bump-versions-of-families</id>
                                 <goals>
                                     <goal>bump-version</goal>
                                 </goals>
@@ -622,7 +622,7 @@
                                         \torg.apache.maven.plugins:maven-site-plugin:4.0.0-M1:site verify`
 
                                         to build documentation, after which you can review what was built,
-                                        and, if satisfactory, move on to commiting it and publishing.
+                                        and, if satisfactory, move on to committing it and publishing.
                                     </message>
                                 </configuration>
                             </execution>
