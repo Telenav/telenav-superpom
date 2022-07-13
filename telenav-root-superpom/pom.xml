@@ -346,6 +346,7 @@
 
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${maven-gpg-plugin.version}</version>
                         <executions>
 
                             <execution>
@@ -454,7 +455,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
+                        <version>${cactus.maven.plugin.versions}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -649,7 +650,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
+                        <version>${cactus.maven.plugin.versions}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -779,7 +780,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
+                        <version>${cactus.maven.plugin.versions}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -974,7 +975,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
+                        <version>${cactus.maven.plugin.versions}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -1199,7 +1200,7 @@
         <maven.version>3.8.5</maven.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
