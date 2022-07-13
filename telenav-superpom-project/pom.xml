@@ -38,7 +38,6 @@
         dependencyManagement section, which allows plugin resolution to pick it up
         (you can't use a version range directly in a plugin block)-->
         <cactus.maven.plugin.versions>[${cactus.maven.plugin.previous.version}, ${cactus.maven.plugin.version}]</cactus.maven.plugin.versions>
-        <cactus.maven.plugin.verbose>false</cactus.maven.plugin.verbose>
 
         <cactus.version>1.5.10</cactus.version>
 
@@ -113,9 +112,6 @@
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
                     <version>${cactus.maven.plugin.version}</version>
-                    <configuration>
-                        <verbose>${cactus.maven.plugin.verbose}</verbose>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -132,7 +128,6 @@
             <plugin>
                 <groupId>com.telenav.cactus</groupId>
                 <artifactId>cactus-maven-plugin</artifactId>
-                <version>${cactus.maven.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>project-metadata</id>
@@ -141,9 +136,6 @@
                             <goal>project-information</goal>
                             <goal>build-metadata</goal>
                         </goals>
-                        <configuration>
-                            <verbose>${cactus.maven.plugin.verbose}</verbose>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
