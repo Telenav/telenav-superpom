@@ -24,6 +24,7 @@
 
     <groupId>com.telenav.mesakit</groupId>
     <artifactId>telenav-superpom-mesakit</artifactId>
+    <version>2.0.3</version>
 
     <packaging>pom</packaging>
     <name>telenav-superpom-mesakit</name>
@@ -34,15 +35,15 @@
     <properties>
         <!-- KivaKit Version -->
 
-        <kivakit.version>1.6.0</kivakit.version>
-        <telenav.superpom.kivakit.version>2.0.2</telenav.superpom.kivakit.version>
+        <kivakit.version>1.6.1</kivakit.version>
+        <telenav.superpom.kivakit.version>2.0.3</telenav.superpom.kivakit.version>
 
         <!-- MesaKit Version -->
 
-        <mesakit.version>0.9.14</mesakit.version>
+        <mesakit.version>0.9.15</mesakit.version>
 
-        <lexakai.version>1.0.8</lexakai.version>
-        <lexakai.annotations.version>1.0.1</lexakai.annotations.version>
+        <lexakai.version>1.0.9</lexakai.version>
+        <lexakai.annotations.version>1.0.2</lexakai.annotations.version>
 
     </properties>
 
