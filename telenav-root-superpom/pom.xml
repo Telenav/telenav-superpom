@@ -455,7 +455,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.versions}</version>
+                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -541,7 +541,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.versions}</version>
+                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -641,7 +641,6 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <!--<cactus.maven.plugin.version>1.4.26</cactus.maven.plugin.version>-->
                 <maven.shade.skip>true</maven.shade.skip>
             </properties>
             <build>
@@ -650,7 +649,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.versions}</version>
+                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -780,7 +779,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.versions}</version>
+                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -975,7 +974,7 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.versions}</version>
+                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
