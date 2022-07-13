@@ -966,9 +966,6 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
-            <properties>
-                <releasePush>false</releasePush>
-            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -993,7 +990,7 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                    <properties>skipIfEmpty,cactus.publish.check.skip,cactus.check.skip</properties>
                                 </configuration>
                             </execution>
 
@@ -1045,10 +1042,6 @@
                                     <goal>push</goal>
                                 </goals>
                                 <phase>process-resources</phase>
-                                <configuration>
-                                    <!-- for now -->
-                                    <pretend>true</pretend>
-                                </configuration>
                             </execution>
 
                             <execution>
@@ -1064,7 +1057,8 @@
                                         new snapshot versions of everything that was published
                                         locally and pushed (${releasePush}) to the git server.
 
-                                        Congratulations!  You released ${cactus.families}!
+                                        Congratulations!  You released ${cactus.families}
+                                        in ${project.basedir}!
                                     </message>
                                 </configuration>
                             </execution>
