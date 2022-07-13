@@ -111,7 +111,11 @@
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
-                    <version>${cactus.maven.plugin.version}</version>
+                    <!-- Yes you will get a warning.  No, do NOT,
+                         put a version here, or we will be unable to
+                         build using the cactus-maven-plugin in the
+                         source tree, only whatever is spelled out
+                         here. -->
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
