@@ -760,6 +760,33 @@
 
                         </executions>
                     </plugin>
+                    
+                    <!-- Some javadoc won't be (and cannot be if it uses the shade plugin
+                    to clobber module-info.class files) rebuilt, so we night to
+                    sign NOW in addition to including the plugin in the next phase -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>3.0.1</version>
+                        <executions>
+
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>install</phase>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
 
                 </plugins>
             </build>
