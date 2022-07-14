@@ -666,7 +666,17 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                    <properties>
+                                        skipIfEmpty,
+                                        maven.deploy.skip,
+                                        cactus.codeflowers.skip,
+                                        cactus.copy.javadoc.skip,
+                                        cactus.lexakai.skip,
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip,
+                                        skipNexusStagingDeployMojo
+                                    </properties>
                                 </configuration>
                             </execution>
                             
@@ -822,7 +832,17 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                    <properties>
+                                        skipIfEmpty,
+                                        maven.deploy.skip,
+                                        cactus.codeflowers.skip,
+                                        cactus.copy.javadoc.skip,
+                                        cactus.lexakai.skip,
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip,
+                                        skipNexusStagingDeployMojo
+                                    </properties>
                                 </configuration>
                             </execution>
 
