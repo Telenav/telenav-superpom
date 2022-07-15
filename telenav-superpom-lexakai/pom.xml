@@ -24,7 +24,7 @@
 
     <groupId>com.telenav.lexakai</groupId>
     <artifactId>telenav-superpom-lexakai</artifactId>
-    <version>2.0.4</version>
+    <version>2.0.6</version>
 
     <packaging>pom</packaging>
     <name>telenav-superpom-lexakai</name>
@@ -34,11 +34,11 @@
 
     <properties>
         <cactus.version>1.5.18</cactus.version>
-        <lexakai.version>1.0.10-SNAPSHOT</lexakai.version>
-        <lexakai.annotations.version>1.0.3-SNAPSHOT</lexakai.annotations.version>
+        <lexakai.version>1.0.11-SNAPSHOT</lexakai.version>
+        <lexakai.annotations.version>1.0.5-SNAPSHOT</lexakai.annotations.version>
         <!-- KivaKit Version -->
-        <kivakit.version>1.6.2-SNAPSHOT</kivakit.version>
-        <telenav.superpom.kivakit.version>2.0.4</telenav.superpom.kivakit.version>
+        <kivakit.version>1.6.3-SNAPSHOT</kivakit.version>
+        <telenav.superpom.kivakit.version>2.0.6</telenav.superpom.kivakit.version>
 
     </properties>
 

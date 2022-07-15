@@ -16,7 +16,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -470,7 +470,10 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
+                                    <properties>
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
                             <execution>
@@ -557,7 +560,10 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
+                                    <properties>
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.
+                                        skip,maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
 
@@ -669,6 +675,7 @@
                                     <properties>
                                         skipIfEmpty,
                                         maven.deploy.skip,
+                                        do.not.publish,
                                         cactus.codeflowers.skip,
                                         cactus.copy.javadoc.skip,
                                         cactus.lexakai.skip,
@@ -841,6 +848,7 @@
                                         cactus.generate.lexakai.skip,
                                         cactus.publish.check.skip,
                                         maven.javadoc.skip,
+                                        do.not.publish,
                                         skipNexusStagingDeployMojo
                                     </properties>
                                 </configuration>
@@ -962,7 +970,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>${maven-gpg-plugin.version}</version>
                         <executions>
 
                             <execution>
@@ -1240,7 +1248,7 @@
         <maven.version>3.8.5</maven.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
