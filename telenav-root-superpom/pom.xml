@@ -679,6 +679,7 @@
                                     <familiesRequired>true</familiesRequired>
                                     <properties>
                                         skipIfEmpty,
+                                        gpg.skip,
                                         maven.deploy.skip,
                                         do.not.publish,
                                         cactus.codeflowers.skip,
@@ -854,7 +855,8 @@
                                         cactus.publish.check.skip,
                                         maven.javadoc.skip,
                                         do.not.publish,
-                                        skipNexusStagingDeployMojo
+                                        skipNexusStagingDeployMojo,
+                                        gpg.skip
                                     </properties>
                                 </configuration>
                             </execution>
