@@ -34,7 +34,7 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.5.14</cactus.maven.plugin.version>
+        <cactus.maven.plugin.version>1.5.15</cactus.maven.plugin.version>
         <cactus.maven.plugin.previous.version>1.5.9</cactus.maven.plugin.previous.version>
         <!-- Version range for cactus - the bump-version will automatically update will
         automatically update the above two properties, and we use this in a
