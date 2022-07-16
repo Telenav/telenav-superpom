@@ -860,6 +860,16 @@
                                     </properties>
                                 </configuration>
                             </execution>
+                            
+                            <execution>
+                                <!-- Ensure we don't try to publish a pom that
+                                     was already published and is identical to the
+                                     published one. -->
+                                <id>filter-already-published-identical-poms</id>
+                                <goals>
+                                    <goal>filter-published</goal>
+                                </goals>
+                            </execution>
 
                             <execution>
                                 <id>commit-doc-changes</id>
