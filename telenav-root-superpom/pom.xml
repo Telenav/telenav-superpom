@@ -567,8 +567,8 @@
                                     <familiesRequired>true</familiesRequired>
                                     <properties>
                                         cactus.generate.lexakai.skip,
-                                        cactus.publish.check.
-                                        skip,maven.javadoc.skip</properties>
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
 
@@ -1114,6 +1114,9 @@
                                     <goal>push</goal>
                                 </goals>
                                 <phase>process-resources</phase>
+                                <configuration>
+                                    <pushAll>true</pushAll>
+                                </configuration>
                             </execution>
 
                             <execution>
