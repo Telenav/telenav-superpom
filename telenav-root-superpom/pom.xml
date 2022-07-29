@@ -16,7 +16,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
