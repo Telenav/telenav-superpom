@@ -33,7 +33,7 @@
     </description>
 
     <properties>
-        <cactus.version>1.5.19</cactus.version>
+        <cactus.version>1.5.20</cactus.version>
         <lexakai.version>1.0.11-SNAPSHOT</lexakai.version>
         <lexakai.annotations.version>1.0.5-SNAPSHOT</lexakai.annotations.version>
         <!-- KivaKit Version -->
