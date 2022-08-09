@@ -13,7 +13,7 @@ Telenav Open Source projects, including:
 
 To release a new version of the Telenav superpoms to Maven Central:
  
-1. In a shell window, run  `./release.sh` or `mvn -P sign-artifacts clean deploy`
+1. In a shell window, run  `./release` or `mvn -P sign-artifacts clean deploy`
 
 2. Sign into [OSSRH](https://s01.oss.sonatype.org/#stagingRepositories), close the staging repository and release to Maven Central
 
