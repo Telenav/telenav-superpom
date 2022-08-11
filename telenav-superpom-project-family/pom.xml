@@ -23,7 +23,7 @@
     </parent>
 
     <artifactId>telenav-superpom-project-family</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
 
     <packaging>pom</packaging>
     <name>telenav-superpom-project-family</name>
@@ -34,8 +34,8 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.5.12</cactus.maven.plugin.version>
-        <cactus.maven.plugin.previous.version>1.5.9</cactus.maven.plugin.previous.version>
+        <cactus.maven.plugin.version>1.5.18</cactus.maven.plugin.version>
+        <cactus.maven.plugin.previous.version>1.5.17</cactus.maven.plugin.previous.version>
         <!-- Version range for cactus - the bump-version will automatically update will
         automatically update the above two properties, and we use this in a
         dependencyManagement section, which allows plugin resolution to pick it up 

@@ -8,15 +8,15 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 <project
-        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
-        xmlns = "http://maven.apache.org/POM/4.0.0"
-        xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xmlns = "http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -330,7 +330,12 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>${maven-release-plugin.version}</version>
                 </plugin>
+                <plugin>
 
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven-gpg-plugin.version}</version>
+                </plugin>
             </plugins>
 
         </pluginManagement>
@@ -470,7 +475,10 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
+                                    <properties>
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
                             <execution>
@@ -557,7 +565,10 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip</properties>
+                                    <properties>
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.
+                                        skip,maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
 
@@ -666,7 +677,18 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                    <properties>
+                                        skipIfEmpty,
+                                        maven.deploy.skip,
+                                        do.not.publish,
+                                        cactus.codeflowers.skip,
+                                        cactus.copy.javadoc.skip,
+                                        cactus.lexakai.skip,
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip,
+                                        skipNexusStagingDeployMojo
+                                    </properties>
                                 </configuration>
                             </execution>
                             
@@ -760,6 +782,33 @@
 
                         </executions>
                     </plugin>
+                    
+                    <!-- Some javadoc won't be (and cannot be if it uses the shade plugin
+                    to clobber module-info.class files) rebuilt, so we night to
+                    sign NOW in addition to including the plugin in the next phase -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>3.0.1</version>
+                        <executions>
+
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>install</phase>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
 
                 </plugins>
             </build>
@@ -795,7 +844,18 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                    <properties>
+                                        skipIfEmpty,
+                                        maven.deploy.skip,
+                                        cactus.codeflowers.skip,
+                                        cactus.copy.javadoc.skip,
+                                        cactus.lexakai.skip,
+                                        cactus.generate.lexakai.skip,
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip,
+                                        do.not.publish,
+                                        skipNexusStagingDeployMojo
+                                    </properties>
                                 </configuration>
                             </execution>
 
@@ -915,7 +975,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>${maven-gpg-plugin.version}</version>
                         <executions>
 
                             <execution>
@@ -966,9 +1026,6 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
-            <properties>
-                <releasePush>false</releasePush>
-            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -993,7 +1050,7 @@
                                 </goals>
                                 <configuration>
                                     <familiesRequired>true</familiesRequired>
-                                    <properties>skipIfEmpty,maven.deploy.skip,cactus.copy.javadoc.skip,cactus.lexakai.skip,cactus.generate.lexakai.skip,cactus.publish.check.skip,maven.javadoc.skip,skipNexusStagingDeployMojo</properties>
+                                    <properties>skipIfEmpty,cactus.publish.check.skip,cactus.check.skip</properties>
                                 </configuration>
                             </execution>
 
@@ -1045,10 +1102,6 @@
                                     <goal>push</goal>
                                 </goals>
                                 <phase>process-resources</phase>
-                                <configuration>
-                                    <!-- for now -->
-                                    <pretend>true</pretend>
-                                </configuration>
                             </execution>
 
                             <execution>
@@ -1064,7 +1117,8 @@
                                         new snapshot versions of everything that was published
                                         locally and pushed (${releasePush}) to the git server.
 
-                                        Congratulations!  You released ${cactus.families}!
+                                        Congratulations!  You released ${cactus.families}
+                                        in ${project.basedir}!
                                     </message>
                                 </configuration>
                             </execution>
@@ -1199,7 +1253,7 @@
         <maven.version>3.8.5</maven.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
