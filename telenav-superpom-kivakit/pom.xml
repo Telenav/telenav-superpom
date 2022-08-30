@@ -303,6 +303,44 @@
                 <version>${kivakit.version}</version>
             </dependency>
 
+            <!-- Microservice annotations and their test libs -->
+
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotations</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotation-processors</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotation-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotation-tests</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotation-tests-other-annotated-lib</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotation-tests-modelpersister</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.telenav.kivakit</groupId>
+                <artifactId>kivakit-microservice-annotation-tests-foreign-lib</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- Merged JARs -->
 
             <dependency>
