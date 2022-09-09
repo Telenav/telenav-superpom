@@ -38,7 +38,7 @@
         <lexakai.annotations.version>1.0.5-SNAPSHOT</lexakai.annotations.version>
         <!-- KivaKit Version -->
         <kivakit.version>1.6.3-SNAPSHOT</kivakit.version>
-        <telenav.superpom.kivakit.version>2.0.7</telenav.superpom.kivakit.version>
+        <telenav.superpom.kivakit.version>2.0.8</telenav.superpom.kivakit.version>
 
     </properties>
 
