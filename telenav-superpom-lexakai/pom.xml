@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- //
- // © 2011-2022 Telenav, Inc.
- // Licensed under Apache License, Version 2.0
- //
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- -->
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// © 2011-2022 Telenav, Inc.
+// Licensed under Apache License, Version 2.0
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
 
 <project
-     xmlns="http://maven.apache.org/POM/4.0.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -73,13 +73,13 @@
                                 <goals>
                                     <goal>lexakai</goal>
                                 </goals>
+                                <configuration>
+                                    <verbose>true</verbose>
+                                    <overwrite-resources>true</overwrite-resources>
+                                    <update-readme>true</update-readme>
+                                </configuration>
                             </execution>
                         </executions>
-                        <configuration>
-                            <verbose>true</verbose>
-                            <overwrite-resources>true</overwrite-resources>
-                            <update-readme>true</update-readme>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>
