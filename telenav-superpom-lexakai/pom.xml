@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- //
- // © 2011-2022 Telenav, Inc.
- // Licensed under Apache License, Version 2.0
- //
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- -->
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// © 2011-2022 Telenav, Inc.
+// Licensed under Apache License, Version 2.0
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
 
 <project
-     xmlns="http://maven.apache.org/POM/4.0.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.telenav</groupId>
         <artifactId>telenav-superpom-project</artifactId>
-        <version>2.0.2</version>
+        <version>2.0.4</version>
         <relativePath>../telenav-superpom-project/pom.xml</relativePath>
     </parent>
 
     <groupId>com.telenav.lexakai</groupId>
     <artifactId>telenav-superpom-lexakai</artifactId>
-    <version>2.0.5</version>
+    <version>2.0.10</version>
 
     <packaging>pom</packaging>
     <name>telenav-superpom-lexakai</name>
@@ -33,12 +33,12 @@
     </description>
 
     <properties>
-        <cactus.version>1.5.18</cactus.version>
-        <lexakai.version>1.0.10</lexakai.version>
-        <lexakai.annotations.version>1.0.4</lexakai.annotations.version>
+        <cactus.version>1.5.32</cactus.version>
+        <lexakai.version>1.0.12</lexakai.version>
+        <lexakai.annotations.version>1.0.6</lexakai.annotations.version>
         <!-- KivaKit Version -->
-        <kivakit.version>1.6.2</kivakit.version>
-        <telenav.superpom.kivakit.version>2.0.5</telenav.superpom.kivakit.version>
+        <kivakit.version>1.7.0</kivakit.version>
+        <telenav.superpom.kivakit.version>2.1.0</telenav.superpom.kivakit.version>
 
     </properties>
 
@@ -73,13 +73,13 @@
                                 <goals>
                                     <goal>lexakai</goal>
                                 </goals>
+                                <configuration>
+                                    <verbose>true</verbose>
+                                    <overwrite-resources>true</overwrite-resources>
+                                    <update-readme>true</update-readme>
+                                </configuration>
                             </execution>
                         </executions>
-                        <configuration>
-                            <verbose>true</verbose>
-                            <overwrite-resources>true</overwrite-resources>
-                            <update-readme>true</update-readme>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>

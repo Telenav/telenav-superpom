@@ -16,7 +16,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -567,8 +567,8 @@
                                     <familiesRequired>true</familiesRequired>
                                     <properties>
                                         cactus.generate.lexakai.skip,
-                                        cactus.publish.check.
-                                        skip,maven.javadoc.skip</properties>
+                                        cactus.publish.check.skip,
+                                        maven.javadoc.skip</properties>
                                 </configuration>
                             </execution>
 
@@ -679,6 +679,7 @@
                                     <familiesRequired>true</familiesRequired>
                                     <properties>
                                         skipIfEmpty,
+                                        gpg.skip,
                                         maven.deploy.skip,
                                         do.not.publish,
                                         cactus.codeflowers.skip,
@@ -854,9 +855,20 @@
                                         cactus.publish.check.skip,
                                         maven.javadoc.skip,
                                         do.not.publish,
-                                        skipNexusStagingDeployMojo
+                                        skipNexusStagingDeployMojo,
+                                        gpg.skip
                                     </properties>
                                 </configuration>
+                            </execution>
+                            
+                            <execution>
+                                <!-- Ensure we don't try to publish a pom that
+                                     was already published and is identical to the
+                                     published one. -->
+                                <id>filter-already-published-identical-poms</id>
+                                <goals>
+                                    <goal>filter-published</goal>
+                                </goals>
                             </execution>
 
                             <execution>
@@ -1102,6 +1114,9 @@
                                     <goal>push</goal>
                                 </goals>
                                 <phase>process-resources</phase>
+                                <configuration>
+                                    <pushAll>true</pushAll>
+                                </configuration>
                             </execution>
 
                             <execution>
@@ -1286,7 +1301,7 @@
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.redundantIfBraces>LEAVE_ALONE</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.redundantIfBraces>
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.methodDeclBracePlacement>NEW_LINE</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.methodDeclBracePlacement>
         <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.classDeclBracePlacement>NEW_LINE</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.classDeclBracePlacement>
-        <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.specialElseIf>false</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.specialElseIf>
+        <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.specialElseIf>true</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.specialElseIf>
         <org-netbeans-modules-editor-indent.CodeStyle.project.text-line-wrap>none</org-netbeans-modules-editor-indent.CodeStyle.project.text-line-wrap>
         <org-netbeans-modules-editor-indent.CodeStyle.project.indent-shift-width>4</org-netbeans-modules-editor-indent.CodeStyle.project.indent-shift-width>
         <org-netbeans-modules-editor-indent.CodeStyle.project.spaces-per-tab>4</org-netbeans-modules-editor-indent.CodeStyle.project.spaces-per-tab>
