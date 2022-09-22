@@ -40,6 +40,7 @@
         <!-- KivaKit Version -->
 
         <kivakit.version>1.7.1-SNAPSHOT</kivakit.version>
+        <kivakit.filesystems.version>1.7.1</kivakit.filesystems.version>
 
     </properties>
 
@@ -105,17 +106,17 @@
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-filesystems-hdfs</artifactId>
-                <version>${kivakit.version}</version>
+                <version>${kivakit.filesystems.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-filesystems-hdfs-proxy-spi</artifactId>
-                <version>${kivakit.version}</version>
+                <version>${kivakit.filesystems.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-filesystems-s3fs</artifactId>
-                <version>${kivakit.version}</version>
+                <version>${kivakit.filesystems.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
