@@ -32,15 +32,15 @@
     </description>
 
     <properties>
-        <cactus.maven.plugin.version>1.5.32</cactus.maven.plugin.version>
-        <cactus.maven.plugin.previous.version>1.5.31</cactus.maven.plugin.previous.version>
+        <cactus.maven.plugin.version>1.5.33</cactus.maven.plugin.version>
+        <cactus.maven.plugin.previous.version>1.5.32</cactus.maven.plugin.previous.version>
         <!-- Version range for cactus - the bump-version will automatically update will
         automatically update the above two properties, and we use this in a
         dependencyManagement section, which allows plugin resolution to pick it up
         (you can't use a version range directly in a plugin block)-->
         <cactus.maven.plugin.versions>[${cactus.maven.plugin.previous.version}, ${cactus.maven.plugin.version}]</cactus.maven.plugin.versions>
 
-        <cactus.version>1.5.32</cactus.version>
+        <cactus.version>1.5.33</cactus.version>
 
         <!-- Merged JARs -->
 
