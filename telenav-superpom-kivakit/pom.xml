@@ -40,7 +40,7 @@
         <!-- KivaKit Version -->
 
         <kivakit.version>1.8.1-SNAPSHOT</kivakit.version>
-        <kivakit-hdfs.version>1.7.1</kivakit-hdfs.version>
+        <kivakit-hdfs.version>1.8.1</kivakit-hdfs.version>
     </properties>
 
     <dependencyManagement>
