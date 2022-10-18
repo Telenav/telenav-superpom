@@ -176,7 +176,7 @@
                 <configuration>
 
                     <show>public</show>
-                    <source>11</source>
+                    <source>17</source>
                     <detectJavaApiLink>false</detectJavaApiLink>
                     <doclint>none</doclint>
                     <nohelp>true</nohelp>
@@ -401,7 +401,7 @@
                         <configuration>
 
                             <show>protected</show>
-                            <source>11</source>
+                            <source>17</source>
                             <sourcepath>src/main/java</sourcepath>
                             <failOnError>false</failOnError>
                             <detectJavaApiLink>false</detectJavaApiLink>
@@ -1264,7 +1264,7 @@
 
         <!-- Build -->
 
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <maven.version>3.8.5</maven.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
