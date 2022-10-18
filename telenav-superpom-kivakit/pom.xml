@@ -40,7 +40,7 @@
         <!-- KivaKit Version -->
 
         <kivakit.version>1.8.1-SNAPSHOT</kivakit.version>
-        <kivakit-hdfs.version>1.8.1</kivakit-hdfs.version>
+        <kivakit-hdfs.version>1.8.0</kivakit-hdfs.version>
     </properties>
 
     <dependencyManagement>
@@ -120,7 +120,7 @@
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
                 <artifactId>kivakit-filesystems-s3fs</artifactId>
-                <version>${kivakit-hdfs.version}</version>
+                <version>${kivakit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.telenav.kivakit</groupId>
