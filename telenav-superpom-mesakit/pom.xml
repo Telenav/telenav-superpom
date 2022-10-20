@@ -34,7 +34,7 @@
 
     <properties>
         <!-- KivaKit Version -->
-        <telenav.superpom.kivakit.version>2.2.1</telenav.superpom.kivakit.version>
+        <telenav.superpom.kivakit.version>2.2.2</telenav.superpom.kivakit.version>
 
         <!-- MesaKit Version -->
         <mesakit.version>0.9.18</mesakit.version>
