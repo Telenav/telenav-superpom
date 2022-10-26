@@ -7,6 +7,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
+<!--suppress MavenModelInspection -->
 <project
     xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
     xmlns = "http://maven.apache.org/POM/4.0.0"
@@ -16,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -214,6 +215,7 @@
                     <version>${maven-compiler-plugin.version}</version>
                     <configuration>
                         <source>${java.version}</source>
+                        <testSource>${java.version}</testSource>
                         <target>${java.version}</target>
                         <release>${java.version}</release>
                         <compilerArgs>
@@ -319,7 +321,7 @@
                         <serverId>ossrh</serverId>
                         <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                         <skipLocalStaging>true</skipLocalStaging>
-                        <skipStaging>${do.not.publish}</skipStaging>
+                        <skipNexusStagingDeployMojo>${do.not.publish}</skipNexusStagingDeployMojo>
                         <autoReleaseAfterClose>${release.on.close}</autoReleaseAfterClose>
                         <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
                     </configuration>
@@ -336,12 +338,73 @@
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>${maven-gpg-plugin.version}</version>
                 </plugin>
+                
+                <plugin>
+                    <groupId>com.telenav.cactus</groupId>
+                    <artifactId>cactus-maven-plugin</artifactId>
+                    <version>${cactus-maven-plugin.version}</version>
+                </plugin>
+                
             </plugins>
 
         </pluginManagement>
     </build>
 
     <profiles>
+        
+        <profile>
+            <id>generate-metadata</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>com.telenav.cactus</groupId>
+                            <artifactId>cactus-maven-plugin</artifactId>
+                            <version>${cactus-maven-plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-shade-plugin</artifactId>
+                            <version>${maven-shade-plugin.version}</version>
+                            <configuration>
+                                <skip>${maven.shade.skip}</skip>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>                
+                <plugins>
+                    <plugin>
+                        <groupId>com.telenav.cactus</groupId>
+                        <artifactId>cactus-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>project-metadata</id>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>project-information</goal>
+                                    <goal>build-metadata</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
+                </plugins>
+            </build>
+        </profile>
+        
+        <!-- Exclude Slow Tests -->
+
+        <profile>
+            <id>test-quick</id>
+            <properties>
+                <exclude.test.groups>com.telenav.kivakit.core.test.annotations.SlowTests</exclude.test.groups>
+                <testQuick>true</testQuick>
+            </properties>
+        </profile>
+        
         <profile>
             <id>sign-artifacts</id>
             <build>
@@ -790,7 +853,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>${maven-gpg-plugin.version}</version>
                         <executions>
 
                             <execution>
@@ -863,8 +926,8 @@
                             
                             <execution>
                                 <!-- Ensure we don't try to publish a pom that
-                                     was already published and is identical to the
-                                     published one. -->
+                                was already published and is identical to the
+                                published one. -->
                                 <id>filter-already-published-identical-poms</id>
                                 <goals>
                                     <goal>filter-published</goal>
@@ -1263,9 +1326,9 @@
     <properties>
         
         <!-- Addresses maven warnings, at the price that EVERY time
-             we release a new cactus, we need a to bump the version
-             of absolutely EVERYTHING. -->
-        <cactus-maven-plugin.version>1.5.35</cactus-maven-plugin.version>
+        we release a new cactus, we need a to bump the version
+        of absolutely EVERYTHING. -->
+        <cactus-maven-plugin.version>1.5.36</cactus-maven-plugin.version>
 
         <!-- Build -->
 
