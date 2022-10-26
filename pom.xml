@@ -32,12 +32,6 @@
     
     <modules>
         <module>telenav-root-superpom</module>
-        <module>telenav-superpom-project-family</module>
-        <module>telenav-superpom-intermediate-bom</module>
-        <module>telenav-superpom</module>
-        <module>telenav-superpom-project</module>
-        <module>telenav-superpom-mesakit</module>
-        <module>telenav-superpom-kivakit</module>
     </modules>
 
     <!-- Licensing -->
