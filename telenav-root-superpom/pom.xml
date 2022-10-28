@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -342,7 +342,7 @@
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
-                    <version>${cactus-maven-plugin.version}</version>
+                    <version>${cactus-maven-plugin.previous.version}</version>
                 </plugin>
                 
             </plugins>
@@ -363,7 +363,7 @@
                         <plugin>
                             <groupId>com.telenav.cactus</groupId>
                             <artifactId>cactus-maven-plugin</artifactId>
-                            <version>${cactus-maven-plugin.version}</version>
+                            <version>${cactus-maven-plugin.previous.version}</version>
                         </plugin>
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
@@ -523,7 +523,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus-maven-plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -1328,7 +1327,7 @@
         <!-- Addresses maven warnings, at the price that EVERY time
         we release a new cactus, we need a to bump the version
         of absolutely EVERYTHING. -->
-        <cactus-maven-plugin.version>1.5.37</cactus-maven-plugin.version>
+        <cactus-maven-plugin.previous.version>1.5.38</cactus-maven-plugin.previous.version>
 
         <!-- Build -->
 
