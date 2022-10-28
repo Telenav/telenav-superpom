@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -673,6 +673,16 @@
                                     <commitMessage>Prepare for release</commitMessage>
                                     <versionFlavor>to-release</versionFlavor>
                                     <createReleaseBranch>true</createReleaseBranch>
+                                </configuration>
+                            </execution>
+                            
+                            <execution>
+                                <id>ensure-docs-updated</id>
+                                <goals>
+                                    <goal>replace</goal>
+                                </goals>
+                                <configuration>
+                                    <scope>family</scope>
                                 </configuration>
                             </execution>
 
