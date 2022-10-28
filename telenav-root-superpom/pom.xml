@@ -676,6 +676,11 @@
                                 </configuration>
                             </execution>
                             
+                            <!-- If we are not actually updating any versions, then the
+                                 docs phase of BumpVersionMojo will not run (and it is
+                                 off by default now anyway).  So do a pass of docs updates
+                                 regardless.
+                            -->
                             <execution>
                                 <id>ensure-docs-updated</id>
                                 <goals>
