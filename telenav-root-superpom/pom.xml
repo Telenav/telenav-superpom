@@ -1327,7 +1327,7 @@
         <!-- Addresses maven warnings, at the price that EVERY time
         we release a new cactus, we need a to bump the version
         of absolutely EVERYTHING. -->
-        <cactus-maven-plugin.previous.version>1.5.37</cactus-maven-plugin.previous.version>
+        <cactus-maven-plugin.previous.version>1.5.38</cactus-maven-plugin.previous.version>
 
         <!-- Build -->
 
