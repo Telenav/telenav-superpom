@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.7</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -47,12 +47,12 @@
             <dependency>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>${maven-enforcer-plugin.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>${build-helper-maven-plugin.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -177,7 +177,7 @@
                 <configuration>
 
                     <show>public</show>
-                    <source>17</source>
+                    <source>${java.source.version}</source>
                     <detectJavaApiLink>false</detectJavaApiLink>
                     <doclint>none</doclint>
                     <nohelp>true</nohelp>
@@ -185,7 +185,6 @@
                         -notimestamp --show-module-contents all --show-packages
                         all --show-types private --add-reads cactus.maven.plugin=ALL-UNNAMED
                     </additionalOptions>
-
 
                 </configuration>
                 <executions>
@@ -214,10 +213,10 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
                     <configuration>
-                        <source>${java.version}</source>
-                        <testSource>${java.version}</testSource>
-                        <target>${java.version}</target>
-                        <release>${java.version}</release>
+                        <source>${java.source.version}</source>
+                        <testSource>${java.source.version}</testSource>
+                        <target>${java.source.version}</target>
+                        <release>${java.source.version}</release>
                         <compilerArgs>
                             <compilerArg>-Xlint:unchecked</compilerArg>
                             <compilerArg>-Xlint:-requires-transitive-automatic</compilerArg>
@@ -238,7 +237,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>${build-helper-maven-plugin.version}</version>
                 </plugin>
 
                 <plugin>
@@ -289,7 +288,7 @@
                     <configuration>
 
                         <show>public</show>
-                        <source>17</source>
+                        <source>${java.source.version}</source>
                         <detectJavaApiLink>false</detectJavaApiLink>
                         <doclint>none</doclint>
                         <nohelp>true</nohelp>
@@ -338,20 +337,20 @@
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>${maven-gpg-plugin.version}</version>
                 </plugin>
-                
+
                 <plugin>
                     <groupId>com.telenav.cactus</groupId>
                     <artifactId>cactus-maven-plugin</artifactId>
-                    <version>${cactus-maven-plugin.version}</version>
+                    <version>${cactus-maven-plugin.previous.version}</version>
                 </plugin>
-                
+
             </plugins>
 
         </pluginManagement>
     </build>
 
     <profiles>
-        
+
         <profile>
             <id>generate-metadata</id>
             <activation>
@@ -361,9 +360,9 @@
                 <pluginManagement>
                     <plugins>
                         <plugin>
-                            <groupId>com.telenav.cactus</groupId>
-                            <artifactId>cactus-maven-plugin</artifactId>
-                            <version>${cactus-maven-plugin.version}</version>
+                            <groupId>com.telenav.cactus.metadata</groupId>
+                            <artifactId>cactus-metadata-maven-plugin</artifactId>
+                            <version>${cactus-metadata-maven-plugin.previous.version}</version>
                         </plugin>
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
@@ -374,11 +373,11 @@
                             </configuration>
                         </plugin>
                     </plugins>
-                </pluginManagement>                
+                </pluginManagement>
                 <plugins>
                     <plugin>
-                        <groupId>com.telenav.cactus</groupId>
-                        <artifactId>cactus-maven-plugin</artifactId>
+                        <groupId>com.telenav.cactus.metadata</groupId>
+                        <artifactId>cactus-metadata-maven-plugin</artifactId>
                         <executions>
                             <execution>
                                 <id>project-metadata</id>
@@ -390,11 +389,11 @@
                             </execution>
                         </executions>
                     </plugin>
-                    
+
                 </plugins>
             </build>
         </profile>
-        
+
         <!-- Exclude Slow Tests -->
 
         <profile>
@@ -404,7 +403,7 @@
                 <testQuick>true</testQuick>
             </properties>
         </profile>
-        
+
         <profile>
             <id>sign-artifacts</id>
             <build>
@@ -464,7 +463,7 @@
                         <configuration>
 
                             <show>protected</show>
-                            <source>17</source>
+                            <source>${java.source.version}</source>
                             <sourcepath>src/main/java</sourcepath>
                             <failOnError>false</failOnError>
                             <detectJavaApiLink>false</detectJavaApiLink>
@@ -502,7 +501,7 @@
             need to live somewhere visible from every project - and
             may need just to be copied to both the project and project family
             superpoms and kept in sync, which is ugly.
-            
+
             The problem is, put this stuff here, and every pom needs an
             update every time there's a new cactus version, and it cascades
             through everything (if we use properties to manage the version,
@@ -523,7 +522,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus-maven-plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -563,7 +561,7 @@
                                 </goals>
                                 <phase>validate</phase>
                             </execution>
-                                                        
+
                             <execution>
                                 <id>print-phase-zero-message</id>
                                 <goals>
@@ -574,9 +572,9 @@
                                     <onFailure>false</onFailure>
                                     <message>
                                         Your origin URL has been cloned to the directory displayed.
-                                        
+
                                         Change directories to that to proceed with phase-1:
-                                        
+
                                         `mvn \
                                         \t-P release-phase-1 \
                                         \t-Denforcer.skip=true \
@@ -593,11 +591,11 @@
                             </execution>
 
                         </executions>
-                    </plugin>        
+                    </plugin>
                 </plugins>
             </build>
         </profile>
-        
+
         <profile>
             <id>release-phase-1</id>
             <activation>
@@ -612,7 +610,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -636,7 +633,7 @@
                             </execution>
 
                             <!-- pulling this out for now -->
-                            <!-- 
+                            <!--
                             <execution>
                                 <id>pull-assets-checkouts</id>
                                 <goals>
@@ -674,6 +671,21 @@
                                     <commitMessage>Prepare for release</commitMessage>
                                     <versionFlavor>to-release</versionFlavor>
                                     <createReleaseBranch>true</createReleaseBranch>
+                                </configuration>
+                            </execution>
+
+                            <!-- If we are not actually updating any versions, then the
+                                 docs phase of BumpVersionMojo will not run (and it is
+                                 off by default now anyway).  So do a pass of docs updates
+                                 regardless.
+                            -->
+                            <execution>
+                                <id>ensure-docs-updated</id>
+                                <goals>
+                                    <goal>replace</goal>
+                                </goals>
+                                <configuration>
+                                    <scope>family</scope>
                                 </configuration>
                             </execution>
 
@@ -723,7 +735,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -755,7 +766,7 @@
                                     </properties>
                                 </configuration>
                             </execution>
-                            
+
                             <execution>
                                 <!-- Generate magic lexakai files from data in the pom  -->
                                 <id>generate-lexakai-properties-files</id>
@@ -846,7 +857,7 @@
 
                         </executions>
                     </plugin>
-                    
+
                     <!-- Some javadoc won't be (and cannot be if it uses the shade plugin
                     to clobber module-info.class files) rebuilt, so we night to
                     sign NOW in addition to including the plugin in the next phase -->
@@ -872,7 +883,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    
+
 
                 </plugins>
             </build>
@@ -892,7 +903,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -923,7 +933,7 @@
                                     </properties>
                                 </configuration>
                             </execution>
-                            
+
                             <execution>
                                 <!-- Ensure we don't try to publish a pom that
                                 was already published and is identical to the
@@ -973,13 +983,6 @@
                                     <goal>copy-aggregated-javadoc</goal>
                                 </goals>
                             </execution>
-                            
-                            <execution>
-                                <id>update-metadata-post-commit</id>
-                                <goals>
-                                    <goal>build-metadata</goal>
-                                </goals>
-                            </execution>
 
                             <execution>
                                 <id>print-phase-three-message</id>
@@ -993,7 +996,7 @@
                                         Documentation changes have been commited, and
                                         perhaps pushed? (${releasePush})
 
-                                        Artifacts have been uploaded to nexus.  Review, 
+                                        Artifacts have been uploaded to nexus.  Review,
                                         and release the repository
                                         if things look right.
 
@@ -1006,7 +1009,25 @@
 
                         </executions>
                     </plugin>
-
+                    
+                    <plugin>
+                        <groupId>com.telenav.cactus.metadata</groupId>
+                        <artifactId>cactus-metadata-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>update-metadata-post-commit</id>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>project-information</goal>
+                                    <goal>build-metadata</goal>
+                                </goals>
+                                <configuration>
+                                    <verb>Updating Metadata</verb>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -1106,7 +1127,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -1191,7 +1211,7 @@
                                 <configuration>
                                     <onFailure>false</onFailure>
                                     <message>
-                                        You are now back on the development branch, with 
+                                        You are now back on the development branch, with
                                         new snapshot versions of everything that was published
                                         locally and pushed (${releasePush}) to the git server.
 
@@ -1324,28 +1344,29 @@
     </licenses>
 
     <properties>
-        
+
+        <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
+
         <!-- Addresses maven warnings, at the price that EVERY time
         we release a new cactus, we need a to bump the version
         of absolutely EVERYTHING. -->
-        <cactus-maven-plugin.version>1.5.36</cactus-maven-plugin.version>
+        <cactus-maven-plugin.previous.version>1.5.40</cactus-maven-plugin.previous.version>
+        <cactus-metadata-maven-plugin.previous.version>1.0.1</cactus-metadata-maven-plugin.previous.version>
 
         <!-- Build -->
 
-        <java.version>17</java.version>
+        <java.source.version>17</java.source.version>
         <maven.version>3.8.5</maven.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
-        <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
+        <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
+        <maven-shade-plugin.version>3.4.0</maven-shade-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-exec-plugin.version>3.0.0</maven-exec-plugin.version>
         <maven-protobuf-plugin.version>0.6.1</maven-protobuf-plugin.version>
         <maven-release-plugin.version>3.0.0-M6</maven-release-plugin.version>
-        <maven-enforcer-plugin.version>3.0.0</maven-enforcer-plugin.version>
+        <maven-enforcer-plugin.version>3.1.0</maven-enforcer-plugin.version>
         <maven-os-plugin.version>1.6.1</maven-os-plugin.version>
         <maven.plugin.plugin.version>3.6.4</maven.plugin.plugin.version>
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
