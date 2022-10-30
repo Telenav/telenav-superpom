@@ -1351,7 +1351,7 @@
         we release a new cactus, we need a to bump the version
         of absolutely EVERYTHING. -->
         <cactus-maven-plugin.previous.version>1.5.39</cactus-maven-plugin.previous.version>
-        <cactus-metadata-maven-plugin.previous.version>1.0.0</cactus-metadata-maven-plugin.previous.version>
+        <cactus-metadata-maven-plugin.previous.version>1.0.1</cactus-metadata-maven-plugin.previous.version>
 
         <!-- Build -->
 
