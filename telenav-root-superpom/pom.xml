@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -185,7 +185,6 @@
                         -notimestamp --show-module-contents all --show-packages
                         all --show-types private --add-reads cactus.maven.plugin=ALL-UNNAMED
                     </additionalOptions>
-
 
                 </configuration>
                 <executions>
@@ -361,9 +360,9 @@
                 <pluginManagement>
                     <plugins>
                         <plugin>
-                            <groupId>com.telenav.cactus</groupId>
-                            <artifactId>cactus-maven-plugin</artifactId>
-                            <version>${cactus-maven-plugin.previous.version}</version>
+                            <groupId>com.telenav.cactus.metadata</groupId>
+                            <artifactId>cactus-metadata-maven-plugin</artifactId>
+                            <version>${cactus-metadata-maven-plugin.previous.version}</version>
                         </plugin>
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
@@ -377,8 +376,8 @@
                 </pluginManagement>
                 <plugins>
                     <plugin>
-                        <groupId>com.telenav.cactus</groupId>
-                        <artifactId>cactus-maven-plugin</artifactId>
+                        <groupId>com.telenav.cactus.metadata</groupId>
+                        <artifactId>cactus-metadata-maven-plugin</artifactId>
                         <executions>
                             <execution>
                                 <id>project-metadata</id>
@@ -611,7 +610,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -737,7 +735,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -906,7 +903,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -989,13 +985,6 @@
                             </execution>
 
                             <execution>
-                                <id>update-metadata-post-commit</id>
-                                <goals>
-                                    <goal>build-metadata</goal>
-                                </goals>
-                            </execution>
-
-                            <execution>
                                 <id>print-phase-three-message</id>
                                 <goals>
                                     <goal>print-message</goal>
@@ -1020,7 +1009,25 @@
 
                         </executions>
                     </plugin>
-
+                    
+                    <plugin>
+                        <groupId>com.telenav.cactus.metadata</groupId>
+                        <artifactId>cactus-metadata-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>update-metadata-post-commit</id>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>project-information</goal>
+                                    <goal>build-metadata</goal>
+                                </goals>
+                                <configuration>
+                                    <verb>Updating Metadata</verb>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -1120,7 +1127,6 @@
                     <plugin>
                         <groupId>com.telenav.cactus</groupId>
                         <artifactId>cactus-maven-plugin</artifactId>
-                        <version>${cactus.maven.plugin.version}</version>
                         <configuration>
                             <scope>family</scope>
                             <verbose>true</verbose>
@@ -1345,6 +1351,7 @@
         we release a new cactus, we need a to bump the version
         of absolutely EVERYTHING. -->
         <cactus-maven-plugin.previous.version>1.5.39</cactus-maven-plugin.previous.version>
+        <cactus-metadata-maven-plugin.previous.version>1.0.0</cactus-metadata-maven-plugin.previous.version>
 
         <!-- Build -->
 
