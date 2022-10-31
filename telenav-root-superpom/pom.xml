@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
 
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
@@ -1350,7 +1350,7 @@
         <!-- Addresses maven warnings, at the price that EVERY time
         we release a new cactus, we need a to bump the version
         of absolutely EVERYTHING. -->
-        <cactus-maven-plugin.previous.version>1.5.41</cactus-maven-plugin.previous.version>
+        <cactus-maven-plugin.previous.version>1.5.42</cactus-maven-plugin.previous.version>
         <cactus-metadata-maven-plugin.previous.version>1.0.1</cactus-metadata-maven-plugin.previous.version>
 
         <!-- Build -->
