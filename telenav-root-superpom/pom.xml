@@ -26,7 +26,6 @@
     -->
 
     <packaging>pom</packaging>
-    <name>telenav-root-superpom</name>
     <description>
         The uber-root telenav superpom, containing global plugin configuration, possibly a few
         rarely changing dependency management elements and NOTHING ELSE.  Anything here must be

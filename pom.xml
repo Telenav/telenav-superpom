@@ -20,7 +20,6 @@
     <version>2.0.5</version>
 
     <packaging>pom</packaging>
-    <name>telenav-superpom-bom</name>
     <description>
         Aggregator for telenav superpoms.
     </description>
