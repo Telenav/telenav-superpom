@@ -19,6 +19,8 @@
     <artifactId>telenav-root-superpom</artifactId>
     <version>1.0.10</version>
 
+    <name>${project.artifactId}</name>
+
     <!--
     The uber-pom of uber-poms.  This is the place ONLY for stuff that
     almost NEVER changes and is safe to have in the configuration for
@@ -1006,7 +1008,7 @@
 
                         </executions>
                     </plugin>
-                    
+
                     <plugin>
                         <groupId>com.telenav.cactus.metadata</groupId>
                         <artifactId>cactus-metadata-maven-plugin</artifactId>
@@ -1024,7 +1026,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
