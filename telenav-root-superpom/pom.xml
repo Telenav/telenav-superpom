@@ -666,8 +666,7 @@
                                 <configuration>
                                     <scope>family</scope>
                                     <bumpPublished>true</bumpPublished>
-                                    <commitChanges>true</commitChanges>
-                                    <commitMessage>Prepare for release</commitMessage>
+                                    <commit>true</commit>
                                     <versionFlavor>to-release</versionFlavor>
                                     <createReleaseBranch>true</createReleaseBranch>
                                 </configuration>
@@ -952,9 +951,8 @@
                                 <configuration>
                                     <push>${releasePush}</push>
                                     <scope>all-project-families</scope>
-                                    <commitChanges>true</commitChanges>
+                                    <commitMessage>Prepare for release</commitMessage>
                                     <includeRoot>true</includeRoot>
-                                    <commitMessage>Commit docs for release</commitMessage>
                                 </configuration>
                             </execution>
 
@@ -1168,12 +1166,12 @@
                                 </goals>
                                 <phase>generate-sources</phase>
                                 <configuration>
-                                    <commitChanges>true</commitChanges>
+                                    <commit>true</commit>
                                     <scope>family</scope>
                                     <includeRoot>true</includeRoot>
                                     <versionFlavor>to-snapshot</versionFlavor>
                                     <updateDocs>false</updateDocs>
-                                    <superpomBumpPolicy>BUMP_ACQUIRING_NEW_FAMILY_FLAVOR</superpomBumpPolicy>
+                                    <bumpPolicy>bump-acquiring-new-family-flavor</bumpPolicy>
                                 </configuration>
                             </execution>
 
@@ -1347,7 +1345,7 @@
         <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
 
         <!-- Addresses maven warnings, at the price that EVERY time
-        we release a new cactus, we need a to bump the version
+        we release a new cactus, we need to bump the version
         of absolutely EVERYTHING. -->
         <cactus-maven-plugin.previous.version>1.5.43</cactus-maven-plugin.previous.version>
         <cactus-metadata-maven-plugin.previous.version>1.0.1</cactus-metadata-maven-plugin.previous.version>
