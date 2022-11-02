@@ -17,7 +17,7 @@
 
     <groupId>com.telenav</groupId>
     <artifactId>telenav-root-superpom</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.12</version>
 
     <name>${project.artifactId}</name>
 
@@ -183,8 +183,7 @@
                     <doclint>none</doclint>
                     <nohelp>true</nohelp>
                     <additionalOptions>
-                        -notimestamp --show-module-contents all --show-packages
-                        all --show-types private --add-reads cactus.maven.plugin=ALL-UNNAMED
+                        -notimestamp
                     </additionalOptions>
 
                 </configuration>
@@ -1012,6 +1011,9 @@
                     <plugin>
                         <groupId>com.telenav.cactus.metadata</groupId>
                         <artifactId>cactus-metadata-maven-plugin</artifactId>
+                        <!-- Explicit version *should* not be needed here, but if removed,
+                             maven will emit a pile of warnings that it is unspecified -->
+                        <version>${cactus-metadata-maven-plugin.previous.version}</version>
                         <executions>
                             <execution>
                                 <id>update-metadata-post-commit</id>
