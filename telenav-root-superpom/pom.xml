@@ -315,6 +315,7 @@
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>${nexus-staging-maven-plugin.version}</version>
                     <extensions>true</extensions>
                     <configuration>
                         <serverId>ossrh</serverId>
@@ -896,6 +897,42 @@
             <properties>
                 <releasePush>false</releasePush>
             </properties>
+            <!-- These should not be neede here, but the kivakit superpom fails
+            in release builds without them. -->
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>ossrh</id>
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+                </snapshotRepository>
+
+                <repository>
+                    <id>ossrh</id>
+                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+            <repositories>
+
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>Maven Central</name>
+                    <url>https://repo.maven.apache.org/maven2/</url>
+                </repository>
+
+                <repository>
+                    <id>ossrh</id>
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+
             <build>
                 <plugins>
 
@@ -1012,7 +1049,7 @@
                         <groupId>com.telenav.cactus.metadata</groupId>
                         <artifactId>cactus-metadata-maven-plugin</artifactId>
                         <!-- Explicit version *should* not be needed here, but if removed,
-                             maven will emit a pile of warnings that it is unspecified -->
+                        maven will emit a pile of warnings that it is unspecified -->
                         <version>${cactus-metadata-maven-plugin.previous.version}</version>
                         <executions>
                             <execution>
@@ -1232,7 +1269,6 @@
     </profiles>
 
     <repositories>
-
         <repository>
             <snapshots>
                 <enabled>false</enabled>
